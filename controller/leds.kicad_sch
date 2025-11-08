@@ -1,0 +1,28 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "9637762e-65b7-4716-b317-b5c7f4b20a4f")
+	(paper "A4")
+	(lib_symbols)
+	(text "2 sor 7 x CXM-22-HM-61-54-AC30-P1-3 = 1050 umol/sec alap fény, 560W ~ 600W\nUmax = 365V DC max U=55v -> 7db @ maxU 52.1 V\nUtyp = 351.1 V -> U=50.15 -> I = 0.8A ~ 75% -> 7&75umol/s = 525 umol/sec\n280.88 W /sor\n"
+		(exclude_from_sim no)
+		(at 71.12 35.052 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "2b1e4384-4f3e-4fbe-8558-1770b03dda53")
+	)
+	(text "CXM14 \nUinmax = 365V DC -> UledMax = 37V -> 10db @ Uledmax = 36.5\nUiTyp = 351.1 V -> Uledtyp = 35.1V -> I = 860 mA -> 120% -> 54 umol/s ->  "
+		(exclude_from_sim no)
+		(at 75.946 59.69 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "778d39ee-e9f8-48d4-916d-93a53ae6f7c7")
+	)
+)
