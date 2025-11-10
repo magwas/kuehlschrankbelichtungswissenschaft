@@ -1,4 +1,4 @@
-25673486908980993
+25687588166970488
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102893,9 +102893,65 @@ https://www.addicore.com/Pro-Mini-p/ad249.htm
 29
 29
 arduino-library
+ESP32-S3-DEVKITC-1-N8R8
+
+
+0
+44
+44
+arduino-library
+ESP32WROOM32EN4
+ESP32-WROOM-32E-N4-1
+Integrated Circuit
+0
+47
+47
+arduino-library
 G2RK1DC5
 G2RK-1-DC5-2
 Relay or Contactor
 0
 7
 7
+arduino-library
+JST_B7B-PH-K-S
+
+
+0
+7
+7
+arduino-library
+L15065705024000H0
+L150-65705024000H0-1
+LED
+0
+4
+4
+arduino-library
+SOP65P640X110-24N
+SOT355-1
+Integrated Circuit
+0
+24
+24
+arduino-library
+TBL00138103GY2GY
+TBL001-381-03GY-2GY-1
+Connector
+0
+6
+3
+arduino-library
+TO229P240X654X875-3P
+IPAK SL (TO-251 SL)
+MOSFET (N-Channel)
+0
+3
+3
+arduino-library
+TO254P470X1016X1965-3P
+KCS0003B_
+Integrated Circuit
+0
+3
+3

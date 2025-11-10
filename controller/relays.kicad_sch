@@ -248,6 +248,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Zener"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Zener"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Zener diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Zener_0_1"
+				(polyline
+					(pts
+						(xy -1.27 -1.27) (xy -1.27 1.27) (xy -0.762 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 -1.27) (xy 1.27 1.27) (xy -1.27 0) (xy 1.27 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Zener_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "G2RK-1-DC5:G2RK-1-DC5"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -397,7 +547,7 @@
 						)
 					)
 				)
-				(pin no_connect line
+				(pin passive line
 					(at 0 -5.08 0)
 					(length 5.08)
 					(name "NC"
@@ -1016,6 +1166,12 @@
 		)
 	)
 	(junction
+		(at 34.29 97.79)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "0442ce75-eb6d-468f-9de8-4635c8983f22")
+	)
+	(junction
 		(at 157.48 40.64)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1100,10 +1256,22 @@
 		(uuid "bdee5f45-dacb-42dc-b9f0-981b1323ff37")
 	)
 	(junction
+		(at 71.12 113.03)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "c2857bbc-1589-4968-8698-abc9b6710b20")
+	)
+	(junction
 		(at 158.75 77.47)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "db121f6c-414d-4a37-8576-71dbc318517e")
+	)
+	(junction
+		(at 69.85 110.49)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e9c2021f-a851-4069-a31f-cdabe8b10c9d")
 	)
 	(junction
 		(at 161.29 148.59)
@@ -1153,7 +1321,7 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 152.4) (xy 77.47 152.4)
+			(xy 71.12 152.4) (xy 83.82 152.4)
 		)
 		(stroke
 			(width 0)
@@ -1173,7 +1341,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 157.48) (xy 77.47 157.48)
+			(xy 35.56 160.02) (xy 83.82 160.02)
 		)
 		(stroke
 			(width 0)
@@ -1190,6 +1358,16 @@
 			(type default)
 		)
 		(uuid "085708ba-173f-4a82-a3db-d72c8927fbb7")
+	)
+	(wire
+		(pts
+			(xy 34.29 97.79) (xy 34.29 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0a489845-df33-46c5-a7be-cc5560057208")
 	)
 	(wire
 		(pts
@@ -1310,6 +1488,16 @@
 			(type default)
 		)
 		(uuid "25d9b532-90be-438c-be17-6c2c6407a2bb")
+	)
+	(wire
+		(pts
+			(xy 35.56 160.02) (xy 35.56 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28b76ab5-d998-4c2f-ba1e-f79e4ceb464f")
 	)
 	(wire
 		(pts
@@ -1493,6 +1681,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 113.03) (xy 104.14 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47dd1fdc-f3fd-487e-ab3f-bf763f870c31")
+	)
+	(wire
+		(pts
 			(xy 231.14 151.13) (xy 231.14 144.78)
 		)
 		(stroke
@@ -1510,6 +1708,16 @@
 			(type default)
 		)
 		(uuid "489d6e52-396d-4a05-a918-10aca8996654")
+	)
+	(wire
+		(pts
+			(xy 57.15 97.79) (xy 69.85 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "49eb3200-561e-4c5d-aedc-46622121ee04")
 	)
 	(wire
 		(pts
@@ -1763,6 +1971,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 91.44) (xy 71.12 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7a9f0f26-ee61-4c49-9b8c-612bdd796857")
+	)
+	(wire
+		(pts
 			(xy 161.29 148.59) (xy 161.29 151.13)
 		)
 		(stroke
@@ -1870,6 +2088,16 @@
 			(type default)
 		)
 		(uuid "8e503ea1-0661-4c5e-a637-e25e73e29f4c")
+	)
+	(wire
+		(pts
+			(xy 34.29 91.44) (xy 34.29 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8f418903-5ef7-4930-839c-463c154db1bd")
 	)
 	(wire
 		(pts
@@ -2063,6 +2291,16 @@
 	)
 	(wire
 		(pts
+			(xy 49.53 91.44) (xy 34.29 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a58f3690-9cb6-4e45-84e1-5a2e5561ab91")
+	)
+	(wire
+		(pts
 			(xy 196.85 148.59) (xy 201.93 148.59)
 		)
 		(stroke
@@ -2090,6 +2328,16 @@
 			(type default)
 		)
 		(uuid "ae08003d-efc9-404b-a482-6cfca3d34fe6")
+	)
+	(wire
+		(pts
+			(xy 49.53 97.79) (xy 34.29 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ae9dbeeb-057c-4576-b744-9c526368cc41")
 	)
 	(wire
 		(pts
@@ -2163,6 +2411,16 @@
 	)
 	(wire
 		(pts
+			(xy 69.85 97.79) (xy 69.85 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bcf83ff3-ac6f-48d0-82eb-2623c77fc372")
+	)
+	(wire
+		(pts
 			(xy 210.82 97.79) (xy 229.87 97.79)
 		)
 		(stroke
@@ -2183,7 +2441,7 @@
 	)
 	(wire
 		(pts
-			(xy 69.85 113.03) (xy 104.14 113.03)
+			(xy 69.85 113.03) (xy 71.12 113.03)
 		)
 		(stroke
 			(width 0)
@@ -2240,6 +2498,16 @@
 			(type default)
 		)
 		(uuid "c6cb30da-cd47-4861-bee2-38e88de0a7b9")
+	)
+	(wire
+		(pts
+			(xy 35.56 157.48) (xy 29.21 157.48)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ca121b52-6c90-4325-9a7b-e8aa351bbb88")
 	)
 	(wire
 		(pts
@@ -2333,6 +2601,16 @@
 	)
 	(wire
 		(pts
+			(xy 71.12 91.44) (xy 71.12 113.03)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df11acf8-492f-4eb4-ba2d-0c7e05f4d5f4")
+	)
+	(wire
+		(pts
 			(xy 26.67 48.26) (xy 35.56 48.26)
 		)
 		(stroke
@@ -2363,7 +2641,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 157.48) (xy 77.47 152.4)
+			(xy 83.82 160.02) (xy 83.82 152.4)
 		)
 		(stroke
 			(width 0)
@@ -2471,7 +2749,7 @@
 		)
 		(uuid "f9a3c361-fb52-4146-a76b-9c144116c4da")
 	)
-	(hierarchical_label "RELAY_5_ON"
+	(global_label "RELAY_5_ON"
 		(shape input)
 		(at 189.23 33.02 180)
 		(effects
@@ -2481,8 +2759,17 @@
 			(justify right)
 		)
 		(uuid "218abb54-7442-4407-9c3d-c6efa463aa38")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 189.23 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_7_ON"
+	(global_label "RELAY_7_ON"
 		(shape input)
 		(at 191.77 104.14 180)
 		(effects
@@ -2492,8 +2779,17 @@
 			(justify right)
 		)
 		(uuid "4896b33f-06aa-4356-b6a3-466174795c7f")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 191.77 104.14 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_5_OFF"
+	(global_label "RELAY_5_OFF"
 		(shape input)
 		(at 217.17 31.75 180)
 		(effects
@@ -2503,8 +2799,17 @@
 			(justify right)
 		)
 		(uuid "520681f9-3dd2-4802-a22f-ef3f416f3deb")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 217.17 31.75 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_6_ON"
+	(global_label "RELAY_6_ON"
 		(shape input)
 		(at 190.5 69.85 180)
 		(effects
@@ -2514,8 +2819,17 @@
 			(justify right)
 		)
 		(uuid "5244232d-96b7-4641-8da2-a6abee8190ad")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 190.5 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_3_OFF"
+	(global_label "RELAY_3_OFF"
 		(shape input)
 		(at 93.98 101.6 180)
 		(effects
@@ -2525,8 +2839,17 @@
 			(justify right)
 		)
 		(uuid "57c5e1e8-8b8b-40dd-80ea-61955f491f94")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 93.98 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_2_ON"
+	(global_label "RELAY_2_ON"
 		(shape input)
 		(at 67.31 68.58 180)
 		(effects
@@ -2536,8 +2859,17 @@
 			(justify right)
 		)
 		(uuid "6795d7e0-a4b1-4edf-8b33-4ee7041f503b")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.31 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_3_ON"
+	(global_label "RELAY_3_ON"
 		(shape input)
 		(at 66.04 102.87 180)
 		(effects
@@ -2547,8 +2879,17 @@
 			(justify right)
 		)
 		(uuid "709d6bcc-179c-4d7b-baae-7a852d266c14")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 66.04 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_4_OFF"
+	(global_label "RELAY_4_OFF"
 		(shape input)
 		(at 95.25 138.43 180)
 		(effects
@@ -2558,8 +2899,17 @@
 			(justify right)
 		)
 		(uuid "81f7b751-9d03-40ac-aaab-76ef8ce18800")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.25 138.43 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_6_OFF"
+	(global_label "RELAY_6_OFF"
 		(shape input)
 		(at 218.44 68.58 180)
 		(effects
@@ -2569,8 +2919,17 @@
 			(justify right)
 		)
 		(uuid "832647cb-d389-4bcc-9abe-c68b57a3347e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 218.44 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_8_ON"
+	(global_label "RELAY_8_ON"
 		(shape input)
 		(at 193.04 140.97 180)
 		(effects
@@ -2580,8 +2939,17 @@
 			(justify right)
 		)
 		(uuid "904cc80a-ff2f-4e80-baf7-0758f1b87562")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 193.04 140.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_7_OFF"
+	(global_label "RELAY_7_OFF"
 		(shape input)
 		(at 219.71 102.87 180)
 		(effects
@@ -2591,8 +2959,17 @@
 			(justify right)
 		)
 		(uuid "ab1bf25c-dca0-4c5b-9349-d08b5db28e78")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 219.71 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_8_OFF"
+	(global_label "RELAY_8_OFF"
 		(shape input)
 		(at 220.98 139.7 180)
 		(effects
@@ -2602,8 +2979,17 @@
 			(justify right)
 		)
 		(uuid "b24ba91e-5736-45ac-b570-592c6d89cde5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 220.98 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_2_OFF"
+	(global_label "RELAY_2_OFF"
 		(shape input)
 		(at 95.25 67.31 180)
 		(effects
@@ -2613,8 +2999,39 @@
 			(justify right)
 		)
 		(uuid "c146a5f0-4c5f-4084-9fef-5f5492df4ca5")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 95.25 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_1_ON"
+	(global_label "RELAY_1_OFF"
+		(shape input)
+		(at 95.25 34.29 180)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "cc1ec5b6-9b9f-47a7-ab4b-c483dbb841d6")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 79.9881 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+	)
+	(global_label "RELAY_1_ON"
 		(shape input)
 		(at 67.31 35.56 180)
 		(effects
@@ -2624,8 +3041,17 @@
 			(justify right)
 		)
 		(uuid "ccba19ed-d273-4eb6-938f-ba5a24c00aa2")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.31 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 	)
-	(hierarchical_label "RELAY_4_ON"
+	(global_label "RELAY_4_ON"
 		(shape input)
 		(at 67.31 139.7 180)
 		(effects
@@ -2635,17 +3061,15 @@
 			(justify right)
 		)
 		(uuid "ecf7bb0e-64e6-4f18-a039-3a8d3fd66ef7")
-	)
-	(hierarchical_label "RELAY_1_OFF"
-		(shape input)
-		(at 95.25 34.29 180)
-		(effects
-			(font
-				(size 1.27 1.27)
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 67.31 139.7 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
 			)
-			(justify right)
 		)
-		(uuid "f4ac2ccb-c43c-46ad-bcfd-0b6a5c71222a")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2815,7 +3239,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 151.13 119.38 0)
 			(effects
 				(font
@@ -3313,7 +3737,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 148.59 48.26 0)
 			(effects
 				(font
@@ -3425,6 +3849,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 53.34 91.44 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3c0f8d93-8183-41fd-aa4b-de3eab5064e0")
+		(property "Reference" "D2"
+			(at 53.34 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 53.34 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "610a715d-e8cb-413b-86b3-85b00489006a")
+		)
+		(pin "1"
+			(uuid "ae8194bc-8998-43d8-b2b6-16964662ede3")
+		)
+		(instances
+			(project "controller"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/67e54fbe-466b-4ed5-a473-cff96d97dd5c"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "G2RK-1-DC5:G2RK-1-DC5")
 		(at 157.48 40.64 0)
 		(unit 1)
@@ -3450,7 +3942,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 189.23 135.56 0)
 			(effects
 				(font
@@ -3727,7 +4219,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 67.31 138.1 0)
 			(effects
 				(font
@@ -4090,7 +4582,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 67.31 171.12 0)
 			(effects
 				(font
@@ -4358,7 +4850,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 67.31 242.24 0)
 			(effects
 				(font
@@ -4635,7 +5127,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 190.5 172.39 0)
 			(effects
 				(font
@@ -4811,6 +5303,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Zener")
+		(at 53.34 97.79 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "86074729-71fb-4a89-9bf1-0091ea919b34")
+		(property "Reference" "D1"
+			(at 53.34 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Zener"
+			(at 53.34 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 53.34 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 53.34 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Zener diode"
+			(at 53.34 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "5e9d6ec5-c3f3-4b8d-9ebd-67a8b8f0ca14")
+		)
+		(pin "1"
+			(uuid "11145f51-ce14-4188-886c-a5be29361617")
+		)
+		(instances
+			(project ""
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/67e54fbe-466b-4ed5-a473-cff96d97dd5c"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "G2RK-1-DC5:G2RK-1-DC5")
 		(at 161.29 148.59 0)
 		(unit 1)
@@ -4836,7 +5396,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 193.04 243.51 0)
 			(effects
 				(font
@@ -4971,7 +5531,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 24.13 154.94 0)
 			(effects
 				(font
@@ -5118,7 +5678,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 22.86 118.11 0)
 			(effects
 				(font
@@ -5265,7 +5825,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 66.04 205.41 0)
 			(effects
 				(font
@@ -5618,7 +6178,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 152.4 156.21 0)
 			(effects
 				(font
@@ -5765,7 +6325,7 @@
 				)
 			)
 		)
-		(property "Footprint" "G2RK1DC5"
+		(property "Footprint" "arduino-library:G2RK1DC5"
 			(at 191.77 206.68 0)
 			(effects
 				(font
@@ -6042,7 +6602,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 21.59 50.8 0)
 			(effects
 				(font
@@ -6113,7 +6673,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 24.13 83.82 0)
 			(effects
 				(font
@@ -6250,7 +6810,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "arduino-library:TBL00138103GY2GY"
 			(at 149.86 85.09 0)
 			(effects
 				(font
