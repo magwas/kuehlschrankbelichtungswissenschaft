@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model ESMR401VSN102MA50S
+#/638783/1316554/2.50/2/3/Capacitor Polarised
+DEF ESMR401VSN102MA50S C 0 30 Y Y 1 F N
+F0 "C" 350 250 50 H V L CNN
+F1 "ESMR401VSN102MA50S" 350 150 50 H V L CNN
+F2 "CAPPRD1000W180D3550H5250" 350 50 50 H I L CNN
+F3 "https://www.chemi-con.co.jp/products/relatedfiles/capacitor/catalog/SMRN-e.PDF" 350 -50 50 H I L CNN
+F4 "Aluminum Electrolytic Capacitors - Snap In 400V 1000uF 20% Tol." 350 -150 50 H I L CNN "Description"
+F5 "52.5" 350 -250 50 H I L CNN "Height"
+F6 "661-ESMR401N102MA50S" 350 -350 50 H I L CNN "Mouser Part Number"
+F7 "https://www.mouser.co.uk/ProductDetail/Chemi-Con/ESMR401VSN102MA50S?qs=Odivq8ja524b%2FQGIYCgEGQ%3D%3D" 350 -450 50 H I L CNN "Mouser Price/Stock"
+F8 "Chemi-Con" 350 -550 50 H I L CNN "Manufacturer_Name"
+F9 "ESMR401VSN102MA50S" 350 -650 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 500 0 100 L 50 50 0 0 P
+P 5 0 1 6 200 100 200 -100 230 -100 230 100 200 100 N
+P 2 0 1 6 180 50 140 50 N
+P 2 0 1 6 160 70 160 30 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 300 0 400 0 N
+P 5 0 1 10 300 100 300 -100 270 -100 270 100 300 100 F
+ENDDRAW
+ENDDEF
+#
+#End Library

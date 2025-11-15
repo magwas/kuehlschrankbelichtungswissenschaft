@@ -497,7 +497,7 @@
   },
   "schematic": {
     "annotate_start_num": 0,
-    "bom_export_filename": "${PROJECTNAME}.csv",
+    "bom_export_filename": "led.csv",
     "bom_fmt_presets": [],
     "bom_fmt_settings": {
       "field_delimiter": ",",
@@ -603,10 +603,10 @@
           "show": false
         },
         {
-          "group_by": false,
+          "group_by": true,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -672,35 +672,39 @@
       "leds_65k_1"
     ],
     [
-      "f0bccb48-9a8d-4d2f-be25-ae8ec39e3d2b",
+      "54b5f467-ecbd-419e-b57a-68b9f57aaa3d",
+      "Outputs"
+    ],
+    [
+      "46e622e5-6345-45d3-bd03-551174433bc3",
       "leds_65k_2"
     ],
     [
-      "4065dc83-3d5a-4f40-b428-a64873cb6706",
+      "07870ad2-736c-4fc6-b607-fc783ac353af",
       "leds_65k_3"
     ],
     [
-      "7787097c-9385-4ed4-8a9f-a56788723866",
+      "1e289460-c7f6-45f3-8471-b3bda40eee6a",
       "leds_65k_4"
     ],
     [
-      "5aff7d51-befc-4dfa-b795-ddd44fde5e99",
+      "516d88ca-b4c8-4825-8a00-2f3921280bb5",
       "leds_65k_5"
     ],
     [
-      "4c6088b4-382a-4365-9edd-971e83a3f6bc",
-      "leds_18k_1"
-    ],
-    [
-      "e672aadc-e946-44e5-a369-02d13e1b5d2c",
+      "08fcac37-238a-42f6-b3fb-ac63fe3ccf14",
       "leds_18k_2"
     ],
     [
-      "b2bddf0e-7e42-4f20-8795-c5d6730029e6",
+      "5aec1ce1-45e4-46e9-8146-4644b64be076",
+      "leds_18k_1"
+    ],
+    [
+      "0a25a1a7-8031-4ac0-bcc3-1be337215f8c",
       "leds_18k_3"
     ],
     [
-      "40687bc5-7ae6-4828-a6c0-6690196f5b17",
+      "4eb65af3-d37e-483c-97ba-1cef623888b7",
       "leds_18k_4"
     ]
   ],

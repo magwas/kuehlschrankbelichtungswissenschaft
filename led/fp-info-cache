@@ -1,4 +1,4 @@
-25687588166970488
+25703454905222737
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102872,6 +102872,13 @@ https://docs.arduino.cc/hardware/zero
 38
 38
 arduino-library
+CAPPRD1000W180D3550H5250
+35 x 50
+Capacitor Polarised
+0
+2
+2
+arduino-library
 Clone_Mega2560_Pro_Socket
 https://docs.arduino.cc/hardware/mega-2560
 
@@ -102914,6 +102921,27 @@ Relay or Contactor
 7
 7
 arduino-library
+G6DN1ADC45
+G6DN-1A DC4.5-1
+Relay or Contactor
+0
+4
+4
+arduino-library
+HCTI22058
+HCTI-220-5.8-1
+Inductor
+0
+2
+2
+arduino-library
+IRM-45
+
+
+0
+4
+4
+arduino-library
 JST_B7B-PH-K-S
 
 
@@ -102928,12 +102956,47 @@ LED
 4
 4
 arduino-library
+RESAD2900W85L1100D450
+RSF1
+Resistor
+0
+2
+2
+arduino-library
 SOP65P640X110-24N
 SOT355-1
 Integrated Circuit
 0
 24
 24
+arduino-library
+SOP65P640X120-16N
+PW0016A
+Integrated Circuit
+0
+16
+16
+arduino-library
+TBL002A35002GR2OR
+TBL002A-350-02GR-2OR-1
+Connector
+0
+2
+2
+arduino-library
+TBL002A35003GR2OR
+TBL002A-350-03GR-2OR-2
+Connector
+0
+3
+3
+arduino-library
+TBL002A35008GR2OR
+TBL002A-350-08GR-2OR-1
+Connector
+0
+8
+8
 arduino-library
 TBL00138103GY2GY
 TBL001-381-03GY-2GY-1
