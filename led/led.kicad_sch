@@ -6986,7 +6986,7 @@
 		)
 	)
 	(sheet
-		(at 91.44 142.24)
+		(at 91.44 172.72)
 		(size 25.4 8.89)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7000,9 +7000,9 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "07870ad2-736c-4fc6-b607-fc783ac353af")
-		(property "Sheetname" "leds_65k_3"
-			(at 91.44 141.5284 0)
+		(uuid "0596284e-72e4-4547-b187-8c5592fb05cd")
+		(property "Sheetname" "leds_65k_5"
+			(at 91.44 172.0084 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7011,7 +7011,7 @@
 			)
 		)
 		(property "Sheetfile" "leds65k_1.kicad_sch"
-			(at 91.44 151.7146 0)
+			(at 91.44 182.1946 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7020,8 +7020,8 @@
 			)
 		)
 		(pin "CURRENT_DRIVER_PWM" input
-			(at 91.44 144.78 180)
-			(uuid "9f80fb32-c09f-4007-bd81-7a311ddad121")
+			(at 91.44 175.26 180)
+			(uuid "2dd4d7ac-a4af-4dba-af50-36b37f7e430c")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7030,8 +7030,8 @@
 			)
 		)
 		(pin "LEDS_ON" input
-			(at 91.44 148.59 180)
-			(uuid "c6b17ced-12d9-48e1-a8fc-c4fa6aae4c0d")
+			(at 91.44 179.07 180)
+			(uuid "5aa366f1-d50b-403e-a3d6-801124b27050")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7042,7 +7042,7 @@
 		(instances
 			(project "led"
 				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
-					(page "5")
+					(page "7")
 				)
 			)
 		)
@@ -7172,68 +7172,6 @@
 		)
 	)
 	(sheet
-		(at 91.44 157.48)
-		(size 25.4 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "1e289460-c7f6-45f3-8471-b3bda40eee6a")
-		(property "Sheetname" "leds_65k_4"
-			(at 91.44 156.7684 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "leds65k_1.kicad_sch"
-			(at 91.44 166.9546 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "CURRENT_DRIVER_PWM" input
-			(at 91.44 160.02 180)
-			(uuid "c5d747af-e1b0-478a-ad26-ac72845d8456")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LEDS_ON" input
-			(at 91.44 163.83 180)
-			(uuid "5d8acbd5-cac5-48d0-b4f1-479c128644ed")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
-					(page "6")
-				)
-			)
-		)
-	)
-	(sheet
 		(at 91.44 127)
 		(size 25.4 8.89)
 		(exclude_from_sim no)
@@ -7248,7 +7186,7 @@
 		(fill
 			(color 0 0 0 0.0000)
 		)
-		(uuid "46e622e5-6345-45d3-bd03-551174433bc3")
+		(uuid "46aabbd2-7fc1-47cb-aa3b-73a3038d653f")
 		(property "Sheetname" "leds_65k_2"
 			(at 91.44 126.2884 0)
 			(effects
@@ -7269,7 +7207,7 @@
 		)
 		(pin "CURRENT_DRIVER_PWM" input
 			(at 91.44 129.54 180)
-			(uuid "5a9b3401-67b5-4318-a107-2fadb48881cf")
+			(uuid "996757a0-aa9f-4856-82da-a3835f73c035")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7279,7 +7217,7 @@
 		)
 		(pin "LEDS_ON" input
 			(at 91.44 133.35 180)
-			(uuid "dbf09dc6-4385-4927-842b-7ad314fbd94a")
+			(uuid "c427bb42-b2fe-4d7b-94f8-b43a057de146")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7291,6 +7229,68 @@
 			(project "led"
 				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
 					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 157.48)
+		(size 25.4 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "4738d208-191a-4e5e-9602-e97a739d0ef0")
+		(property "Sheetname" "leds_65k_4"
+			(at 91.44 156.7684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "leds65k_1.kicad_sch"
+			(at 91.44 166.9546 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CURRENT_DRIVER_PWM" input
+			(at 91.44 160.02 180)
+			(uuid "3f2b498b-c287-45d4-91d0-c6103da22084")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LEDS_ON" input
+			(at 91.44 163.83 180)
+			(uuid "ddcc50bc-d79f-468f-9011-396ed88bade6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
+					(page "6")
 				)
 			)
 		)
@@ -7353,68 +7353,6 @@
 			(project "led"
 				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
 					(page "11")
-				)
-			)
-		)
-	)
-	(sheet
-		(at 91.44 172.72)
-		(size 25.4 8.89)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(stroke
-			(width 0.1524)
-			(type solid)
-		)
-		(fill
-			(color 0 0 0 0.0000)
-		)
-		(uuid "516d88ca-b4c8-4825-8a00-2f3921280bb5")
-		(property "Sheetname" "leds_65k_5"
-			(at 91.44 172.0084 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left bottom)
-			)
-		)
-		(property "Sheetfile" "leds65k_1.kicad_sch"
-			(at 91.44 182.1946 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(pin "CURRENT_DRIVER_PWM" input
-			(at 91.44 175.26 180)
-			(uuid "f702b987-07d9-4ff8-abbc-961300298a76")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(pin "LEDS_ON" input
-			(at 91.44 179.07 180)
-			(uuid "aefc9ca1-dd2c-44e6-b401-fb51945aad8b")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
-					(page "7")
 				)
 			)
 		)
@@ -7519,6 +7457,68 @@
 			(project "led"
 				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
 					(page "9")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 91.44 142.24)
+		(size 25.4 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "72376ae9-6017-47ba-b04f-84a68df4880f")
+		(property "Sheetname" "leds_65k_3"
+			(at 91.44 141.5284 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "leds65k_1.kicad_sch"
+			(at 91.44 151.7146 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "CURRENT_DRIVER_PWM" input
+			(at 91.44 144.78 180)
+			(uuid "1772ca0d-10ce-4f5d-ad58-9f580fb0eea7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LEDS_ON" input
+			(at 91.44 148.59 180)
+			(uuid "ab702ef8-46f6-4345-9510-1d1a544b3550")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b"
+					(page "5")
 				)
 			)
 		)
