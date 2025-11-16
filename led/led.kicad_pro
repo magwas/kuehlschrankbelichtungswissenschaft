@@ -576,7 +576,7 @@
           "group_by": false,
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -603,7 +603,7 @@
           "show": false
         },
         {
-          "group_by": true,
+          "group_by": false,
           "label": "Description",
           "name": "Description",
           "show": true
@@ -620,7 +620,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Footprint"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -668,7 +668,7 @@
       "Root"
     ],
     [
-      "be5f820c-fa0f-40ca-b61d-19540cb5b514",
+      "d9a700bb-2ef5-49e4-a53c-a5b54e2b049e",
       "leds_65k_1"
     ],
     [
@@ -676,36 +676,60 @@
       "Outputs"
     ],
     [
-      "46aabbd2-7fc1-47cb-aa3b-73a3038d653f",
+      "8ae77074-9665-4431-8267-b7ccb4b9a6ca",
+      "top_switch1"
+    ],
+    [
+      "6c4c63f0-577c-4e78-b127-3e8364c63f27",
       "leds_65k_2"
     ],
     [
-      "72376ae9-6017-47ba-b04f-84a68df4880f",
-      "leds_65k_3"
+      "91f907aa-daf4-4a99-b4a3-f9deaca421d1",
+      "top_switch2"
     ],
     [
-      "4738d208-191a-4e5e-9602-e97a739d0ef0",
-      "leds_65k_4"
-    ],
-    [
-      "0596284e-72e4-4547-b187-8c5592fb05cd",
-      "leds_65k_5"
-    ],
-    [
-      "08fcac37-238a-42f6-b3fb-ac63fe3ccf14",
+      "4657a6da-42a0-4c37-9dff-046ab29fe1ba",
       "leds_18k_2"
+    ],
+    [
+      "3af0b494-d7a9-4dcc-8196-c181939815df",
+      "top_switch_1channel"
     ],
     [
       "5aec1ce1-45e4-46e9-8146-4644b64be076",
       "leds_18k_1"
     ],
     [
-      "0a25a1a7-8031-4ac0-bcc3-1be337215f8c",
+      "b91243b9-5808-4263-80eb-deab7244221e",
+      "top_switch_1channel1"
+    ],
+    [
+      "a148affd-8e36-468c-8c01-ab2086054996",
       "leds_18k_3"
     ],
     [
-      "4eb65af3-d37e-483c-97ba-1cef623888b7",
+      "e5c4d2d5-aef7-4d79-b2d9-7e80d0bdca31",
       "leds_18k_4"
+    ],
+    [
+      "7a0af58d-8343-4daf-8db7-90bf6f6b226e",
+      "leds_65k_3"
+    ],
+    [
+      "90c382e1-500b-4dd2-a1bc-dcf0e666755f",
+      "leds_65k_4"
+    ],
+    [
+      "9c31dcdb-0789-4880-b675-80a4a9c1c399",
+      "top_switch3"
+    ],
+    [
+      "e385ff94-b0b1-4a58-93f3-0ca805ef5a07",
+      "top_switch4"
+    ],
+    [
+      "26342586-4ff5-45da-bd07-da6b77ca317c",
+      "leds_65k_5"
     ]
   ],
   "text_variables": {}

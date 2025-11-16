@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP G6DN-1A_DC5
+D OMRON ELECTRONIC COMPONENTS - G6DN-1A DC5 - RELAY, 5VDC, 5A, SPST-NO, THT
+K
+F https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6dn.pdf
+$ENDCMP
+#
+#End Doc Library

@@ -5,343 +5,6 @@
 	(uuid "3e5fcb7c-52ef-404b-86ae-e827a40202c7")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Comparator:LM397"
-			(pin_names
-				(offset 0.127)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 1.27 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LM397"
-				(at 3.81 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-				(at 1.27 -15.24 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm397.pdf"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Single General-Purpose Voltage Comparator with Open-Collector Output, SOT-23-5"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "single comparator"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "SOT?23*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "LM397_0_1"
-				(polyline
-					(pts
-						(xy -5.08 5.08) (xy 5.08 0) (xy -5.08 -5.08) (xy -5.08 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LM397_1_1"
-				(pin input line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin input line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 7.62 270)
-					(length 3.81)
-					(name "V+"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at -2.54 -7.62 90)
-					(length 3.81)
-					(name "V-"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin open_collector line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:C_Polarized"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C_Polarized"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Polarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "CP_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_Polarized_0_1"
-				(rectangle
-					(start -2.286 0.508)
-					(end 2.286 1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.286) (xy -0.762 2.286)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 2.794) (xy -1.27 1.778)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 2.286 -0.508)
-					(end -2.286 -1.016)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-			)
-			(symbol "C_Polarized_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:D_Zener"
 			(pin_numbers
 				(hide yes)
@@ -654,1202 +317,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:Thermistor_NTC"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "TH"
-				(at -4.445 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Thermistor_NTC"
-				(at 3.175 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "thermistor NTC resistor sensor RTD"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "*NTC* *Thermistor* PIN?ARRAY* bornier* *Terminal?Block* R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Thermistor_NTC_0_1"
-				(arc
-					(start -3.175 2.413)
-					(mid -3.0506 2.3165)
-					(end -3.048 2.159)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -3.048 2.794)
-					(mid -2.9736 2.9736)
-					(end -2.794 3.048)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 3.048)
-					(mid -2.6144 2.9736)
-					(end -2.54 2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 2.54)
-					(mid -2.9736 2.6144)
-					(end -3.048 2.794)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.794 1.905)
-					(mid -2.9736 1.9794)
-					(end -3.048 2.159)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.54 2.159)
-					(mid -2.6144 1.9794)
-					(end -2.794 1.905)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -2.159 2.794)
-					(mid -2.434 2.5608)
-					(end -2.794 2.54)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.159) (xy -2.54 2.794)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 -3.683) (xy -2.54 -1.397) (xy -2.794 -2.159) (xy -2.286 -2.159) (xy -2.54 -1.397) (xy -2.54 -1.651)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 2.54) (xy -1.778 1.524) (xy 1.778 -1.524) (xy 1.778 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.778 -1.397) (xy -1.778 -3.683) (xy -2.032 -2.921) (xy -1.524 -2.921) (xy -1.778 -3.683)
-						(xy -1.778 -3.429)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start -1.016 2.54)
-					(end 1.016 -2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "Thermistor_NTC_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Diode:1N4007"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "1N4007"
-				(at 0 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-				(at 0 -4.445 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Device" "D"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Sim.Pins" "1=K 2=A"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "D*DO?41*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "1N4007_0_1"
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "1N4007_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "IPS70R1K4P7SAKMA1:IPS70R1K4P7SAKMA1"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "Q"
-				(at 11.43 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "IPS70R1K4P7SAKMA1"
-				(at 11.43 1.27 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "TO229P240X654X875-3P"
-				(at 11.43 -98.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/IPS70R1K4P7SAKMA1.pdf"
-				(at 11.43 -198.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "Trans MOSFET N-CH 700V 4A Tube"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" "2.4"
-				(at 11.43 -398.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" "726-IPS70R1K4P7AKMA1"
-				(at 11.43 -498.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IPS70R1K4P7SAKMA1?qs=KuGazDKa6A5krM2tPb7wyA%3D%3D"
-				(at 11.43 -598.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Infineon"
-				(at 11.43 -698.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "IPS70R1K4P7SAKMA1"
-				(at 11.43 -798.73 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "IPS70R1K4P7SAKMA1_1_1"
-				(polyline
-					(pts
-						(xy 2.54 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 5.08) (xy 5.08 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 5.588) (xy 5.842 4.572)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 2.54) (xy 6.858 3.048) (xy 6.858 2.032) (xy 5.842 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 2.032) (xy 5.842 3.048)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 0) (xy 7.62 0)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.842 -0.508) (xy 5.842 0.508)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 6.35 2.54)
-					(radius 3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 5.842 5.08)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 5.08) (xy 7.62 7.62)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 2.54) (xy 5.842 2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 7.62 2.54) (xy 7.62 -2.54)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 2.54)
-					(name "G"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 10.16 270)
-					(length 2.54)
-					(name "D"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -5.08 90)
-					(length 2.54)
-					(name "S"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Isolator:4N25"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at -5.08 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "4N25"
-				(at 0 5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
-				(at -5.08 -5.08 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-						(italic yes)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.vishay.com/docs/83725/4n25.pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-					(hide yes)
-				)
-			)
-			(property "Description" "DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "NPN DC Optocoupler Base Connected"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "DIP*W7.62mm*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "4N25_0_1"
-				(rectangle
-					(start -5.08 3.81)
-					(end 5.08 -3.81)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(polyline
-					(pts
-						(xy -5.08 -2.54) (xy -3.175 -2.54) (xy -3.175 2.54) (xy -5.08 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.81 -0.635) (xy -2.54 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -3.175 -0.635) (xy -3.81 0.635) (xy -2.54 0.635) (xy -3.175 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 0.508) (xy 0.635 0.508) (xy 0.254 0.381) (xy 0.254 0.635) (xy 0.635 0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.635 -0.508) (xy 0.635 -0.508) (xy 0.254 -0.635) (xy 0.254 -0.381) (xy 0.635 -0.508)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -0.254) (xy 2.667 -2.286) (xy 2.667 -2.286)
-					)
-					(stroke
-						(width 0.3556)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -1.143) (xy 3.81 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 2.667 -1.397) (xy 3.81 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.683 -2.413) (xy 3.429 -1.905) (xy 3.175 -2.159) (xy 3.683 -2.413)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 0) (xy 5.08 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 3.81 -2.54) (xy 5.08 -2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 5.08 2.54) (xy 1.905 2.54) (xy 1.905 -1.27) (xy 2.54 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "4N25_1_1"
-				(pin passive line
-					(at -7.62 2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -7.62 -2.54 0)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin no_connect line
-					(at -5.08 0 0)
-					(length 2.54)
-					(hide yes)
-					(name "NC"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 0 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 7.62 -2.54 180)
-					(length 2.54)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "L150-65705024000H0:L150-65705024000H0"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -2038,535 +505,22 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "RSF1JT1R00:RSF1JT1R00"
-			(pin_names
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 13.97 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Value" "RSF1JT1R00"
-				(at 13.97 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-				)
-			)
-			(property "Footprint" "RESAD2900W85L1100D450"
-				(at 13.97 -96.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://cs.seielect.com/catalog/SEI-RSF_RSMF.pdf"
-				(at 13.97 -196.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Description" "RES, MO, 1W, 1 ohm, 5%"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Height" ""
-				(at 13.97 -396.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Part Number" ""
-				(at 13.97 -496.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Mouser Price/Stock" ""
-				(at 13.97 -596.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Stackpole Electronics, Inc."
-				(at 13.97 -696.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "RSF1JT1R00"
-				(at 13.97 -796.19 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "RSF1JT1R00_1_1"
-				(rectangle
-					(start 5.08 1.27)
-					(end 12.7 -1.27)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 17.78 0 180)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "power:VDD"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "VDD"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"VDD\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "VDD_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "VDD_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(junction
-		(at 152.4 137.16)
+		(at 97.79 21.59)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "004f1418-f629-4b4a-ab74-be2747762fc1")
+		(uuid "76f289ab-bec7-4662-9200-e7e1c89a2c6e")
 	)
 	(junction
-		(at 66.04 50.8)
+		(at 97.79 163.83)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "03af8fb7-d5dc-41e9-b7eb-1cb3d8af7638")
-	)
-	(junction
-		(at 175.26 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0642dbb6-5d46-40d7-a242-6bbade888aa4")
-	)
-	(junction
-		(at 110.49 128.27)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0f04db78-a569-48e6-9fc8-27867d42a3a9")
-	)
-	(junction
-		(at 148.59 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "16f50d0f-2c00-44c4-8d10-5fe235b124e3")
-	)
-	(junction
-		(at 205.74 16.51)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "264b9685-845a-4054-806b-2d9a14c27b96")
-	)
-	(junction
-		(at 66.04 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a106eb8-c69d-4880-8d37-af72a450195f")
-	)
-	(junction
-		(at 40.64 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "47b0cd88-3dfd-4c82-b0f1-7827d2990c40")
-	)
-	(junction
-		(at 57.15 63.5)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "4e760049-d20c-4dd8-b9a0-520ecc76ece2")
-	)
-	(junction
-		(at 132.08 101.6)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "5356a903-cbc6-4bbe-a2ce-85b7fafc5546")
-	)
-	(junction
-		(at 40.64 60.96)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "8b3da453-b8ab-4008-8f4c-0d9b18953059")
-	)
-	(junction
-		(at 124.46 132.08)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "955f318b-99a0-4430-b2cf-939b45c20f04")
-	)
-	(junction
-		(at 170.18 134.62)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9774ec61-111c-41d3-8072-3a4328c1a2a4")
-	)
-	(junction
-		(at 140.97 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "9b058472-6f54-4660-8298-ab4680f9de9f")
-	)
-	(junction
-		(at 170.18 120.65)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a1109710-ea78-4ac1-bfb6-ccb4560ceb5f")
-	)
-	(junction
-		(at 157.48 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "a25e8507-403f-4aa5-a3a8-79448c12d0ec")
-	)
-	(junction
-		(at 205.74 88.9)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d21a658d-6e29-4ee3-8c61-cefaa282abc7")
-	)
-	(junction
-		(at 173.99 160.02)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "ecf3843f-9096-4116-b527-9f25a8997287")
-	)
-	(junction
-		(at 57.15 80.01)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "f0e4f578-89bf-4def-9a84-f17831994881")
+		(uuid "90404090-69fa-498b-9eeb-81aa3856e293")
 	)
 	(wire
 		(pts
-			(xy 40.64 66.04) (xy 40.64 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01302e8c-e1d4-4685-91f0-b682509455ce")
-	)
-	(wire
-		(pts
-			(xy 40.64 50.8) (xy 40.64 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01f76d72-53dc-4df4-893f-a045fb924e55")
-	)
-	(wire
-		(pts
-			(xy 201.93 137.16) (xy 201.93 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "04c76e8b-cf28-417f-8825-4f81bc4f35d2")
-	)
-	(wire
-		(pts
-			(xy 261.62 113.03) (xy 261.62 115.57)
+			(xy 153.67 118.11) (xy 153.67 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2576,7 +530,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 54.61) (xy 260.35 68.58)
+			(xy 152.4 59.69) (xy 152.4 73.66)
 		)
 		(stroke
 			(width 0)
@@ -2586,27 +540,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 16.51) (xy 205.74 16.51)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0bd19406-f637-4c75-bd79-dae633ab7a3a")
-	)
-	(wire
-		(pts
-			(xy 101.6 128.27) (xy 101.6 123.19)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c2b08b2-aaa9-4d51-bce5-1da76de226f8")
-	)
-	(wire
-		(pts
-			(xy 224.79 133.35) (xy 224.79 135.89)
+			(xy 116.84 138.43) (xy 116.84 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2616,7 +550,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 76.2) (xy 261.62 88.9)
+			(xy 153.67 81.28) (xy 153.67 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2626,7 +560,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 91.44) (xy 224.79 93.98)
+			(xy 116.84 96.52) (xy 116.84 99.06)
 		)
 		(stroke
 			(width 0)
@@ -2636,17 +570,7 @@
 	)
 	(wire
 		(pts
-			(xy 57.15 60.96) (xy 57.15 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "17ceacee-33df-420c-9070-f2f7c4e4b89f")
-	)
-	(wire
-		(pts
-			(xy 223.52 33.02) (xy 223.52 46.99)
+			(xy 115.57 38.1) (xy 115.57 52.07)
 		)
 		(stroke
 			(width 0)
@@ -2656,47 +580,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 88.9) (xy 205.74 88.9)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1c363295-b8dc-46b9-83ce-1393864ba76c")
-	)
-	(wire
-		(pts
-			(xy 124.46 132.08) (xy 124.46 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "233c8c6f-64b8-4ef0-aba5-567b0ec9be61")
-	)
-	(wire
-		(pts
-			(xy 116.84 128.27) (xy 110.49 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "23e4772d-62bf-424a-9a5e-931f3a6482d3")
-	)
-	(wire
-		(pts
-			(xy 116.84 123.19) (xy 116.84 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24cf1d4d-cfa1-4b25-abc3-d8e377796ffc")
-	)
-	(wire
-		(pts
-			(xy 261.62 133.35) (xy 261.62 135.89)
+			(xy 153.67 138.43) (xy 153.67 140.97)
 		)
 		(stroke
 			(width 0)
@@ -2706,17 +590,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 105.41) (xy 201.93 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "32728fe5-87a7-4775-a51a-64e07c98093b")
-	)
-	(wire
-		(pts
-			(xy 224.79 96.52) (xy 224.79 110.49)
+			(xy 116.84 101.6) (xy 116.84 115.57)
 		)
 		(stroke
 			(width 0)
@@ -2726,7 +600,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 76.2) (xy 224.79 88.9)
+			(xy 116.84 81.28) (xy 116.84 93.98)
 		)
 		(stroke
 			(width 0)
@@ -2736,7 +610,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 113.03) (xy 224.79 115.57)
+			(xy 116.84 118.11) (xy 116.84 120.65)
 		)
 		(stroke
 			(width 0)
@@ -2746,67 +620,27 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 50.8) (xy 66.04 50.8)
+			(xy 64.77 45.72) (xy 83.82 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3e69143f-6baa-4914-a9a3-c0276eb7ebbe")
+		(uuid "43dbf0f8-6c4c-4058-a048-e905e848086e")
 	)
 	(wire
 		(pts
-			(xy 140.97 88.9) (xy 140.97 93.98)
+			(xy 97.79 21.59) (xy 97.79 68.58)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "431f2734-0f2d-4389-b226-55d7ae9cb0e5")
+		(uuid "4e969f9d-88a4-418a-8030-bcf8142c9436")
 	)
 	(wire
 		(pts
-			(xy 189.23 160.02) (xy 173.99 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4d317534-3dd3-4886-93e8-5a3d6b222913")
-	)
-	(wire
-		(pts
-			(xy 40.64 73.66) (xy 40.64 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "55b2c6a1-d6ab-4e83-9f2b-4c45e8354de3")
-	)
-	(wire
-		(pts
-			(xy 189.23 137.16) (xy 201.93 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "57edca04-f932-4446-9959-b9acf1c25c35")
-	)
-	(wire
-		(pts
-			(xy 124.46 152.4) (xy 124.46 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "582ded05-e514-4114-ab1c-9c87195f461a")
-	)
-	(wire
-		(pts
-			(xy 250.19 21.59) (xy 223.52 21.59)
+			(xy 142.24 26.67) (xy 115.57 26.67)
 		)
 		(stroke
 			(width 0)
@@ -2816,7 +650,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 153.67) (xy 224.79 156.21)
+			(xy 116.84 158.75) (xy 116.84 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2826,47 +660,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 146.05) (xy 152.4 146.05)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5c1494e3-24ee-4ded-8be0-58e4f49f92c7")
-	)
-	(wire
-		(pts
-			(xy 157.48 120.65) (xy 157.48 127)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "5fef9af7-2fc5-4242-a3b0-8aa3c5bd12ce")
-	)
-	(wire
-		(pts
-			(xy 157.48 142.24) (xy 157.48 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "64aa98f1-3942-4eb7-9304-7f9cbcfbea29")
-	)
-	(wire
-		(pts
-			(xy 38.1 63.5) (xy 57.15 63.5)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6502f2ad-8717-4578-acae-552acb90daa3")
-	)
-	(wire
-		(pts
-			(xy 223.52 49.53) (xy 223.52 52.07)
+			(xy 115.57 54.61) (xy 115.57 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2876,47 +670,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 139.7) (xy 189.23 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68782981-39f8-4e13-8106-980e097a59c0")
-	)
-	(wire
-		(pts
-			(xy 157.48 120.65) (xy 170.18 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68dca51c-d7ef-4d1e-bbe7-f71ad4572216")
-	)
-	(wire
-		(pts
-			(xy 66.04 80.01) (xy 66.04 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "699d46fa-aa14-4086-bbd3-c4febd62c5e6")
-	)
-	(wire
-		(pts
-			(xy 148.59 160.02) (xy 157.48 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6bbaf3a8-0e51-420d-ba94-a2c078ae57e0")
-	)
-	(wire
-		(pts
-			(xy 224.79 138.43) (xy 224.79 151.13)
+			(xy 116.84 143.51) (xy 116.84 156.21)
 		)
 		(stroke
 			(width 0)
@@ -2926,87 +680,27 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 137.16) (xy 152.4 146.05)
+			(xy 83.82 45.72) (xy 83.82 163.83)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6d5c6275-1863-4dd2-8364-bf51acdd2273")
+		(uuid "78830588-3eea-4aaa-8bd0-57d0a1dd11e2")
 	)
 	(wire
 		(pts
-			(xy 124.46 88.9) (xy 140.97 88.9)
+			(xy 82.55 43.18) (xy 82.55 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "70441d9d-8727-4e0f-9267-8f669527c22a")
+		(uuid "82665daf-a618-479c-b609-6016475fbf4b")
 	)
 	(wire
 		(pts
-			(xy 66.04 69.85) (xy 66.04 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7416c431-72cc-4268-b352-fc188d49eadc")
-	)
-	(wire
-		(pts
-			(xy 66.04 16.51) (xy 66.04 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7643b100-9387-4e53-a023-87240c6f255b")
-	)
-	(wire
-		(pts
-			(xy 167.64 134.62) (xy 170.18 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7b2c1fd6-337b-4283-afa7-8ddd03c5f0fe")
-	)
-	(wire
-		(pts
-			(xy 54.61 60.96) (xy 57.15 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7ce71685-46e2-4988-8054-19398e96aaf4")
-	)
-	(wire
-		(pts
-			(xy 170.18 134.62) (xy 173.99 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8688ad7a-23d9-4eec-94b1-d3c865e83018")
-	)
-	(wire
-		(pts
-			(xy 40.64 60.96) (xy 46.99 60.96)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8a16134f-05ed-4b95-8613-b88042b907ef")
-	)
-	(wire
-		(pts
-			(xy 223.52 68.58) (xy 224.79 68.58)
+			(xy 115.57 73.66) (xy 116.84 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3016,7 +710,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 71.12) (xy 224.79 73.66)
+			(xy 116.84 76.2) (xy 116.84 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3026,7 +720,17 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 16.51) (xy 260.35 25.4)
+			(xy 83.82 163.83) (xy 97.79 163.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d3dfca3-989a-4e27-afbd-7baf6efd5a4a")
+	)
+	(wire
+		(pts
+			(xy 152.4 21.59) (xy 152.4 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3036,17 +740,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 106.68) (xy 124.46 110.49)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "8e4f6ca7-9cf3-4ec2-88f8-25af70a0440b")
-	)
-	(wire
-		(pts
-			(xy 260.35 68.58) (xy 261.62 68.58)
+			(xy 152.4 73.66) (xy 153.67 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3056,7 +750,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 33.02) (xy 260.35 46.99)
+			(xy 152.4 38.1) (xy 152.4 52.07)
 		)
 		(stroke
 			(width 0)
@@ -3066,7 +760,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 78.74) (xy 205.74 88.9)
+			(xy 97.79 83.82) (xy 97.79 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3076,7 +770,7 @@
 	)
 	(wire
 		(pts
-			(xy 260.35 27.94) (xy 260.35 30.48)
+			(xy 152.4 33.02) (xy 152.4 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3086,17 +780,17 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 16.51) (xy 205.74 63.5)
+			(xy 64.77 43.18) (xy 82.55 43.18)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "94a5995e-ad69-41ed-91b0-36e964a5eb69")
+		(uuid "95a6e085-6527-4ba5-8d8a-4707a5f926e9")
 	)
 	(wire
 		(pts
-			(xy 223.52 21.59) (xy 223.52 25.4)
+			(xy 115.57 26.67) (xy 115.57 30.48)
 		)
 		(stroke
 			(width 0)
@@ -3106,17 +800,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 120.65) (xy 170.18 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "96c041e3-f6f7-4529-9c7d-862578bc52d3")
-	)
-	(wire
-		(pts
-			(xy 223.52 54.61) (xy 223.52 68.58)
+			(xy 115.57 59.69) (xy 115.57 73.66)
 		)
 		(stroke
 			(width 0)
@@ -3126,7 +810,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 96.52) (xy 261.62 110.49)
+			(xy 153.67 101.6) (xy 153.67 115.57)
 		)
 		(stroke
 			(width 0)
@@ -3136,7 +820,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 158.75) (xy 224.79 158.75)
+			(xy 97.79 163.83) (xy 116.84 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3146,7 +830,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 153.67) (xy 261.62 156.21)
+			(xy 153.67 158.75) (xy 153.67 161.29)
 		)
 		(stroke
 			(width 0)
@@ -3156,37 +840,7 @@
 	)
 	(wire
 		(pts
-			(xy 140.97 101.6) (xy 132.08 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a8a4ba11-937b-4684-a6fc-c6d14c83114a")
-	)
-	(wire
-		(pts
-			(xy 170.18 138.43) (xy 170.18 134.62)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab5d6d9b-1a5b-4c0f-b863-6a8a1980c8f9")
-	)
-	(wire
-		(pts
-			(xy 189.23 134.62) (xy 189.23 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab90f469-5156-4899-ab14-acc5e6af7640")
-	)
-	(wire
-		(pts
-			(xy 261.62 91.44) (xy 261.62 93.98)
+			(xy 153.67 96.52) (xy 153.67 99.06)
 		)
 		(stroke
 			(width 0)
@@ -3196,27 +850,7 @@
 	)
 	(wire
 		(pts
-			(xy 152.4 132.08) (xy 124.46 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af4ea8e1-df92-44d0-8829-8cebb22e3e11")
-	)
-	(wire
-		(pts
-			(xy 52.07 80.01) (xy 57.15 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b162d719-b575-44e5-b31d-d1a7bc2adf33")
-	)
-	(wire
-		(pts
-			(xy 261.62 71.12) (xy 261.62 73.66)
+			(xy 153.67 76.2) (xy 153.67 78.74)
 		)
 		(stroke
 			(width 0)
@@ -3226,7 +860,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 158.75) (xy 250.19 158.75)
+			(xy 153.67 163.83) (xy 142.24 163.83)
 		)
 		(stroke
 			(width 0)
@@ -3236,37 +870,7 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 160.02) (xy 148.59 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b4b02753-d07f-4242-8842-54a5f56085cf")
-	)
-	(wire
-		(pts
-			(xy 40.64 50.8) (xy 52.07 50.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b56209eb-6a3a-4b76-a7fa-d674033feeb3")
-	)
-	(wire
-		(pts
-			(xy 124.46 125.73) (xy 124.46 132.08)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b7b93312-f0ce-4eb4-9825-544b9249dfa9")
-	)
-	(wire
-		(pts
-			(xy 223.52 27.94) (xy 223.52 30.48)
+			(xy 115.57 33.02) (xy 115.57 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3276,7 +880,7 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 138.43) (xy 261.62 151.13)
+			(xy 153.67 143.51) (xy 153.67 156.21)
 		)
 		(stroke
 			(width 0)
@@ -3286,117 +890,17 @@
 	)
 	(wire
 		(pts
-			(xy 124.46 91.44) (xy 124.46 88.9)
+			(xy 82.55 21.59) (xy 97.79 21.59)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "c8601e77-ffb9-4828-81d6-326bad6bb0a0")
+		(uuid "cdca3070-d40c-4907-8210-93e0a09f77b1")
 	)
 	(wire
 		(pts
-			(xy 205.74 88.9) (xy 205.74 158.75)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf0cb447-4538-45a1-b377-5fb756e2a8ff")
-	)
-	(wire
-		(pts
-			(xy 173.99 139.7) (xy 173.99 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cf8e06e8-a288-4ac0-bfbc-218128161814")
-	)
-	(wire
-		(pts
-			(xy 189.23 120.65) (xy 175.26 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d0e9906f-d6fe-45f5-ba4f-651bd2e3211d")
-	)
-	(wire
-		(pts
-			(xy 38.1 80.01) (xy 40.64 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d52828c9-1e47-4846-b9bb-d8a4d3caf82e")
-	)
-	(wire
-		(pts
-			(xy 132.08 101.6) (xy 132.08 105.41)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d7915d37-990b-4d7b-a5cd-1ae53999532d")
-	)
-	(wire
-		(pts
-			(xy 101.6 128.27) (xy 110.49 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d792c59f-4996-4c75-9302-4d2168416be8")
-	)
-	(wire
-		(pts
-			(xy 57.15 63.5) (xy 57.15 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dd8f78fb-084c-40d1-9aa2-cc9786616536")
-	)
-	(wire
-		(pts
-			(xy 57.15 73.66) (xy 57.15 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "df8fd605-e009-408b-88c0-15423fe2a903")
-	)
-	(wire
-		(pts
-			(xy 66.04 80.01) (xy 57.15 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dff5ce5b-5d3a-44f2-adbf-9488f31d0f7b")
-	)
-	(wire
-		(pts
-			(xy 170.18 127) (xy 170.18 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0d671c6-69ed-4aac-bc43-6c59a4aa91b8")
-	)
-	(wire
-		(pts
-			(xy 250.19 158.75) (xy 250.19 21.59)
+			(xy 142.24 163.83) (xy 142.24 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3406,7 +910,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 16.51) (xy 260.35 16.51)
+			(xy 97.79 21.59) (xy 152.4 21.59)
 		)
 		(stroke
 			(width 0)
@@ -3416,7 +920,7 @@
 	)
 	(wire
 		(pts
-			(xy 224.79 118.11) (xy 224.79 130.81)
+			(xy 116.84 123.19) (xy 116.84 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3426,37 +930,7 @@
 	)
 	(wire
 		(pts
-			(xy 148.59 137.16) (xy 152.4 137.16)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ef13fdba-1912-440d-ace5-622abd9aea15")
-	)
-	(wire
-		(pts
-			(xy 157.48 160.02) (xy 173.99 160.02)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f202ab36-be78-4acc-b666-01a1ae8ddf82")
-	)
-	(wire
-		(pts
-			(xy 189.23 124.46) (xy 189.23 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8ea5289-ee9a-47e5-933e-633f3be2d83b")
-	)
-	(wire
-		(pts
-			(xy 261.62 118.11) (xy 261.62 130.81)
+			(xy 153.67 123.19) (xy 153.67 135.89)
 		)
 		(stroke
 			(width 0)
@@ -3466,27 +940,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 80.01) (xy 44.45 80.01)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd3178d2-e8b2-493c-a4d1-5492734a334d")
-	)
-	(wire
-		(pts
-			(xy 66.04 50.8) (xy 66.04 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "fd896ce5-fdbb-4300-ab95-eeabe95fe896")
-	)
-	(wire
-		(pts
-			(xy 260.35 49.53) (xy 260.35 52.07)
+			(xy 152.4 54.61) (xy 152.4 57.15)
 		)
 		(stroke
 			(width 0)
@@ -3494,75 +948,31 @@
 		)
 		(uuid "fdf61d62-5622-472f-9593-e662d4635c41")
 	)
-	(global_label "MAINS_ZERO"
+	(hierarchical_label "VDC+"
 		(shape input)
-		(at 38.1 80.01 180)
-		(fields_autoplaced yes)
+		(at 64.77 43.18 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "0a906d2e-3f8e-4f3a-a0b6-f9ade5f5a436")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 23.5034 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
+		(uuid "74a22280-b851-437c-b6ad-cccff337a3e1")
 	)
-	(global_label "MAINS_LIVE"
+	(hierarchical_label "VDC-"
 		(shape input)
-		(at 38.1 63.5 180)
-		(fields_autoplaced yes)
+		(at 64.77 45.72 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right)
 		)
-		(uuid "a368ecf4-32ea-478a-acd9-8ce1be763358")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 24.5919 63.5 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-				(hide yes)
-			)
-		)
-	)
-	(hierarchical_label "CURRENT_DRIVER_PWM"
-		(shape input)
-		(at 148.59 137.16 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "5a3a57c2-52d6-4cfe-b557-cdbaf59df49b")
-	)
-	(hierarchical_label "LEDS_ON"
-		(shape input)
-		(at 101.6 118.11 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "eaef7a14-d67a-4066-bb68-a2ed9df6f562")
+		(uuid "81843fba-8557-4ca1-8a1b-d8ef63970776")
 	)
 	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 261.62 76.2 0)
+		(at 153.67 81.28 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3571,7 +981,7 @@
 		(dnp no)
 		(uuid "013da859-534d-4853-ba7a-0dc917af4cfe")
 		(property "Reference" "LED10"
-			(at 273.05 60.96 0)
+			(at 165.1 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3579,7 +989,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 273.05 63.5 0)
+			(at 165.1 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3587,7 +997,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 280.67 -18.72 0)
+			(at 172.72 -13.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3597,7 +1007,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -118.72 0)
+			(at 172.72 -113.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3607,7 +1017,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 261.62 76.2 0)
+			(at 153.67 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3616,7 +1026,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 280.67 -318.72 0)
+			(at 172.72 -313.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3626,7 +1036,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 280.67 -418.72 0)
+			(at 172.72 -413.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3636,7 +1046,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -518.72 0)
+			(at 172.72 -513.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,7 +1056,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 280.67 -618.72 0)
+			(at 172.72 -613.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3656,7 +1066,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 280.67 -718.72 0)
+			(at 172.72 -713.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3666,36 +1076,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "dc9e1304-f91c-4872-8c56-7f78adb965ec")
+			(uuid "4924c725-a9d9-474d-b71d-4020510990a9")
 		)
 		(pin "4"
-			(uuid "1f39556e-ff6c-4670-83e1-f7cf56f5c1bf")
+			(uuid "41d5324c-ad64-4bcb-98c7-ea66bdbb3d87")
 		)
 		(pin "3"
-			(uuid "373daf40-aef2-499d-9d9e-afa39f8c9e33")
+			(uuid "6b41a25d-e753-4a27-bcad-3c921bbdc547")
 		)
 		(pin "1"
-			(uuid "d688b858-1a05-4db4-aa0e-37dbfcef0021")
+			(uuid "18a8b6b3-c8cd-454e-90da-b82760388c6a")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED80")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED122")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED24")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED66")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED52")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED80")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED10")
 					(unit 1)
 				)
@@ -3703,149 +1113,8 @@
 		)
 	)
 	(symbol
-		(lib_id "IPS70R1K4P7SAKMA1:IPS70R1K4P7SAKMA1")
-		(at 132.08 101.6 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "01827395-d546-4005-90f1-981ef84138a2")
-		(property "Reference" "Q2"
-			(at 120.65 97.7899 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IPS70R1K4P7SAKMA1"
-			(at 120.65 100.3299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "arduino-library:TO229P240X654X875-3P"
-			(at 120.65 200.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/IPS70R1K4P7SAKMA1.pdf"
-			(at 120.65 300.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Trans MOSFET N-CH 700V 4A Tube"
-			(at 132.08 101.6 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "2.4"
-			(at 120.65 500.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "726-IPS70R1K4P7AKMA1"
-			(at 120.65 600.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IPS70R1K4P7SAKMA1?qs=KuGazDKa6A5krM2tPb7wyA%3D%3D"
-			(at 120.65 700.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 120.65 800.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IPS70R1K4P7SAKMA1"
-			(at 120.65 900.33 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "38021aa4-2789-40da-816a-c2bb9fc330f3")
-		)
-		(pin "1"
-			(uuid "6b50c588-db86-4fbe-b8b3-a5eabc5a317d")
-		)
-		(pin "2"
-			(uuid "360cb5a9-bc30-486e-98cf-716d49e3681c")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "Q18")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "Q9")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "Q16")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "Q14")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:L")
-		(at 205.74 74.93 180)
+		(at 97.79 80.01 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3854,7 +1123,7 @@
 		(fields_autoplaced yes)
 		(uuid "0c5ee6cf-2c8f-45fa-bb6b-d0ac297d275e")
 		(property "Reference" "L1"
-			(at 207.01 73.6599 0)
+			(at 99.06 78.7399 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3862,8 +1131,8 @@
 				(justify right)
 			)
 		)
-		(property "Value" "HCTI-220-5.8"
-			(at 207.01 76.1999 0)
+		(property "Value" "220 uH @5.8A"
+			(at 99.06 81.2799 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3872,7 +1141,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:HCTI22058"
-			(at 205.74 74.93 0)
+			(at 97.79 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3881,7 +1150,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 205.74 74.93 0)
+			(at 97.79 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3890,7 +1159,16 @@
 			)
 		)
 		(property "Description" "Inductor"
-			(at 205.74 74.93 0)
+			(at 97.79 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "530-HCTI-220-5.8 "
+			(at 97.79 80.01 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3899,30 +1177,30 @@
 			)
 		)
 		(pin "2"
-			(uuid "dc4d90ab-4929-447f-ac0c-c46fb21674ad")
+			(uuid "a3b996ae-ca28-4e3b-886c-d3155c04dbdd")
 		)
 		(pin "1"
-			(uuid "5a454f66-13bc-4790-94fa-b400649b3503")
+			(uuid "fecfa867-a4d3-4fa3-b747-309fe1321ae9")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "L6")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "L9")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "L2")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "L5")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "L4")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "L6")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "L1")
 					(unit 1)
 				)
@@ -3931,7 +1209,7 @@
 	)
 	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 261.62 96.52 0)
+		(at 153.67 101.6 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3940,7 +1218,7 @@
 		(dnp no)
 		(uuid "1fcbbf04-0ba8-4c7c-98a1-1fafbdf0c4a5")
 		(property "Reference" "LED11"
-			(at 273.05 81.28 0)
+			(at 165.1 86.36 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3948,7 +1226,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 273.05 83.82 0)
+			(at 165.1 88.9 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3956,7 +1234,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 280.67 1.6 0)
+			(at 172.72 6.68 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3966,7 +1244,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -98.4 0)
+			(at 172.72 -93.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3976,7 +1254,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 261.62 96.52 0)
+			(at 153.67 101.6 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3985,7 +1263,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 280.67 -298.4 0)
+			(at 172.72 -293.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3995,7 +1273,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 280.67 -398.4 0)
+			(at 172.72 -393.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4005,7 +1283,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -498.4 0)
+			(at 172.72 -493.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4015,7 +1293,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 280.67 -598.4 0)
+			(at 172.72 -593.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4025,7 +1303,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 280.67 -698.4 0)
+			(at 172.72 -693.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4035,36 +1313,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "c66e2836-7ed2-40b6-92b4-75aad267cdcb")
+			(uuid "034907fa-01f5-419c-be11-920b1a7615ba")
 		)
 		(pin "4"
-			(uuid "a76cb4b0-3089-46b3-b581-a1f509dcf2a2")
+			(uuid "7c7e9298-ff42-4863-b152-f9523345473a")
 		)
 		(pin "3"
-			(uuid "c7de1969-0683-44e1-9659-205dc1b36843")
+			(uuid "339d9bb7-2d06-4e84-b7e7-32170e9c1138")
 		)
 		(pin "1"
-			(uuid "96becf0a-e783-4d2a-a1d6-63a29c397243")
+			(uuid "83725f70-22fd-4d21-9010-943f7456f3f8")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED81")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED123")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED25")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED67")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED53")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED81")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED11")
 					(unit 1)
 				)
@@ -4072,398 +1350,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 189.23 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "326ef111-645d-41b4-9772-363e53bb7cca")
-		(property "Reference" "R4"
-			(at 191.77 126.9999 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MFR-25FTE52-100K"
-			(at 191.77 129.5399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 187.452 128.27 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 189.23 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100k Resistor"
-			(at 189.23 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "1f202559-2501-459b-8ad8-5a8648afe669")
-		)
-		(pin "2"
-			(uuid "d1830987-382f-4519-b1b5-0026f63a86d0")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "R33")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "R21")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "R29")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "R25")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 140.97 97.79 180)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "37bf8f71-46cb-4641-aad3-1aa9cbbdd7e2")
-		(property "Reference" "R6"
-			(at 134.62 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "MFR-25FTE52-100K"
-			(at 137.16 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 142.748 97.79 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 140.97 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "100k Resistor"
-			(at 140.97 97.79 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "b1e027d5-3222-4b25-a302-c0e5acfbe613")
-		)
-		(pin "1"
-			(uuid "800af871-dfbe-413e-b8c6-1028438159a0")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "R31")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "R15")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "R27")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "R23")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "RSF1JT1R00:RSF1JT1R00")
-		(at 124.46 152.4 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "38e48a4f-46d8-4575-b7a5-91e9a4969b1f")
-		(property "Reference" "R1"
-			(at 127 142.2399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "RSF1JT1R00"
-			(at 127 144.7799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "arduino-library:RESAD2900W85L1100D450"
-			(at 220.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://cs.seielect.com/catalog/SEI-RSF_RSMF.pdf"
-			(at 320.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "RES, MO, 1W, 1 ohm, 5%"
-			(at 124.46 152.4 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" ""
-			(at 520.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" ""
-			(at 620.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" ""
-			(at 720.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Stackpole Electronics, Inc."
-			(at 820.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "RSF1JT1R00"
-			(at 920.65 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "82851973-aead-4089-bf7d-26b2fb8e2dd6")
-		)
-		(pin "2"
-			(uuid "157e18bc-776a-4720-ab5f-43cdd6355905")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "R30")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "R14")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "R26")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "R22")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "R1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 148.59 160.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "3edaad82-1b91-4f60-826e-df2bbc9a1f13")
-		(property "Reference" "#PWR01"
-			(at 148.59 166.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 148.59 165.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 148.59 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 148.59 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 148.59 160.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "ac4f3f50-6d30-4204-befa-3912a7996775")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "#PWR053")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "#PWR027")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "#PWR048")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "#PWR040")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "#PWR01")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 260.35 54.61 0)
+		(at 152.4 59.69 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4472,7 +1360,7 @@
 		(dnp no)
 		(uuid "4eda4af2-b4ed-43aa-b496-7e6c661d41ae")
 		(property "Reference" "LED9"
-			(at 271.78 39.37 0)
+			(at 163.83 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4480,7 +1368,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 271.78 41.91 0)
+			(at 163.83 46.99 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4488,7 +1376,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 279.4 -40.31 0)
+			(at 171.45 -35.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4498,7 +1386,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 279.4 -140.31 0)
+			(at 171.45 -135.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4508,7 +1396,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 260.35 54.61 0)
+			(at 152.4 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4517,7 +1405,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 279.4 -340.31 0)
+			(at 171.45 -335.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4527,7 +1415,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 279.4 -440.31 0)
+			(at 171.45 -435.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4537,7 +1425,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 279.4 -540.31 0)
+			(at 171.45 -535.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4547,7 +1435,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 279.4 -640.31 0)
+			(at 171.45 -635.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4557,7 +1445,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 279.4 -740.31 0)
+			(at 171.45 -735.23 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4567,36 +1455,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "f440c249-b6f8-4b51-8487-86e57de42a2a")
+			(uuid "7c081bd9-b761-412f-8893-2243d4acf12b")
 		)
 		(pin "4"
-			(uuid "2d97630a-2bda-44ed-9247-6b36603df6b5")
+			(uuid "62ce7ac0-5cf6-458c-adae-afaeafa5ebd1")
 		)
 		(pin "3"
-			(uuid "649ddc0c-0b12-4f57-80e8-50f165b93cf6")
+			(uuid "a8e302f2-d20a-420a-8558-a4d9fcaf233f")
 		)
 		(pin "1"
-			(uuid "5e22cae2-54fa-45a8-85b8-dd00731516bf")
+			(uuid "6e66d6e7-0deb-4ba9-a44d-ea5cb600b475")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED79")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED121")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED23")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED65")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED51")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED79")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED9")
 					(unit 1)
 				)
@@ -4605,7 +1493,7 @@
 	)
 	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 224.79 158.75 0)
+		(at 116.84 163.83 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4614,7 +1502,7 @@
 		(dnp no)
 		(uuid "559fbe23-5a5b-46c3-a270-24d3d37e7cf2")
 		(property "Reference" "LED7"
-			(at 236.22 143.51 0)
+			(at 128.27 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4622,7 +1510,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 236.22 146.05 0)
+			(at 128.27 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4630,7 +1518,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 243.84 63.83 0)
+			(at 135.89 68.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4640,7 +1528,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -36.17 0)
+			(at 135.89 -31.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4650,7 +1538,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 224.79 158.75 0)
+			(at 116.84 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4659,7 +1547,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 243.84 -236.17 0)
+			(at 135.89 -231.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4669,7 +1557,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 243.84 -336.17 0)
+			(at 135.89 -331.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4679,7 +1567,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -436.17 0)
+			(at 135.89 -431.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4689,7 +1577,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 243.84 -536.17 0)
+			(at 135.89 -531.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4699,7 +1587,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 243.84 -636.17 0)
+			(at 135.89 -631.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4709,36 +1597,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "5de745b6-1dcf-4f09-87d5-a55f2a8b6d77")
+			(uuid "f36dcc89-0104-4b17-adf9-121bac495dd3")
 		)
 		(pin "4"
-			(uuid "2e740422-c161-49f7-8c57-0d4f94d9b464")
+			(uuid "7b9e9349-f403-4e36-a48f-8b27487ddf01")
 		)
 		(pin "3"
-			(uuid "a13f8c81-8342-4aac-bb43-a0211d9ac0d0")
+			(uuid "89eb804d-42bd-49b8-af07-15024a1657e4")
 		)
 		(pin "1"
-			(uuid "612b468f-ad53-4682-8c83-b523f3a1447b")
+			(uuid "23e15cbd-885b-4397-8f23-4cf480e73c24")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED77")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED119")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED21")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED63")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED49")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED77")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED7")
 					(unit 1)
 				)
@@ -4747,7 +1635,7 @@
 	)
 	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 224.79 76.2 0)
+		(at 116.84 81.28 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4756,7 +1644,7 @@
 		(dnp no)
 		(uuid "58b10fc7-a83d-417b-b616-1b58ac5f9240")
 		(property "Reference" "LED3"
-			(at 236.22 60.96 0)
+			(at 128.27 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4764,7 +1652,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 236.22 63.5 0)
+			(at 128.27 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4772,7 +1660,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 243.84 -18.72 0)
+			(at 135.89 -13.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4782,7 +1670,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -118.72 0)
+			(at 135.89 -113.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4792,7 +1680,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 224.79 76.2 0)
+			(at 116.84 81.28 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4801,7 +1689,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 243.84 -318.72 0)
+			(at 135.89 -313.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4811,7 +1699,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 243.84 -418.72 0)
+			(at 135.89 -413.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4821,7 +1709,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -518.72 0)
+			(at 135.89 -513.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4831,7 +1719,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 243.84 -618.72 0)
+			(at 135.89 -613.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4841,7 +1729,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 243.84 -718.72 0)
+			(at 135.89 -713.64 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4851,36 +1739,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "38667237-75cf-4450-a0cd-ede0cff8c9f1")
+			(uuid "d77c0c9d-df58-4c4e-8110-961e44ca51f5")
 		)
 		(pin "4"
-			(uuid "68cafc58-b661-4257-99b1-e43b8f4b90e1")
+			(uuid "aa0321b7-7d46-4c51-8f65-9d5112adaa1f")
 		)
 		(pin "3"
-			(uuid "330d2827-07cb-456d-9c6d-00d06ea76405")
+			(uuid "390ef7bc-6f23-494b-a440-00e5d6e425c2")
 		)
 		(pin "1"
-			(uuid "342b3aaa-8cff-4037-a83b-53dee2d0ca10")
+			(uuid "cf88039d-acde-4492-8968-a5c445784ddf")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED73")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED115")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED17")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED59")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED45")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED73")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED3")
 					(unit 1)
 				)
@@ -4889,7 +1777,7 @@
 	)
 	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 261.62 158.75 0)
+		(at 153.67 163.83 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4898,7 +1786,7 @@
 		(dnp no)
 		(uuid "5ae746b2-a977-47bf-b52d-118d4fe2f72f")
 		(property "Reference" "LED14"
-			(at 273.05 143.51 0)
+			(at 165.1 148.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4906,7 +1794,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 273.05 146.05 0)
+			(at 165.1 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4914,7 +1802,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 280.67 63.83 0)
+			(at 172.72 68.91 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4924,7 +1812,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -36.17 0)
+			(at 172.72 -31.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4934,7 +1822,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 261.62 158.75 0)
+			(at 153.67 163.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4943,7 +1831,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 280.67 -236.17 0)
+			(at 172.72 -231.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4953,7 +1841,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 280.67 -336.17 0)
+			(at 172.72 -331.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4963,7 +1851,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -436.17 0)
+			(at 172.72 -431.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4973,7 +1861,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 280.67 -536.17 0)
+			(at 172.72 -531.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4983,7 +1871,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 280.67 -636.17 0)
+			(at 172.72 -631.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4993,36 +1881,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "dcff05b3-508c-49c2-a637-a8cf85659645")
+			(uuid "3571ea2b-fa52-4fd0-afbe-95afca1ff44a")
 		)
 		(pin "4"
-			(uuid "57c8de59-d07b-4f47-8d93-87d71ecd8bf9")
+			(uuid "e06ec0d2-c55e-4181-a91c-c9fa044d4cf4")
 		)
 		(pin "3"
-			(uuid "a7644d7f-c353-4150-b917-5cce32775b29")
+			(uuid "cf386727-8ea4-4cf5-815a-4ef3788fd3c9")
 		)
 		(pin "1"
-			(uuid "09474e22-ae60-4e53-9334-6094972bd4a1")
+			(uuid "80346db1-89ca-41a2-b7d6-2bb274f4af21")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED84")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED126")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED28")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED70")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED56")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED84")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED14")
 					(unit 1)
 				)
@@ -5030,300 +1918,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Diode:1N4007")
-		(at 40.64 69.85 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5f3561f6-7f02-4eee-abe2-12d9bdd8d152")
-		(property "Reference" "D9"
-			(at 43.18 68.5799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N5408"
-			(at 43.18 71.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 36.195 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 40.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 40.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 40.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 40.64 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "f251f5f1-23ed-4b84-8a2e-5ba16f0d56f0")
-		)
-		(pin "1"
-			(uuid "e0cab8d2-d3d2-4610-ad05-22ef350fe241")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "D26")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "D1")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "D21")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "D16")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "D9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4007")
-		(at 57.15 69.85 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "67d236f3-48b4-43f4-9af2-98a368365183")
-		(property "Reference" "D6"
-			(at 59.69 68.5799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1N5408"
-			(at 59.69 71.1199 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 52.705 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 57.15 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 57.15 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 57.15 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 57.15 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "f693a9fa-8312-4406-a725-5179425350c6")
-		)
-		(pin "2"
-			(uuid "5920da70-630f-421b-9872-90d5ec5d60fd")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "D29")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "D4")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "D24")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "D19")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "D6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 110.49 128.27 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "727d023d-593b-4c6b-b635-484951d9e1f1")
-		(property "Reference" "#PWR016"
-			(at 110.49 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 110.49 133.35 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "00f86b80-f3e4-4d0d-bac5-743cfc05a997")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "#PWR051")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "#PWR018")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "#PWR046")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "#PWR036")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 224.79 138.43 0)
+		(at 116.84 143.51 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5332,7 +1928,7 @@
 		(dnp no)
 		(uuid "79c6520f-38c9-4553-94db-972852c8b712")
 		(property "Reference" "LED6"
-			(at 236.22 123.19 0)
+			(at 128.27 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5340,7 +1936,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 236.22 125.73 0)
+			(at 128.27 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5348,7 +1944,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 243.84 43.51 0)
+			(at 135.89 48.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5358,7 +1954,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -56.49 0)
+			(at 135.89 -51.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5368,7 +1964,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 224.79 138.43 0)
+			(at 116.84 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5377,7 +1973,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 243.84 -256.49 0)
+			(at 135.89 -251.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5387,7 +1983,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 243.84 -356.49 0)
+			(at 135.89 -351.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5397,7 +1993,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -456.49 0)
+			(at 135.89 -451.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5407,7 +2003,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 243.84 -556.49 0)
+			(at 135.89 -551.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5417,7 +2013,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 243.84 -656.49 0)
+			(at 135.89 -651.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5427,36 +2023,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "0cbaa231-83f7-4192-87eb-f2fe179770a1")
+			(uuid "d82b095b-4c5e-4d22-b612-ed65bf3b2013")
 		)
 		(pin "4"
-			(uuid "bf7c6b70-9936-4af3-a509-f3ad5f6bee6c")
+			(uuid "8c68345f-5eab-4cf1-a3c0-4d7cc19db8a8")
 		)
 		(pin "3"
-			(uuid "fb59644e-1c08-43ad-99e3-bfc06a5cff0b")
+			(uuid "45564095-2c6d-4a81-98e5-95e8b59c9f9f")
 		)
 		(pin "1"
-			(uuid "1b6654ce-28cd-41fb-9535-c17479815c31")
+			(uuid "5b22054a-9612-4597-8e72-e62943145ca2")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED76")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED118")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED20")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED62")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED48")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED76")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED6")
 					(unit 1)
 				)
@@ -5464,464 +2060,8 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 66.04 82.55 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7b397537-dc32-42aa-b53c-3d1763cc4b5a")
-		(property "Reference" "#PWR02"
-			(at 66.04 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 66.04 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 66.04 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 66.04 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 66.04 82.55 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "984ee8d0-94e8-4093-b70d-1d8a4a9a1e92")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "#PWR050")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "#PWR017")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "#PWR045")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "#PWR035")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "#PWR02")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 116.84 118.11 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "803a55bc-1ef3-4811-85f0-9fe01f0979d8")
-		(property "Reference" "#PWR04"
-			(at 116.84 121.92 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 116.84 113.03 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 116.84 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 116.84 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 116.84 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "28d10d67-d49d-44e8-99e5-7a8302559457")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "#PWR052")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "#PWR026")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "#PWR047")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "#PWR037")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "#PWR04")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4007")
-		(at 50.8 60.96 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "809b7828-e89e-4814-b55a-d4802120139a")
-		(property "Reference" "D7"
-			(at 50.8 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5408"
-			(at 50.8 57.15 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 50.8 65.405 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 50.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 50.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 50.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 50.8 60.96 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9edfc2c2-a0bb-4011-b3e0-ac331bd9bd9e")
-		)
-		(pin "2"
-			(uuid "5006b56d-6978-4b6d-ba9b-5ae50b939abe")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "D28")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "D3")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "D23")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "D18")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "D7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 170.18 142.24 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "81dad82e-1677-499c-b9bb-d90f76040ab6")
-		(property "Reference" "RH2"
-			(at 172.72 140.9699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "MFR50SFTE52-1K"
-			(at 172.72 143.5099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 168.402 142.24 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 170.18 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1k Resistor"
-			(at 170.18 142.24 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "de025568-5d08-4fee-9b86-39684d12bf2a")
-		)
-		(pin "2"
-			(uuid "1a0c13cf-574f-46a6-8591-5d6c012138fe")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "RH6")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "RH1")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "RH5")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "RH4")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "RH2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Diode:1N4007")
-		(at 48.26 80.01 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "8a5ac13f-6198-42cc-a620-750ac8d91672")
-		(property "Reference" "D8"
-			(at 48.26 73.66 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "1N5408"
-			(at 48.26 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-41_SOD81_P10.16mm_Horizontal"
-			(at 48.26 84.455 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.vishay.com/docs/88503/1n4001.pdf"
-			(at 48.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000V 1A General Purpose Rectifier Diode, DO-41"
-			(at 48.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Device" "D"
-			(at 48.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 48.26 80.01 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "accbbe3a-3fe0-43d2-b629-fb14c257dd20")
-		)
-		(pin "2"
-			(uuid "abba26f9-bbe9-424c-96a5-86a088063c99")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "D27")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "D2")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "D22")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "D17")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 223.52 33.02 0)
+		(at 115.57 38.1 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5929,8 +2069,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "8afc106f-548a-49b5-866a-68050af37b98")
-		(property "Reference" "LED5"
-			(at 234.95 17.78 0)
+		(property "Reference" "LED1"
+			(at 127 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5939,7 +2079,7 @@
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 234.95 20.32 0)
+			(at 127 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5947,7 +2087,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 242.57 -61.9 0)
+			(at 134.62 -56.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5957,7 +2097,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 242.57 -161.9 0)
+			(at 134.62 -156.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5967,7 +2107,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 223.52 33.02 0)
+			(at 115.57 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5976,7 +2116,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 242.57 -361.9 0)
+			(at 134.62 -356.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5986,7 +2126,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 242.57 -461.9 0)
+			(at 134.62 -456.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5996,7 +2136,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 242.57 -561.9 0)
+			(at 134.62 -556.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6006,7 +2146,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 242.57 -661.9 0)
+			(at 134.62 -656.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6016,7 +2156,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 242.57 -761.9 0)
+			(at 134.62 -756.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6026,1415 +2166,36 @@
 			)
 		)
 		(pin "2"
-			(uuid "d45965e2-b792-4841-b1d9-8907fc0824f0")
+			(uuid "92f692f8-8a8b-4650-819d-835569c547be")
 		)
 		(pin "4"
-			(uuid "d1fd5860-0475-4651-ab29-d2b97df3c894")
+			(uuid "6e8d250f-c220-4527-9376-04849ba96961")
 		)
 		(pin "3"
-			(uuid "d9ecdd5b-f5a8-4fb9-b30b-0ff4a56d8f92")
+			(uuid "a81476f5-6329-49a9-bdb7-f63a707d5360")
 		)
 		(pin "1"
-			(uuid "57a94820-4e40-48b5-bf7d-9215fd683854")
+			(uuid "a97a4e5e-189a-4f14-9b24-41317a5daff8")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED71")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED113")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
 					(reference "LED15")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
 					(reference "LED57")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED43")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED71")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "LED5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 260.35 33.02 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8c424752-cb1b-48d1-a7e3-1b6e096fc124")
-		(property "Reference" "LED8"
-			(at 271.78 17.78 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "L150-65705024000H0"
-			(at 271.78 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 279.4 -61.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 279.4 -161.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 260.35 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.8"
-			(at 279.4 -361.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 279.4 -461.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 279.4 -561.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Lumileds"
-			(at 279.4 -661.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 279.4 -761.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "26423625-b2d7-425c-91a8-49157b1c0700")
-		)
-		(pin "4"
-			(uuid "5a8d8dcf-efe5-4709-b738-b62c9d02dfc6")
-		)
-		(pin "3"
-			(uuid "f76fdbe9-b92d-4207-85dd-ae9f5cc6b45a")
-		)
-		(pin "1"
-			(uuid "c2b89679-273d-4b21-b9bc-d6f518ac6efb")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED78")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "LED22")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "LED64")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED50")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "LED8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Isolator:4N25")
-		(at 109.22 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "91ac998b-959b-403d-808c-e3b4025bfe1f")
-		(property "Reference" "U5"
-			(at 109.22 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "4N25"
-			(at 109.22 114.3 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
-			(at 104.14 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-					(italic yes)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.vishay.com/docs/83725/4n25.pdf"
-			(at 109.22 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-				(hide yes)
-			)
-		)
-		(property "Description" "DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6"
-			(at 109.22 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3bfb28b9-b833-4cc3-9091-5c5ab4f06a98")
-		)
-		(pin "5"
-			(uuid "106c7fb8-bb49-4302-9c29-9f6b1908599d")
-		)
-		(pin "1"
-			(uuid "3b481335-f549-4583-9174-eadf42b3ddf5")
-		)
-		(pin "6"
-			(uuid "e1d5ad49-c81b-4fe5-8991-be8739f6fdc0")
-		)
-		(pin "3"
-			(uuid "aaa95234-4e3f-4414-9f6d-25bbfeee7852")
-		)
-		(pin "4"
-			(uuid "6ea3c839-2c9c-4da6-84c8-a38258306ed4")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "U17")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "U3")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "U14")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "U8")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "U5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 261.62 118.11 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9d470d2d-4876-4fc8-813b-1adc9b8e1806")
-		(property "Reference" "LED12"
-			(at 273.05 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L150-65705024000H0"
-			(at 273.05 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 280.67 23.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -76.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 261.62 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.8"
-			(at 280.67 -276.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 280.67 -376.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -476.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Lumileds"
-			(at 280.67 -576.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 280.67 -676.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "7ae557a1-ec7a-4f0e-8b7d-6fa730f49016")
-		)
-		(pin "4"
-			(uuid "ac407b33-3c5d-4474-84aa-49d609250948")
-		)
-		(pin "3"
-			(uuid "27286df2-e677-4075-9f22-707dee5df5b7")
-		)
-		(pin "1"
-			(uuid "447f6f9f-1d46-4a03-8c7e-53eda1659d4a")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED82")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "LED26")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "LED68")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED54")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "LED12")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 223.52 54.61 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "ae7783cb-239b-4fdc-9f6a-05a9d341a26d")
-		(property "Reference" "LED4"
-			(at 234.95 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L150-65705024000H0"
-			(at 234.95 41.91 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 242.57 -40.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 242.57 -140.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 223.52 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.8"
-			(at 242.57 -340.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 242.57 -440.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 242.57 -540.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Lumileds"
-			(at 242.57 -640.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 242.57 -740.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "076c5b13-7767-4808-ad19-79a507c4b12b")
-		)
-		(pin "4"
-			(uuid "f753aa74-0c49-4e6c-b994-8c6abffc7d9a")
-		)
-		(pin "3"
-			(uuid "9b4da628-59c4-40ca-ae23-a2e5ce68be5b")
-		)
-		(pin "1"
-			(uuid "fec6eadb-cead-402a-a905-3f0a4711e710")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED72")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "LED16")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "LED58")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED44")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "LED4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Comparator:LM397")
-		(at 160.02 134.62 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "b1b5e705-48a9-4731-9998-4e5c7eb45530")
-		(property "Reference" "U1"
-			(at 162.052 128.27 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LM397"
-			(at 162.052 130.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 161.29 149.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "http://www.ti.com/lit/ds/symlink/lm397.pdf"
-			(at 160.02 129.54 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Single General-Purpose Voltage Comparator with Open-Collector Output, SOT-23-5"
-			(at 160.02 134.62 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "4"
-			(uuid "e5ea5601-1b19-4cfb-a700-e227e5739d3d")
-		)
-		(pin "1"
-			(uuid "6500a4b4-6a4d-4a1d-a5f8-82e92a568674")
-		)
-		(pin "3"
-			(uuid "a88eb7e5-82fd-46b5-9689-c713b8ff83d5")
-		)
-		(pin "2"
-			(uuid "cd1474ce-722a-4c65-b937-eb49472af708")
-		)
-		(pin "5"
-			(uuid "7911b355-4821-4505-8645-f8ac4abb53f3")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "U18")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "U6")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "U15")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "U12")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "U1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 261.62 138.43 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bc9165e0-0e02-4b6a-85b3-4d445025a85a")
-		(property "Reference" "LED13"
-			(at 273.05 123.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L150-65705024000H0"
-			(at 273.05 125.73 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 280.67 43.51 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -56.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 261.62 138.43 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.8"
-			(at 280.67 -256.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 280.67 -356.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 280.67 -456.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Lumileds"
-			(at 280.67 -556.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 280.67 -656.49 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "620556ac-6062-48fb-a732-0da0f97b731b")
-		)
-		(pin "4"
-			(uuid "fd0d1acc-cd57-4d50-9506-30ce5a47da6e")
-		)
-		(pin "3"
-			(uuid "345cca42-f545-47b8-87d6-ee8537692360")
-		)
-		(pin "1"
-			(uuid "afe6142e-8a9d-4cf0-b1de-742ef7d079d2")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED83")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "LED27")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "LED69")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED55")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "LED13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "IPS70R1K4P7SAKMA1:IPS70R1K4P7SAKMA1")
-		(at 116.84 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "bf309ba2-7d59-4ec2-b857-98aa47d85e54")
-		(property "Reference" "Q13"
-			(at 128.27 116.8399 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "IPS70R1K4P7SAKMA1"
-			(at 128.27 119.3799 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "arduino-library:TO229P240X654X875-3P"
-			(at 128.27 219.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/IPS70R1K4P7SAKMA1.pdf"
-			(at 128.27 319.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "Trans MOSFET N-CH 700V 4A Tube"
-			(at 116.84 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "2.4"
-			(at 128.27 519.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "726-IPS70R1K4P7AKMA1"
-			(at 128.27 619.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IPS70R1K4P7SAKMA1?qs=KuGazDKa6A5krM2tPb7wyA%3D%3D"
-			(at 128.27 719.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 128.27 819.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IPS70R1K4P7SAKMA1"
-			(at 128.27 919.38 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "3"
-			(uuid "70898869-d402-483c-813c-1e3829681256")
-		)
-		(pin "1"
-			(uuid "0aeb897c-b1dc-418a-9bb5-483ca890475e")
-		)
-		(pin "2"
-			(uuid "372740b9-4f0c-4ddd-93d8-ba663c7ae1ee")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "Q17")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "Q8")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "Q15")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "Q12")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "Q13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C_Polarized")
-		(at 66.04 66.04 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c78ad61b-e450-46f6-8fe3-20704c6f517d")
-		(property "Reference" "ESMR401VSN102MA50S_3"
-			(at 69.85 63.8809 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "ESMR401VSN102MA50S"
-			(at 69.85 66.4209 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "arduino-library:CAPPRD1000W180D3550H5250"
-			(at 67.0052 69.85 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.chemi-con.co.jp/products/relatedfiles/capacitor/catalog/SMRN-e.PDF"
-			(at 66.04 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "1000u capacitor"
-			(at 66.04 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "1b18446f-7c9e-427a-b2ff-b77783941f19")
-		)
-		(pin "1"
-			(uuid "920e48f8-3195-4458-bb6e-acad7435a968")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "ESMR401VSN102MA50S_6")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "ESMR401VSN102MA50S_1")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "ESMR401VSN102MA50S_5")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "ESMR401VSN102MA50S_4")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "ESMR401VSN102MA50S_3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDD")
-		(at 175.26 120.65 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "c9d0ac0e-154a-4de8-93fe-c83a36960cd2")
-		(property "Reference" "#PWR057"
-			(at 175.26 124.46 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDD"
-			(at 175.26 115.57 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 175.26 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 175.26 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDD\""
-			(at 175.26 120.65 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "d99b6b84-b367-4e5b-898c-8b1e0351f1a1")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "#PWR054")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "#PWR034")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "#PWR049")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "#PWR044")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "#PWR057")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Zener")
-		(at 205.74 67.31 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cb8d5f9d-0dba-4de2-a87c-b45c825a3075")
-		(property "Reference" "D5"
-			(at 208.28 66.0399 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "1.5KE440A"
-			(at 208.28 68.5799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp"
-			(at 205.74 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-1-5ke-datasheet?assetguid=9D02C7D2-86A5-4BFF-9251-966D6AF02BF7"
-			(at 205.74 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Zener diode"
-			(at 205.74 67.31 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "96d9112c-e285-428b-ae3c-bb251c3fd3d9")
-		)
-		(pin "1"
-			(uuid "1af57c68-ff3c-4d5a-b381-5257cf827967")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "D30")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "D10")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "D25")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "D20")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:Thermistor_NTC")
-		(at 55.88 50.8 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cc29e5c1-2a93-407d-9e99-e0267f2cda7f")
-		(property "Reference" "TH1"
-			(at 56.1975 44.45 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "CL60"
-			(at 56.1975 46.99 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0516_L15.5mm_D5.0mm_P7.62mm_Vertical"
-			(at 54.61 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://amphenol-sensors.com/hubfs/AS-920-325F-Thermotrics-NTC%20Inrush-0525-web.pdf"
-			(at 54.61 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Temperature dependent resistor, negative temperature coefficient"
-			(at 55.88 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "4c62b128-71a4-484f-b806-96055d66cda0")
-		)
-		(pin "2"
-			(uuid "fa37703a-f749-4282-8a29-24199bc8c20d")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "TH6")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "TH2")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "TH5")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "TH4")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "TH1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 224.79 118.11 0)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "e06f4a9d-a0ee-4961-9f96-13e525d9b524")
-		(property "Reference" "LED1"
-			(at 236.22 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "L150-65705024000H0"
-			(at 236.22 105.41 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 243.84 23.19 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -76.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 224.79 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "0.8"
-			(at 243.84 -276.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 243.84 -376.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -476.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "Lumileds"
-			(at 243.84 -576.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 243.84 -676.81 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eb8d716e-1837-4d4a-adeb-ddbaa12618a6")
-		)
-		(pin "4"
-			(uuid "e0e49778-25bb-4cb0-b513-1fc7d7c36be0")
-		)
-		(pin "3"
-			(uuid "6fcc001a-572f-49b5-b3ba-c81f3c61a32e")
-		)
-		(pin "1"
-			(uuid "6d1356bf-12b1-474d-83ec-207489661f3a")
-		)
-		(instances
-			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED75")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "LED19")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "LED61")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED47")
-					(unit 1)
-				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED1")
 					(unit 1)
 				)
@@ -7443,24 +2204,25 @@
 	)
 	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
-		(at 224.79 96.52 0)
+		(at 152.4 38.1 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e219e945-73ee-40a4-9231-c105d731e5cc")
-		(property "Reference" "LED2"
-			(at 236.22 81.28 0)
+		(uuid "8c424752-cb1b-48d1-a7e3-1b6e096fc124")
+		(property "Reference" "LED8"
+			(at 163.83 22.86 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
 			)
 		)
 		(property "Value" "L150-65705024000H0"
-			(at 236.22 83.82 0)
+			(at 163.83 25.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7468,7 +2230,7 @@
 			)
 		)
 		(property "Footprint" "arduino-library:L15065705024000H0"
-			(at 243.84 1.6 0)
+			(at 171.45 -56.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7478,7 +2240,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -98.4 0)
+			(at 171.45 -156.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7488,7 +2250,7 @@
 			)
 		)
 		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
-			(at 224.79 96.52 0)
+			(at 152.4 38.1 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7497,7 +2259,7 @@
 			)
 		)
 		(property "Height" "0.8"
-			(at 243.84 -298.4 0)
+			(at 171.45 -356.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7507,7 +2269,7 @@
 			)
 		)
 		(property "Mouser Part Number" "997-L150657050240H0"
-			(at 243.84 -398.4 0)
+			(at 171.45 -456.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7517,7 +2279,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
-			(at 243.84 -498.4 0)
+			(at 171.45 -556.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7527,7 +2289,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Lumileds"
-			(at 243.84 -598.4 0)
+			(at 171.45 -656.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7537,7 +2299,7 @@
 			)
 		)
 		(property "Manufacturer_Part_Number" "L150-65705024000H0"
-			(at 243.84 -698.4 0)
+			(at 171.45 -756.82 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7547,36 +2309,320 @@
 			)
 		)
 		(pin "2"
-			(uuid "0bfc3a02-83d8-4368-9c9b-cdacae34e93d")
+			(uuid "68c77873-c034-49ba-8f47-452d18807c95")
 		)
 		(pin "4"
-			(uuid "aa00944c-badb-467c-8426-62bb4e171f10")
+			(uuid "1710a7d7-6d55-43c8-8bf5-1b3d7b016b43")
 		)
 		(pin "3"
-			(uuid "389c02d4-62fc-45c6-8756-cdbd9245eb82")
+			(uuid "a5174ee0-525d-4f81-86a6-10646c27d52a")
 		)
 		(pin "1"
-			(uuid "23006344-8333-4ef1-8d55-c59c34ad2cdf")
+			(uuid "61ebf072-34c4-4a80-b757-dcbf93e84d7f")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "LED74")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED120")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "LED18")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "LED22")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "LED60")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "LED64")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "LED46")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED78")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
+					(reference "LED8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "L150-65705024000H0:L150-65705024000H0")
+		(at 153.67 123.19 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9d470d2d-4876-4fc8-813b-1adc9b8e1806")
+		(property "Reference" "LED12"
+			(at 165.1 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 165.1 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "arduino-library:L15065705024000H0"
+			(at 172.72 28.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 172.72 -71.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 153.67 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.8"
+			(at 172.72 -271.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 172.72 -371.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 172.72 -471.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 172.72 -571.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 172.72 -671.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "0b07c073-b420-4a03-9050-9d5229ae1c40")
+		)
+		(pin "4"
+			(uuid "86e8ce02-70a1-46cd-901b-814f93e74cac")
+		)
+		(pin "3"
+			(uuid "21474e84-f962-459f-b4bd-f48d72fab03d")
+		)
+		(pin "1"
+			(uuid "4f781a0f-128e-4d87-b3f5-d8c143bb0217")
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED124")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "LED26")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "LED68")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED82")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
+					(reference "LED12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "L150-65705024000H0:L150-65705024000H0")
+		(at 115.57 59.69 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ae7783cb-239b-4fdc-9f6a-05a9d341a26d")
+		(property "Reference" "LED2"
+			(at 127 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 127 46.99 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "arduino-library:L15065705024000H0"
+			(at 134.62 -35.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 134.62 -135.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 115.57 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.8"
+			(at 134.62 -335.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 134.62 -435.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 134.62 -535.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 134.62 -635.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 134.62 -735.23 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "8cb28311-87a3-422b-89c5-0c410259ff1f")
+		)
+		(pin "4"
+			(uuid "8197fd93-b0ca-4461-b29b-7dbd63a0a371")
+		)
+		(pin "3"
+			(uuid "0493f09b-59cd-46a6-a66d-a32f4e3c1ad4")
+		)
+		(pin "1"
+			(uuid "608f194d-f633-4305-814e-23a604cfc640")
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED114")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "LED16")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "LED58")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED72")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
 					(reference "LED2")
 					(unit 1)
 				)
@@ -7584,115 +2630,159 @@
 		)
 	)
 	(symbol
-		(lib_id "Isolator:4N25")
-		(at 181.61 137.16 0)
+		(lib_id "L150-65705024000H0:L150-65705024000H0")
+		(at 153.67 143.51 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "ebece628-46e4-4353-ae2e-42e36f8b30b7")
-		(property "Reference" "U2"
-			(at 181.61 128.27 0)
+		(uuid "bc9165e0-0e02-4b6a-85b3-4d445025a85a")
+		(property "Reference" "LED13"
+			(at 165.1 128.27 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "4N25"
-			(at 181.61 130.81 0)
+		(property "Value" "L150-65705024000H0"
+			(at 165.1 130.81 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-6_W7.62mm"
-			(at 176.53 142.24 0)
+		(property "Footprint" "arduino-library:L15065705024000H0"
+			(at 172.72 48.59 0)
 			(effects
 				(font
 					(size 1.27 1.27)
-					(italic yes)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.vishay.com/docs/83725/4n25.pdf"
-			(at 181.61 137.16 0)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 172.72 -51.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify left top)
 				(hide yes)
 			)
 		)
-		(property "Description" "DC Optocoupler Base Connected, Vce 30V, CTR 20%, Viso 2500V, DIP6"
-			(at 181.61 137.16 0)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 153.67 143.51 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.8"
+			(at 172.72 -251.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 172.72 -351.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 172.72 -451.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 172.72 -551.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 172.72 -651.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
 				(hide yes)
 			)
 		)
 		(pin "2"
-			(uuid "f9ef5d55-dfdc-4ec8-a453-2d5ba94bac93")
-		)
-		(pin "5"
-			(uuid "8c92e80a-4680-481b-a2ac-e83bdf994e0d")
-		)
-		(pin "1"
-			(uuid "204c08dc-dc79-4ad7-bb43-62f3ef7dbbb6")
-		)
-		(pin "6"
-			(uuid "eda4a990-45ea-4e4f-859b-88e6ffd9a923")
-		)
-		(pin "3"
-			(uuid "151342f2-967c-4c31-8f1f-1153ed6539d2")
+			(uuid "c0b04de5-1a27-4d02-b784-91e74b972d08")
 		)
 		(pin "4"
-			(uuid "c4a8b8c3-738d-4d39-8765-d8f699d552fb")
+			(uuid "8e8f7a34-ef13-4732-9378-51dd91e5c5fa")
+		)
+		(pin "3"
+			(uuid "1426d754-e33b-46f6-ac5c-659eaad33f5d")
+		)
+		(pin "1"
+			(uuid "1bd490dd-b926-43c4-ac85-fc9347d4c87c")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "U19")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED125")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "U7")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "LED27")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "U16")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "LED69")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "U13")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED83")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "U2")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
+					(reference "LED13")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 170.18 130.81 0)
+		(lib_id "Device:D_Zener")
+		(at 97.79 72.39 270)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "efc58c2c-42fe-4e6a-accf-a59957ea5594")
-		(property "Reference" "R5"
-			(at 172.72 129.5399 0)
+		(uuid "cb8d5f9d-0dba-4de2-a87c-b45c825a3075")
+		(property "Reference" "D1"
+			(at 100.33 71.1199 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7700,8 +2790,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "MFR-25FTE52-100K"
-			(at 172.72 132.0799 0)
+		(property "Value" "zener"
+			(at 100.33 73.6599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7709,8 +2799,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P2.54mm_Vertical"
-			(at 168.402 130.81 90)
+		(property "Footprint" "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp"
+			(at 97.79 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7718,8 +2808,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 170.18 130.81 0)
+		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-1-5ke-datasheet?assetguid=9D02C7D2-86A5-4BFF-9251-966D6AF02BF7"
+			(at 97.79 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7727,8 +2817,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "100k Resistor"
-			(at 170.18 130.81 0)
+		(property "Description" "TVS@376V, PPC=2.5A, breakdown=418V, clamping = 602V"
+			(at 97.79 72.39 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7736,32 +2826,325 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "df16ec5d-e6e1-49cc-bbe2-173c5e3a9f98")
+		(property "Mouser Part Number" "603-1.5KE440A/B"
+			(at 97.79 72.39 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "6857ef3c-aeb7-44af-b569-d9a0b3d004e2")
+			(uuid "25060675-a454-41f1-9fac-5162d406fb52")
+		)
+		(pin "1"
+			(uuid "7a9589c2-2dff-41ac-b819-58a656ceb5ce")
 		)
 		(instances
 			(project "led"
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/0596284e-72e4-4547-b187-8c5592fb05cd"
-					(reference "R32")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "D12")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/46aabbd2-7fc1-47cb-aa3b-73a3038d653f"
-					(reference "R16")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "D2")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4738d208-191a-4e5e-9602-e97a739d0ef0"
-					(reference "R28")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "D4")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/72376ae9-6017-47ba-b04f-84a68df4880f"
-					(reference "R24")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "D5")
 					(unit 1)
 				)
-				(path "/3f432d6c-3758-4345-b186-9310705dc61b/be5f820c-fa0f-40ca-b61d-19540cb5b514"
-					(reference "R5")
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "L150-65705024000H0:L150-65705024000H0")
+		(at 116.84 123.19 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e06f4a9d-a0ee-4961-9f96-13e525d9b524")
+		(property "Reference" "LED5"
+			(at 128.27 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 128.27 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "arduino-library:L15065705024000H0"
+			(at 135.89 28.27 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 135.89 -71.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 116.84 123.19 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.8"
+			(at 135.89 -271.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 135.89 -371.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 135.89 -471.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 135.89 -571.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 135.89 -671.73 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "fb14a375-3637-4aba-93fd-1902a61abe16")
+		)
+		(pin "4"
+			(uuid "83ec7a36-4383-43f8-8ede-b7df6586042c")
+		)
+		(pin "3"
+			(uuid "c44ba6f7-fabe-4cc1-95ea-144355dc7f3b")
+		)
+		(pin "1"
+			(uuid "8be9a8ce-8e40-4af2-bc77-96c76347304a")
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED117")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "LED19")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "LED61")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED75")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
+					(reference "LED5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "L150-65705024000H0:L150-65705024000H0")
+		(at 116.84 101.6 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e219e945-73ee-40a4-9231-c105d731e5cc")
+		(property "Reference" "LED4"
+			(at 128.27 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 128.27 88.9 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "arduino-library:L15065705024000H0"
+			(at 135.89 6.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 135.89 -93.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 116.84 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "0.8"
+			(at 135.89 -293.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 135.89 -393.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 135.89 -493.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 135.89 -593.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 135.89 -693.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d80ead43-cdbf-4cf6-99ed-0aa6aa6e0a20")
+		)
+		(pin "4"
+			(uuid "e261469f-30f6-4278-8de3-c5e27eac4dc8")
+		)
+		(pin "3"
+			(uuid "de372d42-c85a-4542-baa7-d35b68ee0c2d")
+		)
+		(pin "1"
+			(uuid "31a62cbf-b1f4-44b3-a80e-8746da60b198")
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/26342586-4ff5-45da-bd07-da6b77ca317c"
+					(reference "LED116")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/6c4c63f0-577c-4e78-b127-3e8364c63f27"
+					(reference "LED18")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/7a0af58d-8343-4daf-8db7-90bf6f6b226e"
+					(reference "LED60")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/90c382e1-500b-4dd2-a1bc-dcf0e666755f"
+					(reference "LED74")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/d9a700bb-2ef5-49e4-a53c-a5b54e2b049e"
+					(reference "LED4")
 					(unit 1)
 				)
 			)

@@ -2385,6 +2385,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "512-BS170"
+			(at 72.39 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "7dd6ba49-1255-4400-81d5-887ce55f3c31")
 		)
@@ -2422,7 +2431,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1A_DC4.5"
+		(property "Value" "25V 5A relay @5V"
 			(at 96.52 81.2799 0)
 			(effects
 				(font
@@ -2431,7 +2440,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "arduino-library:G6DN1ADC45"
+		(property "Footprint" "arduino-library:G6DN-1A-L"
 			(at 96.52 171.12 0)
 			(effects
 				(font
@@ -2441,7 +2450,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/G6DN-1A DC4.5.pdf"
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6dn.pdf"
 			(at 96.52 271.12 0)
 			(effects
 				(font
@@ -2470,7 +2479,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "653-G6DN1ADC45"
+		(property "Mouser Part Number" "653-G6DN1ADC5"
 			(at 96.52 571.12 0)
 			(effects
 				(font
@@ -2681,7 +2690,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-02GR-2OR"
+		(property "Value" "2-pin connector"
 			(at 125.73 146.05 0)
 			(effects
 				(font
@@ -2802,7 +2811,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1A_DC4.5"
+		(property "Value" "25V 5A relay @5V"
 			(at 96.52 115.5699 0)
 			(effects
 				(font
@@ -2811,7 +2820,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "arduino-library:G6DN1ADC45"
+		(property "Footprint" "arduino-library:G6DN-1A-L"
 			(at 96.52 205.41 0)
 			(effects
 				(font
@@ -2821,7 +2830,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/G6DN-1A DC4.5.pdf"
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6dn.pdf"
 			(at 96.52 305.41 0)
 			(effects
 				(font
@@ -2850,7 +2859,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "653-G6DN1ADC45"
+		(property "Mouser Part Number" "653-G6DN1ADC5"
 			(at 96.52 605.41 0)
 			(effects
 				(font
@@ -3034,6 +3043,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "512-BS170"
+			(at 72.39 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "58ca0d9a-c908-4cad-9b76-772c68f24de5")
 		)
@@ -3070,7 +3088,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-02GR-2OR"
+		(property "Value" "2-pin connector"
 			(at 33.02 43.18 0)
 			(effects
 				(font
@@ -3389,7 +3407,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1A_DC4.5"
+		(property "Value" "25V 5A relay @5V"
 			(at 96.52 48.2599 0)
 			(effects
 				(font
@@ -3398,7 +3416,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "arduino-library:G6DN1ADC45"
+		(property "Footprint" "arduino-library:G6DN-1A-L"
 			(at 96.52 138.1 0)
 			(effects
 				(font
@@ -3408,7 +3426,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://componentsearchengine.com/Datasheets/1/G6DN-1A DC4.5.pdf"
+		(property "Datasheet" "https://omronfs.omron.com/en_US/ecb/products/pdf/en-g6dn.pdf"
 			(at 96.52 238.1 0)
 			(effects
 				(font
@@ -3437,7 +3455,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "653-G6DN1ADC45"
+		(property "Mouser Part Number" "653-G6DN1ADC5"
 			(at 96.52 538.1 0)
 			(effects
 				(font
@@ -3848,7 +3866,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-03GR-2OR"
+		(property "Value" "3-pin connector"
 			(at 43.18 156.21 0)
 			(effects
 				(font
@@ -3971,7 +3989,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-08GR-2OR"
+		(property "Value" "8-pin connector"
 			(at 185.42 33.02 0)
 			(effects
 				(font
@@ -4110,7 +4128,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "RSF1JT1R00"
+		(property "Value" "1 Ohm @ 0.01%"
 			(at 147.32 161.2899 90)
 			(effects
 				(font
@@ -4158,7 +4176,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" ""
+		(property "Mouser Part Number" "708-RSF1JT1R00"
 			(at 640.97 154.94 0)
 			(effects
 				(font
@@ -4231,7 +4249,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-02GR-2OR"
+		(property "Value" "2-pin connector"
 			(at 35.56 110.49 0)
 			(effects
 				(font
@@ -4351,7 +4369,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-02GR-2OR"
+		(property "Value" "2-pin connector"
 			(at 38.1 76.2 0)
 			(effects
 				(font
@@ -4576,6 +4594,15 @@
 				(hide yes)
 			)
 		)
+		(property "Mouser Part Number" "512-BS170"
+			(at 72.39 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "cd39311c-af52-4388-a39b-56cabedbf4e1")
 		)
@@ -4612,7 +4639,7 @@
 				)
 			)
 		)
-		(property "Value" "TBL002A-350-03GR-2OR"
+		(property "Value" "3-pin connector"
 			(at 43.18 130.81 0)
 			(effects
 				(font

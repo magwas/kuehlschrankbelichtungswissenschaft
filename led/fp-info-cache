@@ -1,4 +1,4 @@
-25703454905222737
+25705218196659483
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102920,6 +102920,13 @@ Relay or Contactor
 0
 7
 7
+arduino-library
+G6DN-1A-L
+G6DN-1A-L
+Relay or Contactor
+0
+4
+4
 arduino-library
 G6DN1ADC45
 G6DN-1A DC4.5-1
