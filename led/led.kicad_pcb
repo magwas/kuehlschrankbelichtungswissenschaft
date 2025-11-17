@@ -78,5 +78,5728 @@
 		)
 	)
 	(net 0 "")
+	(net 1 "/leds_65k_5/VDC+")
+	(net 2 "Net-(D12-A)")
+	(net 3 "/leds_65k_5/VDC-")
+	(net 4 "Net-(LED113-A_1)")
+	(net 5 "Net-(LED113-K_2)")
+	(net 6 "Net-(LED113-A_2)")
+	(net 7 "Net-(LED114-K_2)")
+	(net 8 "Net-(LED114-A_1)")
+	(net 9 "Net-(LED115-A_1)")
+	(net 10 "Net-(LED115-K_2)")
+	(net 11 "Net-(LED116-K_2)")
+	(net 12 "Net-(LED116-A_1)")
+	(net 13 "Net-(LED117-K_2)")
+	(net 14 "Net-(LED117-A_1)")
+	(net 15 "Net-(LED118-A_1)")
+	(net 16 "Net-(LED118-K_2)")
+	(net 17 "Net-(LED119-A_1)")
+	(net 18 "Net-(LED120-A_1)")
+	(net 19 "Net-(LED120-K_2)")
+	(net 20 "Net-(LED121-A_1)")
+	(net 21 "Net-(LED121-K_2)")
+	(net 22 "Net-(LED122-K_2)")
+	(net 23 "Net-(LED122-A_1)")
+	(net 24 "Net-(LED123-K_2)")
+	(net 25 "Net-(LED123-A_1)")
+	(net 26 "Net-(LED124-A_1)")
+	(net 27 "Net-(LED124-K_2)")
+	(net 28 "Net-(LED125-K_2)")
+	(net 29 "Net-(LED125-A_1)")
+	(net 30 "Net-(LED126-A_1)")
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "115ddb53-9315-4614-bf8f-9acfa2c6f855")
+		(at 216.99 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED124"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "c077b12c-9afd-467e-ad1c-2ec7cdf13622")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4fc1c042-db2b-47f0-8321-bab7735f22f5")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7a02c1bd-cd61-45dd-b888-b364664e5bdd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b93234b3-e444-4357-bf3c-51466b728d20")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16232996-1ef2-4c96-9562-b13b5d0ea4d8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c867f8d-8c5f-4555-b3b5-575edffa2794")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a771a46b-6647-45b5-bb0e-9f14abf30d3b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6cbb172f-1c59-45bb-bd65-824545b4646e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d46709ae-7499-489a-8d59-8da48ae08d62")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/9d470d2d-4876-4fc8-813b-1adc9b8e1806")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7567b598-ce3e-4b9a-b3de-2f60151952ae")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "254295c4-d189-4827-849a-64ce6b0c5e5b")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "94e0d188-d5b0-4367-b2a9-0a36f369c985")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50721279-0472-4a4e-ba3d-357a847a0e2b")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e40fb428-fd24-4d0f-80b9-355658fe4a99")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a7d695f1-86b3-433a-b2a9-2fbe82449f8b")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "33976031-be05-407e-aadb-249b64cf6027")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4d7d8b87-be71-4ef9-88ed-b7b3ce9d2fd7")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "980c8b6a-f5da-459c-85ac-93fefbfad816")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "512aa256-eab5-42ad-b132-2b84d58ab709")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8b0b917f-8cf0-433b-b281-ec5eabc742de")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "441af28a-b4f0-40cc-9ab1-bf63bf6147b5")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eff22235-ad20-4130-9e8c-197639c3244f")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3b13542a-97dd-4fb6-9f4a-c8eca778cbbc")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a15b4ac1-a2da-48f4-936d-484cc6cda070")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "8d50c4e8-d638-44c2-a7b7-7d888e6680e3")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "a42fc15d-e44c-446a-89d8-1f04f9ca19bf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 26 "Net-(LED124-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "e6829ae5-629e-4c22-9f96-a7ea54995593")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 26 "Net-(LED124-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "23b2df25-a7fc-4208-96c0-d0ee9657934a")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 27 "Net-(LED124-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "c25b6c57-1607-4d5b-af4c-57062320ff15")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 24 "Net-(LED123-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "b02250db-5462-49af-adeb-7faff67aaa8b")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "189965ef-4fd5-4e66-a001-11c776ea92f5")
+		(at 165.49 70.295)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED117"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "4cccf03c-0382-4e1f-9bad-64a29fcc6e7d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "bb4548d8-1ebd-4c6d-bae2-dc83f9429afd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "54514620-ccf4-4a25-9af6-1bbcd967a24a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6ded865c-943b-44c2-a3fa-90b24a0ed316")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8cd3f2ed-b126-4ead-bd4a-16199be12582")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5192595f-140c-4362-981c-96c2c51c4830")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "99673821-fafc-4f29-a2cc-00bba2d20562")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6c531600-d582-4fa9-9b84-db98fd677cc6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ec9f18b4-22f9-4ec2-bbab-b1759ae43963")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/e06f4a9d-a0ee-4961-9f96-13e525d9b524")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "47a9c0df-7b2e-48ee-b335-da6517bc37cb")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d702ba28-d5a8-49a7-92ea-1edc0ec11b99")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2180e109-ee57-4c5a-8fa7-e32b77b1634c")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8458fcda-4576-4aac-9039-d3e8c584a0e3")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6c2da3f9-b356-4f69-a207-5102de640058")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ff7b7f22-d42a-497c-897a-c319f7ef9cc5")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "07d0fe0d-3d9f-4157-aecf-ee83363227af")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "44d87e3e-8632-4498-8646-a85192cec241")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "10f62a9d-099d-4aa6-8006-101f9656572d")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "a0468a68-70c3-44f1-be09-ff9295c1bac3")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b679092f-7820-4574-8e86-3a6d83d2b4b0")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b5667338-4fd9-4994-bb63-5a1ba2075eba")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c019e858-f9d3-49e9-9b71-9e99a9fc651a")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7c05d0bc-b145-4cf6-aae1-9a1131e171c8")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "83742b13-1eec-4e39-8fc0-877cb91c8a00")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "af9b0237-85d2-41ef-b53a-0caff0599f9b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "8088b2ae-dec5-489c-b3d0-e91ac2a4b2c4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 14 "Net-(LED117-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "adc6188a-af85-4e29-b82f-547a1e36a0ab")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 14 "Net-(LED117-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "5e3ec81b-a284-4118-9cc9-fd534103a69b")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 13 "Net-(LED117-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "205166ee-6c43-4c66-bb1e-80ad59ceb616")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 11 "Net-(LED116-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "0e546426-df76-4b45-a7df-cc2337186f1d")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "2de46fa1-9f10-4aa2-8104-7c5986322fb0")
+		(at 150.59 70.195)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED119"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "500279c8-e823-4d1c-a300-4f306bbd8728")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "b5b0f1df-1fb5-4658-bc94-8af337805d60")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8bb7e37b-c50b-48ae-85ca-3e6f7e42ff51")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "26be2ce3-2a63-4be7-b9eb-ab556aebae5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "46cf6c59-563b-49f1-9f0c-b71be1821312")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "893e9d9e-731c-4768-bd0a-13a2bbf0d120")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "fe646efa-9f01-4485-96f6-1f9097ef3961")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3d5c1ddf-2755-4dbd-b6a7-63243385c561")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "04c3378d-a023-44ed-810f-0d0ab7362445")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/559fbe23-5a5b-46c3-a270-24d3d37e7cf2")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "880a0293-3c8d-48f6-b1e6-3c363abe2c77")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "50b2fa35-199b-4d64-a016-42977e7b7c55")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3c97d3ae-1024-4b9b-ad34-0485083e5fb7")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "473af561-8187-4c36-920c-f762a6e60dc6")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5fc6d9c3-ce43-4099-b856-2907a1625477")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e0f590fc-6aac-45b5-931c-491595463a31")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ac09e2b4-89e4-49f8-b572-9e479a86e7fd")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "39b1b4f9-4919-4c63-ab36-0bdf7e608660")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0e5b74fc-c7de-4898-95f2-3893a3673896")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b0e45394-645d-401b-afa4-05c2715633b3")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "51bcd81b-1c32-4d3f-8e42-c1db072a9c99")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "5b3e569c-116d-473c-99b0-2a623b61e1fe")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d8d93b6c-8fc8-4bfe-a92e-50615a104379")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7f540b8b-d7a8-4cad-a7c0-b7ea0c942273")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "6e7ced45-9b5e-44aa-97da-e714e9caa2ad")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c05ee0af-2c8c-45d1-bb1f-c2bae5cd613b")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "a070aab9-b021-46d9-ae2b-d629fb690b26")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 17 "Net-(LED119-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "ab3bc5ce-6d6a-468b-9d17-5ab83850b442")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 17 "Net-(LED119-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "0aeecaf7-6321-42a0-8ac3-a1b859f7d95b")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 3 "/leds_65k_5/VDC-")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "9dcb2af5-377c-48bc-943f-576fbba9679e")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 16 "Net-(LED118-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "e180836e-7092-48a2-a6df-b2c40dbc95f3")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:DIOM7959X262N"
+		(layer "F.Cu")
+		(uuid "2f0e38bc-db93-4d44-afe3-e5aa29c4255d")
+		(at 153.15 80.625 180)
+		(descr "SMCJ1.5KE440A-TP-AP")
+		(tags "TVS Diode (Uni-directional)")
+		(property "Reference" "D12"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "3bfa30a4-f0a3-40b1-af1e-3c9294895466")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "zener"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "1cb45619-e223-4b32-b334-1813b2b55d36")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://hu.mouser.com/datasheet/3/225/1/SMCJ1.5KE6.8(C)A-SMCJ1.5KE550(C)A(DO-214AB).pdf"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c801771-79a8-4c41-89e7-9b6860fab1ed")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "TVS@376V, PPC=2.5A, breakdown=418V, clamping = 602V"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "97e5dc4b-02e7-49ee-8d59-73e2df3dc3be")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "833-SMCJ1.5KE440A-TP"
+			(at 0 0 180)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5bef7054-f42a-4a65-998d-9b3514e18eb2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "TO-???* *_Diode_* *SingleDiode* D_*")
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/cb8d5f9d-0dba-4de2-a87c-b45c825a3075")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start 3.97 -2.952)
+			(end -4.6 -2.952)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "75d086f9-663f-4b7d-ba1d-892dd328353d")
+		)
+		(fp_line
+			(start -3.97 2.952)
+			(end 3.97 2.952)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f5d7e862-1ec4-4db3-a390-da3ad08ee1fa")
+		)
+		(fp_line
+			(start 4.85 3.36)
+			(end -4.85 3.36)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d0bef2f3-52bd-4932-a842-db7c04943109")
+		)
+		(fp_line
+			(start 4.85 -3.36)
+			(end 4.85 3.36)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "87d8f1a2-fe2e-40a6-ba97-7f945385b4fd")
+		)
+		(fp_line
+			(start -4.85 3.36)
+			(end -4.85 -3.36)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "21694520-39df-48b2-aae6-49f0c469505d")
+		)
+		(fp_line
+			(start -4.85 -3.36)
+			(end 4.85 -3.36)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "82eb249d-e179-4623-9d9b-571d46b4a1db")
+		)
+		(fp_line
+			(start 3.97 2.952)
+			(end -3.97 2.952)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "c67a1c3d-0261-4ed5-bd6a-e308bb283622")
+		)
+		(fp_line
+			(start 3.97 -2.952)
+			(end 3.97 2.952)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "92f71830-c454-4501-957f-c1842692198d")
+		)
+		(fp_line
+			(start -3.97 2.952)
+			(end -3.97 -2.952)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "474d7a2c-0e2b-4309-a28d-3c92765a6a80")
+		)
+		(fp_line
+			(start -3.97 -1.852)
+			(end -2.87 -2.952)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "57a936d0-59f5-4152-a72c-6937b8d1cbe2")
+		)
+		(fp_line
+			(start -3.97 -2.952)
+			(end 3.97 -2.952)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fde312d4-f82b-4a79-b4ce-9dc47c97910f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5948cade-1a33-4962-ab0a-2f78cbbdc82c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -3.5 0 180)
+			(size 2.2 3.15)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 1 "/leds_65k_5/VDC+")
+			(pinfunction "K")
+			(pintype "passive")
+			(uuid "490e7678-2f91-4918-adbf-b267faf690f8")
+		)
+		(pad "2" smd rect
+			(at 3.5 0 180)
+			(size 2.2 3.15)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 2 "Net-(D12-A)")
+			(pinfunction "A")
+			(pintype "passive")
+			(uuid "d648c8df-45d8-48fe-ae76-287daf6d67b2")
+		)
+		(embedded_fonts no)
+		(model "SMCJ1.5KE440A-TP.stp"
+			(offset
+				(xyz 10.34 -4.599999836 1.570000029)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "5cb390ca-95be-4a03-9455-26d9939bb4ee")
+		(at 195.09 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED113"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "ef32a2f7-7f92-4adc-b4f9-09780bda4d3d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d1567b00-7bd1-46ad-8af6-03f57aadece3")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1992f368-825a-48f5-a668-fad17f8e878d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "70f62b90-daa6-47f0-bbcb-dd06fdf31cab")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de7936e5-6197-404b-b46f-d684cb9e0d25")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20a5813b-e8f4-4b1d-bfe9-7bdfd46746d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "272aa75b-4035-4b9e-954c-6d1250758326")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ae8aafd7-e81f-4400-a1a0-d55ba1c9db60")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a4488727-4c42-43f8-861a-e59e1c6cc43a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/8afc106f-548a-49b5-866a-68050af37b98")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "16735843-0457-4445-bc99-0eb973f9ab01")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7d5d10dd-b760-4a0d-856e-35b4d07ed4f1")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "955737b0-a90a-4d26-855f-2767edbebea1")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "545d9e93-c6d3-4cec-ba30-306f077f6678")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9b22ee4e-bf28-40c8-a294-1c11b56fc96d")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1e40f798-b44f-4d0d-a24d-76008916bf80")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fa40325e-7194-4d61-b5d0-b1b7352150a8")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "80629878-5cef-4e7a-9150-08252561daa0")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0e2367a6-8fb5-48b6-b630-7f920f813659")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4532c954-0f4b-443d-8495-a43826f85547")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "78aac609-849d-4f75-9238-6371e47d84d3")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0a8479c3-ec5d-4cab-b0d3-6827eee96ce4")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2a94b5f4-81f2-4dcb-b3c5-d855a36f76d2")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "928af250-566a-4a87-92b4-1c869ff9c987")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4877a95a-2a3b-4a06-b48a-a0bb14104523")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4e7f638c-3bbf-4cba-b44e-3fcbd2f8fc65")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "9bdd8994-f4e8-4e6e-bc2e-61b991e60db7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 4 "Net-(LED113-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "fd9469fa-542e-41b9-8401-a9a34f0226c9")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 4 "Net-(LED113-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "44bfbc0e-c1ad-4fe0-941c-c802db601469")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "Net-(LED113-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "6b82b258-d898-44bf-9322-a884912752b9")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 6 "Net-(LED113-A_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "bff421ba-cbc1-427b-9859-57d153f947f9")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "5e45778b-c615-47ff-8d6e-63bae15c88c9")
+		(at 180.19 70.295)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED115"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "fb1ad112-0b6b-4ca5-8917-3d3509e6c2c8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "74885654-183a-4fcc-8f54-46ab64e8bdcf")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19e99880-654f-49e3-a2d1-c498ddefa453")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "de7f1ba8-c973-4916-a6e2-c71668204d15")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "86d24f0a-d273-4572-9db5-d16e76ede7b7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "55d26e80-880c-4215-a34c-23ce32cd960c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6bb0ecf3-1009-4b87-810e-df3045123f98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b01500d7-5adb-4be4-b7eb-01def2b214e9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "48136cd3-fead-4a83-ac84-5ccb76e927c8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/58b10fc7-a83d-417b-b616-1b58ac5f9240")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "057aee8f-10c7-4555-a6a0-7dbabe12c2ce")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "42395965-fd1a-43e3-9533-1d4ac92d50da")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c3d1cd50-15c5-4e9e-b493-7764d90b3067")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c8fe23c0-7761-4ab1-a2c6-e7af8f00c27b")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "501579fc-b503-40cb-b139-e1dcd32f99be")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4cda23c1-9325-4b4b-9566-8a949adab1f7")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "98b3dab9-4267-4952-9195-8ee374a951be")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "22c8a0a2-7358-412d-ab6d-4657fc3ed159")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7948cea4-71f8-446c-b6b1-eb349d995fdb")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f5c6fba1-3bed-49ad-a1d3-7107bc997864")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "741662ab-64dc-44f7-95c6-f55f389fd3b7")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d596eb45-f3d3-4231-910a-486c66bca530")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "7a721c84-9e33-4f3e-b49f-f644e861645c")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "fcb3599f-0ce0-460f-a983-946bcab424c3")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1806a854-3ed0-4b02-9394-358485829dfc")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "72688831-4156-437e-ba26-cdb32bda3dd0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5028f532-d662-4152-b679-b5d0349b4600")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 9 "Net-(LED115-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "137cb167-2f88-4c6c-8016-2be359388e8b")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 9 "Net-(LED115-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "225449b4-e6ff-45ef-9426-e5fe67b10aa5")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 10 "Net-(LED115-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "46ec437b-d54a-4e87-8028-e64eb50017ad")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 7 "Net-(LED114-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "c9a43495-e1aa-44b3-9225-9c654284c0c5")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "67b692bb-3967-4145-a329-a4f8b0bdf9ca")
+		(at 158.09 70.195)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED118"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "28a613bf-5f10-4544-b18b-f5b205f76ff8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "ddc7c9b0-edf5-4d6a-beeb-029a9d8e15ff")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "56e56473-476b-457b-8ca2-3e432da5dbdc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f44fbf94-9841-4e54-b325-c1d36d0497cc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "29b77efd-fd96-4dda-9e54-8df6eea6a465")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "00f4abe0-1005-4088-87da-2e9444ec6ddf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a49c83ae-5366-4f30-97bc-fd58df157405")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eb49ad85-d489-4074-a446-a405fbeb9bc8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "18280b7c-59b4-4eee-a360-f8491c7d196d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/79c6520f-38c9-4553-94db-972852c8b712")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "87e701a4-dc77-4211-aab2-d05fe1ffad1a")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "99b9fd40-c1ed-49a6-8d6f-d6882e656cea")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "d96947e7-91e9-406f-8cf0-269c2037b03b")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "cda575ff-3e48-436d-9980-37c91fe5c775")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "54c4f9af-8732-42d7-8fa2-b482a321e0f2")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2576e40e-e482-470b-9435-723659ebd4b5")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e29547e8-93a8-40a0-8241-5e1bf561a6d3")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "355ff88f-a11e-44d2-adcb-348e0f78454d")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3940cf41-be39-40d5-932d-a7ddac5a24ef")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c73f00eb-ec52-458e-a79d-55908d5b0adb")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c7e7810e-334d-4da4-aa57-69bd62277e4b")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4cbfe848-8794-4277-882c-94e3df38aaf2")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d5d6d724-5c32-43df-8f21-bcf69dd0b959")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2dd97717-3dcb-41f3-82ee-a13bbc6e7bf2")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "96db59b3-dcdc-4482-87ed-02d9504f1c06")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "a5c45b43-1b66-498e-95e8-a3433a7b7623")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "f95ed029-1537-4d1a-8e96-f6706e8bb6ad")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 15 "Net-(LED118-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "dd9a0990-a088-402f-b228-1e75ba2a7e9e")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 15 "Net-(LED118-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "775df57f-270d-40c3-aa7c-eff2bbc9476a")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 16 "Net-(LED118-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "b14750c0-a6fe-4f38-84c8-5f5d8a8cc2c5")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 13 "Net-(LED117-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "7ec50b18-1b30-4ae4-a189-4042eb9d0f26")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "7544bda2-cbfd-4651-9414-fc956a30157b")
+		(at 209.69 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED125"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "4d85e3f0-44f2-4dc7-b2c3-821a7fd4cdee")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "59e48a47-31f9-43ac-b64e-217bd3f40c15")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5b246a9d-f923-40da-b610-6cef42e959e9")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6df5a9b2-e6ab-4d2c-97b2-e95f084278a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2da7e870-653c-41a0-b857-17e6f7bde3a4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "502066fe-19d5-4ce6-86da-cfee66b42b46")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "2de12eef-105e-4881-92b7-c76340889749")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "8f0d9993-cf77-4c63-b726-8cd373e8dbf4")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f363c627-a8b8-40b2-b033-f48876a61f1d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/bc9165e0-0e02-4b6a-85b3-4d445025a85a")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3a1acce6-aeef-4533-b0d0-4f54dfe05cd7")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ea8232f1-4c56-465d-b7cc-62cf68d3f346")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "585af9a0-dd95-47bc-a75d-9626a1f203d6")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ae4db99d-812e-4b2a-8e31-c1e501c2d4df")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f8aff062-8006-4a08-83bf-64e081f4bcbf")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "015b97ae-9e8a-4216-8247-01899fe26ef6")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "71b2c59f-43f5-4d78-8096-ff892722f598")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "baf6d5d3-8e23-4f70-b48a-a8101fef55b7")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c6c823a5-5371-4ee7-96c5-3bfc01f9f61f")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8475907e-b879-49c6-a476-8752e13c279e")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "0a52789c-6e40-427b-8e47-3266d31c4247")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b9b0ceb8-7b93-4268-8a54-2a82bcc0cab4")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2e581148-0c99-489d-9ac3-c60b93e39b29")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "224e0f8a-1041-4113-9b9c-456da9fd0f76")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ec7bf70c-ddba-428b-9eae-6afb806888c3")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "84177ec5-603e-4c85-827a-475303022eab")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "61032a70-5686-4605-abfd-34305b12fd2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 29 "Net-(LED125-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "38f00f52-a047-418a-82a4-9c0484d877d3")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 29 "Net-(LED125-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "1f28ab32-e6fa-43f5-8be4-151f758d9fba")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 28 "Net-(LED125-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "1107c62f-346e-4226-a4be-3d28b3a5aecd")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 27 "Net-(LED124-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "d72d9d13-f9d5-4d1d-90c2-a87ad5385d96")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "7dac88f5-728f-4a6b-964d-20608ba13220")
+		(at 246.39 70.4)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED120"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "77566faa-49f0-4c26-a901-d04a4f44a8ba")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "fb7ca406-dba9-4d53-97fc-23a9d008a765")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e8d1fddf-186f-4cca-809b-573bed12849f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "116700f4-2355-431a-beb5-e5b23cd684bd")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "1c643801-cc68-4a9b-99ca-885355360813")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "bc3b26e9-63aa-49b7-ba83-ce506859f63e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d055174d-9566-498b-acd9-77da4f71af55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3a35bdf9-6d12-419d-bfb1-c5f62341ccaf")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "47d62989-8148-4dec-a828-928b0674185b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/8c424752-cb1b-48d1-a7e3-1b6e096fc124")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "bedb82fd-4756-4434-8dd0-d4d33b3a4cb7")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b375bb70-8d28-44ae-9548-8c7012dc7d1f")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "685f715e-9b74-450a-88c0-9d6ac6d0dc58")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7c1b1018-2279-4525-9edf-a6145b0ba85c")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "49041fcf-d544-4ab3-964f-fc2e202b8760")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f9fef8fa-5cb1-4696-aa0b-474fbb22d77e")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "857a6cbc-31b0-48db-901a-a2c9f283526b")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ed7642d6-af1e-4446-be94-90b0da3a9283")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "03d1725e-9371-4f4f-a7e5-47f07f9e623f")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "7f070e31-6c2d-485c-ad48-92ffae88f74a")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "b55a1782-857c-43ad-8cca-00c841ee4ecb")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f64e181e-52b6-454b-9697-a57b323d2946")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "455be2d8-2880-4b03-a3bb-81636ef361b2")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "1cd1f32d-aedd-418c-b96d-db4b26518e1e")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4b51f9ae-192a-44f1-a2ef-f1f818a0f598")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3401c3ea-71b7-473b-accc-5e29b80fa5b0")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "80779017-e6a2-46c5-a901-6af43b820233")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 18 "Net-(LED120-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "d470f63c-3cf1-4a04-bdaf-0e81742773c0")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 18 "Net-(LED120-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "935d416f-c89d-42a7-90ef-454bc20885ec")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 19 "Net-(LED120-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "bb077d43-ff81-4942-877e-bf15e3752cf5")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 1 "/leds_65k_5/VDC+")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "d30ef34d-dfc9-495b-945c-504aa00983fc")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "889ebb7f-a16a-4044-9734-c52c2eb0a2e3")
+		(at 187.59 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED114"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "b046048a-05c1-4ee9-9464-475934261e6c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "af9fe6a8-12c1-4a69-a262-0a661943e3f4")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "23cc813d-d3c8-4010-a873-5e8028e6879d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "75c9dc06-6692-4729-aef5-09ab6cf22a9e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9a490374-412b-4890-aa74-4d0f934492d3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "eeb1fd8c-1f91-4642-8ca0-62900bc17ea0")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d89f8061-ac92-41a7-b783-9ec653ef2a28")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5ec5a939-a921-4ebb-844e-8c1699c0e4f2")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b51d53dc-2cf6-492a-99c6-eee95c5cef98")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/ae7783cb-239b-4fdc-9f6a-05a9d341a26d")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "07f39ceb-57eb-412e-9134-78a0dda5e45b")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b2ba461a-7c80-459f-968b-9f222646a1ad")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e1f33c88-291d-4d8b-b156-2a5804319449")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9e89e0cc-ea48-477a-ab7b-edda8eec105b")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3250db6f-33e7-46bc-90ae-a1efd7fc628d")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e6675adb-d81c-4789-bee6-e3de96a3863f")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b8379588-1135-47f3-8df7-7b719a50363d")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e690f5d3-43f2-4e44-89f9-88c2b382ca1d")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "fc5f5b2f-efd9-46af-ace1-9bbcac460571")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ade64e21-6069-4f6b-a1a1-ecd32ad43a1a")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "876622fd-d654-483b-9d2f-2debd26bc844")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "cbf082f8-19f6-4365-8b8f-ae5d032e1a38")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "3e73a2ba-2d5a-4299-94fc-121ccb82bc91")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4e1fefc2-ad95-4925-bf34-b3da74349be3")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "4df5b187-c075-4f64-a149-c58397871411")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "eee2b58e-6c4f-40a1-a1f7-2e2df3501526")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "66c14608-03eb-47cc-b8d6-6c52ac6f9fbc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 8 "Net-(LED114-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "fcd53332-c0b2-4ed6-92d3-fb8dac78b4da")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 8 "Net-(LED114-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "5ba142b0-ae52-4f8e-9db2-6ba39af5b26b")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 7 "Net-(LED114-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "370b1f6a-ddc1-4cbf-8119-3a9a7f8f548b")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 5 "Net-(LED113-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "71538e0d-e00f-41e0-864c-3d878f9c3f67")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "8cdfec61-4050-494e-8b2a-9b2533b4a69e")
+		(at 224.29 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED123"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "feabee1c-005c-469f-9c8a-a6842a6a265a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "e7f23c37-8172-4084-a149-8ac47f48f637")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "897fbbca-73d7-4c7c-af91-ae2a5b55da63")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b425c159-e05d-4853-a4bd-1b1e2ce1b601")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b9ae7045-81b3-43af-9c9a-ac8749e1d63e")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c319d79-804a-46f1-9970-2bdc93925fbe")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "59cf7f68-2e27-44ba-bb1d-20e7be86c323")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b8240ad8-bd65-49e2-9fee-265e61291538")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6f0de0c2-6967-4356-acf2-0f096e96de1c")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/1fcbbf04-0ba8-4c7c-98a1-1fafbdf0c4a5")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "45da62b0-570a-4b26-8b1f-06abecd3e137")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6dc4dc64-2fa7-457e-9145-e6c07ff45a3a")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "dca6a4be-289c-498a-a1c7-daaf7e406cb3")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7faeb32f-85c7-42a2-b8b7-b4656d4101df")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f2d0dce8-96a5-4226-a851-c12c235c63d7")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ad2582b6-dbc0-4ee1-a1c0-ea72118f3ddd")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "c6f1a345-89f2-4936-b022-a27da2d2cb19")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "e626bf71-2096-4a13-b188-acd075152e0b")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "abbb90d7-b929-4b36-8de1-a896df1c0f19")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "14852a1c-b46c-4194-8e9c-5b8f5d56b247")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "ba908989-9b30-4e99-ade7-a021df69f886")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "1f8eb9f9-aa1e-4eb9-a8e3-97f40d9ba518")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d0873127-7c96-430a-9fdd-9666b6c10b9c")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "658cc492-5bac-48dd-a27b-ecd15ec4174d")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "e8cfef30-6f41-4df2-a2ca-e6375741909c")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "345ccccc-84cb-4073-9d27-d98ce8ef9a94")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "581b8681-b75a-4916-a557-05c1bb0d9ee1")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 25 "Net-(LED123-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "9662257a-9a73-497b-a286-e99ef10257b5")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 25 "Net-(LED123-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "a3f5e9d5-a83a-43bf-a731-4b0d8188f758")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 24 "Net-(LED123-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "1b095264-93ee-42db-bed4-9521aa5b4775")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 22 "Net-(LED122-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "f5afefde-4e5e-42d4-ac3f-7f3671581441")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "8ddb95f4-02a8-499c-a162-471dc3110e66")
+		(at 172.79 70.295)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED116"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "7f676865-d3df-4e09-b080-a1edc469215c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "d7ee67a6-bef0-4172-b5c8-2014dfec6a4e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5745ab79-632f-4537-a436-da6598b25b48")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b127d86f-a60c-40aa-9a62-bf429174332d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9caa78f6-a3e7-49ff-836f-72fa148fab55")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "cc1479a2-defe-4920-8c54-aab90b6803dd")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "16cf3ffa-773f-485b-b57f-c9a23eab8026")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "5c2be9c4-6d5f-47ac-bfdb-9898d3af6776")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "347b4054-c4d9-4998-a79e-164ac92e4148")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/e219e945-73ee-40a4-9231-c105d731e5cc")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a3178588-9b42-4eb4-aabc-f1599baf67a6")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "72db62d7-1e6d-47d7-a1a0-1ebf16eddac4")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2be9a66a-ab0e-4880-9922-9172913f34d0")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f5451959-996e-42f0-83e3-23f8acd0053a")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7d6b804b-0c23-47aa-8826-522f35db4777")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "65cacb77-8169-4eb7-ad4d-5f917d8a1388")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "1cca522f-fe03-4402-a181-607d70a653ec")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "01f9b6cb-f078-4be8-bb89-74a526d1d4c0")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4593ee64-9bb4-4852-a3c5-4ec5f74ba7ba")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "c301bd30-b75b-47fd-9533-4855e4fb2035")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "3be6aebe-8ac7-4719-a0c0-3e7346ebce9a")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f721c97b-eadc-4749-83da-229350ce3dde")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "2c6de1de-d56a-4c26-84c4-178cf3d52165")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "85d11166-9678-4c76-b409-b19c34c18c61")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d319ef4b-6938-498c-a153-e090d26bcb3f")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d8f7062e-8d44-422c-88d7-bde69f4ccf2f")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "9a2ad063-525e-42a5-be5c-6793281c837b")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 12 "Net-(LED116-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "709ca3d6-734d-448e-96b2-34091179e021")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 12 "Net-(LED116-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "e3ffaacd-02f9-404b-942b-0c8e98fcb9a9")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 11 "Net-(LED116-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "12b511f7-b7d0-4430-8098-d49dffd19702")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 10 "Net-(LED115-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "cb78cb09-4a9d-47e0-bf7f-1d30dbece6b2")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "933262de-d27c-4280-bf51-922ab754a14e")
+		(at 202.39 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED126"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "f4c8415b-4a7f-4290-8932-41b3e0f2ecbc")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "4a7c4579-183b-4174-acf1-09943e2fc0e2")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f8a5c42c-e2bb-4753-976d-4e73e260c50d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c1ed1c27-b02d-46b9-b4a0-28f34e039cfa")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d166575e-a85b-418a-b7b3-4148b5515d83")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "c76d5524-7bd1-41d8-8ccd-5eee643058e8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "7b5051a1-3643-4c67-b1cf-59d384606e49")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a283ed91-4538-474e-bdf5-fcc2a54dfda9")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "573e2670-4840-43df-aed2-c40f39e7ce7b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/5ae746b2-a977-47bf-b52d-118d4fe2f72f")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "3e3eec02-ded0-40e5-83c6-8ae1795cb5a8")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "2aa286fe-dee0-43ad-bf63-44466f0b3f57")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f805110d-3a38-44ef-9a8d-0f09cc81cd97")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0e682dab-1313-455d-a21f-718db774f308")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "32615fc3-6636-4a18-b7b7-00704942c96c")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "49076c39-649a-49bb-b5da-e7acbd0a9ce3")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "4a4988f1-8f2a-4310-a819-3092164e7887")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "08c23d7a-b602-4b8e-96f8-1b140a548a90")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "8069fc4e-9ef7-4124-95e0-b82ccdfcc894")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "d69dc375-f565-4f4a-bb52-9d146db46113")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "fbafe616-0404-4733-8ce5-6c69916c61d6")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f6fda85b-94a6-4886-8768-5a5d13cba020")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "791a08aa-dbcb-4249-a4f1-dcb021402967")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "28bbb43a-0d94-4723-b2fb-3ccc62c75d01")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "d98e274e-41a8-42c4-9619-1329889f37c8")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "bbc8b32b-117e-45df-bcea-796a126e0885")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "04b904c6-c8e7-4d2f-92cb-07ecb97406b7")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 30 "Net-(LED126-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "2466f79d-af7b-4fc2-8d48-7419229b557d")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 30 "Net-(LED126-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "c5b860ea-1ee2-4226-99cf-33e54dc2be06")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 6 "Net-(LED113-A_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "fc947c78-f438-4529-a67a-c6ebfecf8102")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 28 "Net-(LED125-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "aa73766e-0fc9-4b36-b4ef-3695922c94cf")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit"
+		(layer "F.Cu")
+		(uuid "95dd6fd7-bea6-4425-90ab-cedd4ecd2c75")
+		(at 263.2 75.95)
+		(descr "solder Pin_ diameter 1.0mm, hole diameter 1.2mm (loose fit), length 10.0mm")
+		(tags "solder Pin_ loose fit")
+		(property "Reference" "H6"
+			(at 0 2.25 0)
+			(layer "F.SilkS")
+			(uuid "1493982b-cdbd-4311-aea4-a313be9fc13d")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 -2.05 0)
+			(layer "F.Fab")
+			(uuid "259b30d5-5dea-4ab9-bac1-e1d70629e2d1")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0c7cccfc-1c4f-4765-8d3a-20c57e74248f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9b7a0de9-5b62-4726-90ca-5a452b58a72c")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/c3b53665-0d3d-4ba3-bc89-149d4ef5b0fe")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr through_hole exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 1.5 0.05)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "3f453b05-ea09-4c3f-9416-c7fdeb32f646")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.7 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "01c68f06-4b32-45dd-ab49-641da794ea63")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.5 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "af79ca51-0e67-49fb-8e87-94990808a0a3")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.2 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "aab472c3-f89c-485a-a449-58943b5afb87")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.25 0)
+			(layer "F.Fab")
+			(uuid "6aff9e01-48df-4b59-8e4f-5cf2602503e3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.4 2.4)
+			(drill 1.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 1 "/leds_65k_5/VDC+")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "882dcc2b-f72f-4e15-a9f4-589a4fba1be3")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_Pin.3dshapes/Pin_D1.0mm_L10.0mm_LooseFit.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "b449eeae-44a9-44e4-bc71-cb5ca8b41a2e")
+		(at 239.01 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED121"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "72950bb5-572b-405d-9183-1e2c849d0129")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "68eba794-4b52-48b7-9f29-cf6c711451af")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "87c3efad-ee6c-481c-9bb7-bc7bfbe05419")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f83c327c-7389-4973-8c7e-b2bf0c6ac04d")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "d53f374a-6f34-45e5-baa5-28726f089143")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "3c1bdf83-ad50-4cf5-b2a8-927933ae005f")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "222983ec-3871-4c4c-b0df-705f36f954dc")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "6a7fcd87-de03-4f0a-9b0a-752cc26981e6")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "19f13378-1bd5-4684-bd2f-cb3d3581f005")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/4eda4af2-b4ed-43aa-b496-7e6c661d41ae")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "118691c7-788a-4d9f-8dca-d07ddcd39518")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "ae0d486e-0e5a-4373-85ee-9eab72925d66")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a18a0870-4edb-40d9-9338-3128bbe0bae7")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "64eaee6d-4768-41ad-b806-f0e6e1a9c6d0")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "fa69637e-8fb5-4007-b1a9-b29d6d158584")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "6b53435a-6081-4107-829c-2d5bc89692da")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "828f7684-fd4c-4677-9894-3f69348a68a0")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "9db908c7-c1ad-431a-92dd-81b331ba8a0a")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "4a8fa01a-ec4b-4422-8ad7-9c2f4ed1b919")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "9abbd8ab-de80-4ffa-9587-d17c8abbb079")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2ba15d1e-3d35-489c-b1d2-fac0b5b3b3be")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "15244707-bb3c-4077-8155-4bec4291d019")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "028cefce-902d-41b8-85aa-13e69dd09c2a")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "41eceae8-c0c3-4e1c-98f6-d5f7b974a781")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "925e5e5f-2948-485d-a12d-22170ad5673b")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "052cfedb-7c4d-4e24-a575-6ad125c0cae9")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "e74cb5fe-0f70-46cd-98a3-a2f1aaa6e87f")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 20 "Net-(LED121-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "b3cda2fa-e741-4e3f-afe7-9fa705843367")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 20 "Net-(LED121-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "25484c5b-c2ef-4724-88c5-5f781fef2154")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 21 "Net-(LED121-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "3342d1fe-b968-4166-94dd-ae4ce0765b9d")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 19 "Net-(LED120-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "42223ecc-739a-4d67-800b-517b3da7f21d")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:L15065705024000H0"
+		(layer "F.Cu")
+		(uuid "ed3ff9b0-bdf4-4dc9-9af4-c8fa7419544b")
+		(at 231.61 70.395)
+		(descr "L150-65705024000H0-1")
+		(tags "LED")
+		(property "Reference" "LED122"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(uuid "a66a3456-6386-483b-876f-5deb5540a66a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Value" "L150-65705024000H0"
+			(at 0 0 0)
+			(layer "F.SilkS")
+			(hide yes)
+			(uuid "f466cff0-e9e6-4a36-a148-465093dc1a47")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.es/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "20fb752d-01fa-46cb-84c3-f09f9f8e6671")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "High Power LEDs - White Cool White, 6500K, 70 CRI"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a443b775-5080-441d-80b9-3e5fdbb45f5a")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Height" "0.8"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "f9a800ec-3de3-4a6d-bba1-d33f993f94a7")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "997-L150657050240H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "a832f17a-1fd1-49b1-bbf3-889c38d99240")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Lumileds/L150-65705024000H0?qs=A6eO%252BMLsxmRcX3%2FW9OSQcg%3D%3D"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b00663e4-d41c-4d80-8738-732907e10987")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Name" "Lumileds"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "0e94bad5-c6cd-4ff6-bd31-883cbd4a4689")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Manufacturer_Part_Number" "L150-65705024000H0"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "98127e3f-674f-44d0-9c5c-0682cbaabe09")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/013da859-534d-4853-ba7a-0dc917af4cfe")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr smd)
+		(fp_line
+			(start -3.1 0)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "0ba9314a-01cb-40a7-99ba-6455eb03615d")
+		)
+		(fp_line
+			(start -3 0)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "f705b0a1-4d19-40df-b6da-f72a647cb326")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "8933222c-1c7e-4655-8b3b-5cb4de8511b3")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "a856d86d-e0a3-433b-ac79-2f997ee44142")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "46531aad-42c1-4fb2-ae9a-fd09843702f5")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.2)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "5bf3190f-c5eb-4349-9e26-14074e4ab501")
+		)
+		(fp_arc
+			(start -3.1 0)
+			(mid -3.05 -0.05)
+			(end -3 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "7c36c41a-490d-4bc7-aa6c-d85030f44837")
+		)
+		(fp_arc
+			(start -3 0)
+			(mid -3.05 0.05)
+			(end -3.1 0)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.SilkS")
+			(uuid "b2a3296d-7527-43b8-9bc8-081138de4410")
+		)
+		(fp_line
+			(start -3.5 -3.59)
+			(end 3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "2783d736-215d-4e45-afab-37a293da5606")
+		)
+		(fp_line
+			(start -3.5 3.59)
+			(end -3.5 -3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "f35d980a-bfa8-4927-b2ce-68ebad29b151")
+		)
+		(fp_line
+			(start 3.5 -3.59)
+			(end 3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "748b099c-566c-4059-a622-5e88700ae6e5")
+		)
+		(fp_line
+			(start 3.5 3.59)
+			(end -3.5 3.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.CrtYd")
+			(uuid "22a47e33-71dc-4408-9bf4-47302cc02183")
+		)
+		(fp_line
+			(start -2.5 -2.59)
+			(end -2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "77acf66a-cb47-4fa5-a3d4-a42ec1aa47bf")
+		)
+		(fp_line
+			(start -2.5 2.59)
+			(end 2.5 2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "ec4a3f6b-8fe4-4e24-8353-58a723807457")
+		)
+		(fp_line
+			(start 2.5 -2.59)
+			(end -2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "abae75be-662c-4963-b82a-8e52e6d81cd5")
+		)
+		(fp_line
+			(start 2.5 2.59)
+			(end 2.5 -2.59)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(layer "F.Fab")
+			(uuid "560f869c-bd41-45bc-b32b-b6d0d8575708")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 0 0)
+			(layer "F.Fab")
+			(uuid "5004c61a-0431-4373-b927-76dd9534af2e")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.254)
+				)
+			)
+		)
+		(pad "1" smd rect
+			(at -0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 23 "Net-(LED122-A_1)")
+			(pinfunction "K_1")
+			(pintype "passive")
+			(uuid "6f143f9a-0f7f-431d-b8bc-ba6732f382f2")
+		)
+		(pad "2" smd rect
+			(at 0.91 0.005)
+			(size 1.22 4.54)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 23 "Net-(LED122-A_1)")
+			(pinfunction "A_1")
+			(pintype "passive")
+			(uuid "b7be7aa5-778f-4905-8434-c26e24f307ed")
+		)
+		(pad "3" smd rect
+			(at -1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 22 "Net-(LED122-K_2)")
+			(pinfunction "K_2")
+			(pintype "passive")
+			(uuid "083dd925-1504-4190-909d-ae8c0317c7af")
+		)
+		(pad "4" smd rect
+			(at 1.81 0.005)
+			(size 0.58 3.22)
+			(layers "F.Cu" "F.Mask" "F.Paste")
+			(net 21 "Net-(LED121-K_2)")
+			(pinfunction "A_2")
+			(pintype "passive")
+			(uuid "5945ee76-ced6-4920-819a-6787792c2178")
+		)
+		(embedded_fonts no)
+		(model "L150-65705024000H0.stp"
+			(offset
+				(xyz 0 0 0.3600000089)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz -90 0 0)
+			)
+		)
+	)
+	(footprint "arduino-library:Coil_6cmx1cm"
+		(layer "F.Cu")
+		(uuid "fba6cd00-a863-4daf-ac6f-8eb768e8182a")
+		(at 76.7 70.2)
+		(property "Reference" "L9"
+			(at 0 -0.5 0)
+			(unlocked yes)
+			(layer "F.SilkS")
+			(uuid "fa2b8597-3724-4061-83f0-46e73d6f908b")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.1)
+				)
+			)
+		)
+		(property "Value" "220 uH @5.8A"
+			(at 0 1 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "badd7ab6-180b-49c0-ac8d-4fdee56f0956")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "9af1ec85-fbed-42d4-a422-f947c6199e1a")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Inductor coil radius=1cm, length=5.5cm, turns=3*55=165, wire radius=1mm air or wood core"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "b729755c-5919-419b-a166-a2684c301dc3")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Mouser Part Number" "530-HCTI-220-5.8 "
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "dd2e9d5a-f00e-40c4-98c1-60ecbc895139")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "Choke_* *Coil* Inductor_* L_*")
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/0c5ee6cf-2c8f-45fa-bb6b-d0ac297d275e")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr through_hole exclude_from_pos_files)
+		(fp_rect
+			(start -40 -5)
+			(end -30 5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "42e34817-cd48-4c85-a5d7-a26daa8455a4")
+		)
+		(fp_rect
+			(start -30 -5)
+			(end 30 5)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "8ba14b7a-10d1-402d-b330-17e91bb0bc26")
+		)
+		(fp_rect
+			(start 30 -5)
+			(end 70 5)
+			(stroke
+				(width 0.1)
+				(type default)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "c23e96e6-295c-43dd-8287-d0a93cfa8476")
+		)
+		(fp_rect
+			(start -40 -12)
+			(end 70 12)
+			(stroke
+				(width 0.1)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "51a2241d-2c66-4d4b-b5be-8b331291bda1")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.5 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(uuid "7b040c79-dde2-4e42-b922-4501af6bb474")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 35 0)
+			(size 2.54 2.54)
+			(drill 1.05)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "/leds_65k_5/VDC-")
+			(pinfunction "1")
+			(pintype "passive")
+			(uuid "d28c6a9a-d258-4a8c-9cf1-dc7473a4b42a")
+		)
+		(pad "2" thru_hole circle
+			(at -35 0)
+			(size 2.54 2.54)
+			(drill 1.05)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 2 "Net-(D12-A)")
+			(pinfunction "2")
+			(pintype "passive")
+			(uuid "ad4ca9df-7db8-497b-bcf4-0370d34295a7")
+		)
+		(embedded_fonts no)
+	)
+	(footprint "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit"
+		(layer "F.Cu")
+		(uuid "ff776ebe-4677-41e3-9c43-1a4a0d42a38c")
+		(at 119.1 70.2)
+		(descr "solder Pin_ diameter 1.0mm, hole diameter 1.2mm (loose fit), length 10.0mm")
+		(tags "solder Pin_ loose fit")
+		(property "Reference" "H11"
+			(at 0 2.25 0)
+			(layer "F.SilkS")
+			(uuid "4e80e723-9eb8-45fa-9ede-823de95da222")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 0 -2.05 0)
+			(layer "F.Fab")
+			(uuid "5f906444-e2cb-449a-ad6a-a06471c9e4f8")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "ecd94a62-ff53-4e99-b8fa-10de8300e7ea")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 0 0 0)
+			(unlocked yes)
+			(layer "F.Fab")
+			(hide yes)
+			(uuid "e3a4b615-b764-41b2-80ec-7ef91fb383f8")
+			(effects
+				(font
+					(size 1.27 1.27)
+					(thickness 0.15)
+				)
+			)
+		)
+		(property ki_fp_filters "MountingHole*Pad*")
+		(path "/26342586-4ff5-45da-bd07-da6b77ca317c/07a6bd8f-e624-4f02-a377-6a204d4bb966")
+		(sheetname "/leds_65k_5/")
+		(sheetfile "leds65k_1.kicad_sch")
+		(attr through_hole exclude_from_bom)
+		(fp_circle
+			(center 0 0)
+			(end 1.5 0.05)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.SilkS")
+			(uuid "35e2fad7-a07b-45fa-b526-bece5af58c8c")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.7 0)
+			(stroke
+				(width 0.05)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.CrtYd")
+			(uuid "6affc426-3601-40ba-8e38-c6bd40c5a34a")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 0.5 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "4929afe7-01be-4de6-a610-82c59bde86de")
+		)
+		(fp_circle
+			(center 0 0)
+			(end 1.2 0)
+			(stroke
+				(width 0.12)
+				(type solid)
+			)
+			(fill no)
+			(layer "F.Fab")
+			(uuid "a7a7eb5d-61ea-432d-b759-e04d67507806")
+		)
+		(fp_text user "${REFERENCE}"
+			(at 0 2.25 0)
+			(layer "F.Fab")
+			(uuid "5ccee045-765e-4bd2-8a0b-7854719d79e5")
+			(effects
+				(font
+					(size 1 1)
+					(thickness 0.15)
+				)
+			)
+		)
+		(pad "1" thru_hole circle
+			(at 0 0)
+			(size 2.4 2.4)
+			(drill 1.2)
+			(layers "*.Cu" "*.Mask")
+			(remove_unused_layers no)
+			(net 3 "/leds_65k_5/VDC-")
+			(pinfunction "1")
+			(pintype "input")
+			(uuid "cad414ea-a182-43ce-8f91-1f90c4376c11")
+		)
+		(embedded_fonts no)
+		(model "${KICAD9_3DMODEL_DIR}/Connector_Pin.3dshapes/Pin_D1.0mm_L10.0mm_LooseFit.step"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 1 1 1)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
+	)
+	(gr_rect
+		(start 218.4 68.2)
+		(end 223 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "15e6c45d-4929-44cc-bfcc-4a1d57f05e63")
+	)
+	(gr_rect
+		(start 233.1 68.2)
+		(end 237.7 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "345b16a3-bbff-4d81-89bb-9d36cb1bd2e3")
+	)
+	(gr_rect
+		(start 109 68)
+		(end 150.3 72.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net 17)
+		(uuid "3833b693-c9a7-4f7b-8064-599865f25910")
+	)
+	(gr_rect
+		(start 181.7 68.2)
+		(end 186.3 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "3f79286d-922d-4196-adb5-53cfe832994a")
+	)
+	(gr_rect
+		(start 37.05 77.75)
+		(end 150.95 83.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "49ea27aa-7d27-4b57-a665-27e4916c85a1")
+	)
+	(gr_rect
+		(start 196.6 68.2)
+		(end 201.2 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "4e4f2e7b-0928-40a2-8375-9a1164aaa682")
+	)
+	(gr_rect
+		(start 166.7 68.1)
+		(end 171.3 72.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "5dfdddeb-731c-4e77-b182-ddc2b95485e5")
+	)
+	(gr_rect
+		(start 240.5 68.2)
+		(end 245.1 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "6988b07a-fbb2-43b2-a077-7fe6c0fcd099")
+	)
+	(gr_rect
+		(start 159.5 68)
+		(end 164.1 72.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "73fe3c63-f06d-4893-9ec8-3c817ffd639e")
+	)
+	(gr_rect
+		(start 189.2 68.2)
+		(end 193.8 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "80db8e1b-fa2a-4d55-98c0-4bafe4a3d12e")
+	)
+	(gr_rect
+		(start 155.6 77.8)
+		(end 252.3 83.7)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "94bd32cd-aff9-4a7d-b246-c82e6e137be0")
+	)
+	(gr_rect
+		(start 247.85 68.1)
+		(end 265.85 83.8)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net 1)
+		(uuid "96c8f8fe-6c51-4462-87d7-2c6b170a1630")
+	)
+	(gr_rect
+		(start 211.1 68.2)
+		(end 215.7 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "b7e9bfa7-61d7-4063-bc36-e6aaea834157")
+	)
+	(gr_rect
+		(start 174.3 68.1)
+		(end 178.9 72.5)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "c5ea83f1-9449-4e01-913e-717dbd2e9d2c")
+	)
+	(gr_rect
+		(start 37.15 67.25)
+		(end 46.25 83.15)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(net 2)
+		(uuid "d4d6cf07-2df3-4d16-ba75-5b4da4b8534e")
+	)
+	(gr_rect
+		(start 203.7 68.2)
+		(end 208.3 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "d80361d7-e47e-4ec9-a991-917b85248f0c")
+	)
+	(gr_rect
+		(start 152.1 68)
+		(end 156.7 72.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "da3a2d21-2863-4cb6-bebe-ae53087b9a30")
+	)
+	(gr_rect
+		(start 225.8 68.2)
+		(end 230.4 72.6)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "F.Cu")
+		(uuid "fdffe3e6-9a91-41aa-b7d3-0a82a26e435f")
+	)
+	(gr_rect
+		(start 112.8 120)
+		(end 215.8 127.4)
+		(stroke
+			(width 0.2)
+			(type solid)
+		)
+		(fill yes)
+		(layer "B.Cu")
+		(net 1)
+		(uuid "0718a2bb-9650-4b29-a04c-b46adcf993af")
+	)
+	(gr_rect
+		(start 36.2 57.5)
+		(end 267.6 84.9)
+		(stroke
+			(width 0.1)
+			(type default)
+		)
+		(fill no)
+		(layer "Margin")
+		(uuid "0332a985-aa4f-4d7b-9148-ef61bb045c78")
+	)
 	(embedded_fonts no)
 )

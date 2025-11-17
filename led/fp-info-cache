@@ -1,4 +1,4 @@
-25706981536523609
+25710508281769258
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102906,6 +102906,20 @@ https://www.addicore.com/Pro-Mini-p/ad249.htm
 0
 29
 29
+arduino-library
+Coil_6cmx1cm
+
+
+0
+2
+2
+arduino-library
+DIOM7959X262N
+SMCJ1.5KE440A-TP-AP
+TVS Diode (Uni-directional)
+0
+2
+2
 arduino-library
 ESP32-S3-DEVKITC-1-N8R8
 

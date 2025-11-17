@@ -505,12 +505,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole_Pad"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 6.35 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole_Pad"
+				(at 0 4.445 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole with connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*Pad*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_Pad_0_1"
+				(circle
+					(center 0 1.27)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "MountingHole_Pad_1_1"
+				(pin input line
+					(at 0 -2.54 90)
+					(length 2.54)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+	)
+	(junction
+		(at 54.61 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "57caf978-9b72-4e76-a182-df3770aa040f")
 	)
 	(junction
 		(at 69.85 85.09)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5b4e00cb-1eee-4b47-aa8e-b07d3ec27a68")
+	)
+	(junction
+		(at 54.61 76.2)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a6f52ffd-cdde-46dc-af02-4460c0c73e7f")
 	)
 	(junction
 		(at 69.85 60.96)
@@ -640,7 +759,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 73.66) (xy 58.42 73.66)
+			(xy 52.07 73.66) (xy 54.61 73.66)
 		)
 		(stroke
 			(width 0)
@@ -717,6 +836,16 @@
 			(type default)
 		)
 		(uuid "5916b9b8-fcf4-47c1-ab7d-89b75dbfce8f")
+	)
+	(wire
+		(pts
+			(xy 54.61 73.66) (xy 58.42 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5bff27ba-382f-462d-8ad7-55397c4694b8")
 	)
 	(wire
 		(pts
@@ -880,7 +1009,7 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 76.2) (xy 58.42 76.2)
+			(xy 52.07 76.2) (xy 54.61 76.2)
 		)
 		(stroke
 			(width 0)
@@ -927,6 +1056,16 @@
 			(type default)
 		)
 		(uuid "db66d3cd-4f53-453b-bf79-029f93c5914d")
+	)
+	(wire
+		(pts
+			(xy 54.61 76.2) (xy 58.42 76.2)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e0dde9bd-e865-4975-a8bc-eb8050f9fc3b")
 	)
 	(wire
 		(pts
@@ -1821,6 +1960,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 54.61 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "630a86a1-b883-4267-8bd7-f8361662569d")
+		(property "Reference" "H16"
+			(at 57.15 78.7399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 57.15 81.2799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit"
+			(at 54.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 54.61 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7706dad4-ecdb-4969-ae3b-f9957b764661")
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4657a6da-42a0-4c37-9dff-046ab29fe1ba"
+					(reference "H16")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/5aec1ce1-45e4-46e9-8146-4644b64be076"
+					(reference "H17")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/a148affd-8e36-468c-8c01-ab2086054996"
+					(reference "H18")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/e5c4d2d5-aef7-4d79-b2d9-7e80d0bdca31"
+					(reference "H19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "L150-65705024000H0:L150-65705024000H0")
 		(at 88.9 80.01 0)
 		(mirror x)
@@ -2676,7 +2894,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "arduino-library:HCTI22058"
+		(property "Footprint" "arduino-library:Coil_6cmx1cm"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -2694,7 +2912,7 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Inductor"
+		(property "Description" "Inductor coil radius=1cm, length=5.5cm, turns=3*55=165, wire radius=1mm air or wood core"
 			(at 69.85 78.74 0)
 			(effects
 				(font
@@ -3043,7 +3261,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Diode_THT:D_DO-15_P5.08mm_Vertical_KathodeUp"
+		(property "Footprint" "arduino-library:DIOM7959X262N"
 			(at 69.85 71.12 0)
 			(effects
 				(font
@@ -3052,7 +3270,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.littelfuse.com/assetdocs/tvs-diodes-1-5ke-datasheet?assetguid=9D02C7D2-86A5-4BFF-9251-966D6AF02BF7"
+		(property "Datasheet" "https://hu.mouser.com/datasheet/3/225/1/SMCJ1.5KE6.8(C)A-SMCJ1.5KE550(C)A(DO-214AB).pdf"
 			(at 69.85 71.12 0)
 			(effects
 				(font
@@ -3070,7 +3288,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "603-1.5KE440A/B"
+		(property "Mouser Part Number" "833-SMCJ1.5KE440A-TP"
 			(at 69.85 71.12 90)
 			(effects
 				(font
@@ -3101,6 +3319,85 @@
 				)
 				(path "/3f432d6c-3758-4345-b186-9310705dc61b/e5c4d2d5-aef7-4d79-b2d9-7e80d0bdca31"
 					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole_Pad")
+		(at 54.61 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7410c3e-92f7-4e01-b9c4-9238093cce3f")
+		(property "Reference" "H12"
+			(at 57.15 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_Pad"
+			(at 57.15 71.1199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Connector_Pin:Pin_D1.0mm_L10.0mm_LooseFit"
+			(at 54.61 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 54.61 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole with connection"
+			(at 54.61 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5ec4be3f-1b0f-4bd0-b04d-e48a034582ae")
+		)
+		(instances
+			(project "led"
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/4657a6da-42a0-4c37-9dff-046ab29fe1ba"
+					(reference "H12")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/5aec1ce1-45e4-46e9-8146-4644b64be076"
+					(reference "H13")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/a148affd-8e36-468c-8c01-ab2086054996"
+					(reference "H14")
+					(unit 1)
+				)
+				(path "/3f432d6c-3758-4345-b186-9310705dc61b/e5c4d2d5-aef7-4d79-b2d9-7e80d0bdca31"
+					(reference "H15")
 					(unit 1)
 				)
 			)
