@@ -13,4 +13,6 @@
   (lib (name "TBL002A-350-08GR-2OR")(type "KiCad")(uri "${KIPRJMOD}/../TBL002A-350-08GR-2OR.kicad_sym")(options "")(descr ""))
   (lib (name "LM2903P")(type "KiCad")(uri "${KIPRJMOD}/../LM2903P.kicad_sym")(options "")(descr ""))
   (lib (name "G6DN-1A_DC5")(type "KiCad")(uri "${KIPRJMOD}/../G6DN-1A_DC5.kicad_sym")(options "")(descr ""))
+  (lib (name "MCP7940N-I_P")(type "KiCad")(uri "${KIPRJMOD}/../MCP7940N-I_P.kicad_sym")(options "")(descr ""))
+  (lib (name "BAT-HLD-005-THM")(type "KiCad")(uri "${KIPRJMOD}/../BAT-HLD-005-THM.kicad_sym")(options "")(descr ""))
 )

@@ -1,4 +1,4 @@
-25705218196659483
+25706981536523609
 Audio_Module
 Reverb_BTDR-1H
 Digital Reverberation Unit, http://www.belton.co.kr/inc/downfile.php?seq=17&file=pdf (footprint from http://www.uk-electronic.de/PDF/BTDR-1.pdf)
@@ -102871,6 +102871,13 @@ https://docs.arduino.cc/hardware/zero
 0
 38
 38
+arduino-library
+BATHLD005THM
+BAT-HLD-005-THM
+Hardware
+0
+3
+3
 arduino-library
 CAPPRD1000W180D3550H5250
 35 x 50

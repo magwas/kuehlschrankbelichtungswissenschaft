@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP MCP7940N-I_P
+D I2C Real-Time Clock/Calendar SRAM PDIP8 Microchip MCP7940N-I/P, Real Time Clock, 64B RAM Serial-I2C, 8-Pin PDIP
+K
+F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-DGA3/278324.pdf
+$ENDCMP
+#
+#End Doc Library
