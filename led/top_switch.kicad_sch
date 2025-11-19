@@ -2555,7 +2555,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://cs.seielect.com/catalog/SEI-RSF_RSMF.pdf"
+		(property "Datasheet" ""
 			(at 357.48 91.44 0)
 			(effects
 				(font
@@ -2584,7 +2584,7 @@
 				(hide yes)
 			)
 		)
-		(property "Mouser Part Number" "708-RSF1JT1R00"
+		(property "Mouser Part Number" "603-MF0207FRE52-1R"
 			(at 657.48 91.44 0)
 			(effects
 				(font
@@ -2604,7 +2604,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Name" "Stackpole Electronics, Inc."
+		(property "Manufacturer_Name" ""
 			(at 857.48 91.44 0)
 			(effects
 				(font
@@ -2614,7 +2614,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "RSF1JT1R00"
+		(property "Manufacturer_Part_Number" "MF0207FRE52-1R"
 			(at 957.48 91.44 0)
 			(effects
 				(font
