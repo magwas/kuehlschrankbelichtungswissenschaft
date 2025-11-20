@@ -2,6 +2,7 @@
 #include "temperature.h"
 #include "housekeep.h"
 #include "userinterface.h"
+#include "NTC_thermistor.h"
 
 void setup()
 {
