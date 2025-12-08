@@ -12,15 +12,18 @@ void lamp_setPPF(int ppf65, int ppf18) {
 
 #define PPF65_MAX 1000
 #define PPF18_MAX 800
-#define PPF2DUTYCYCLE_MULTIPLIER (0.0612f)
+#define PPF2DUTYCYCLE_MULTIPLIER (0.0612f*10)
 #define PPF_MIN 130
 
 void setlamp(int port, float ppf) {
+  int value = ppf*PPF2DUTYCYCLE_MULTIPLIER;
   Serial.print("setting ");
   Serial.print(port);
   Serial.print(" to ");
   Serial.println(ppf);
-  analogWrite(port,ppf*PPF2DUTYCYCLE_MULTIPLIER);
+  Serial.print(" = ");
+  Serial.println(value);
+  analogWrite(port,value);
 }
 
 void lamp_setPPF18(int ppf18) {

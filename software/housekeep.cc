@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "temperature.h"
+#include "clock.h"
 volatile byte shouldHouseKeep = 0;
 
 void interrupt_1S() {
@@ -17,7 +18,8 @@ void houseKeep() {
     return;
   temperatureGet();
   temperaturePrint();
-  Serial.print(millis());
+  Serial.println (millis());
+  printTime();
   Serial.println(" houseekeping");
   shouldHouseKeep = 0;
 }

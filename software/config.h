@@ -6,3 +6,11 @@
 #define PWM_18_2 10
 #define PWM_MAINS 11
 #define ONE_WIRE_BUS 13
+#define BUTTON_1 0
+#define BUTTON_2 1
+
+#define MSG_BUTTON 1
+#define MSG_1HZ 2
+
+#define TEST_PWM 6
+

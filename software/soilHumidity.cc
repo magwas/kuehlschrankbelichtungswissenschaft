@@ -1,8 +1,9 @@
 #include <Arduino.h>
 #define INTERRUPT_PIN 2
-#define LN2 0.6931471805599453
 #define R1 1000.0
 #define C1 100e-9
+#define LN2 0.6931471805599453
+
 // https://en.wikipedia.org/wiki/555_timer_IC#/media/File:555_Astable_Diagram.svg
 // + 1k output current limiter resistor
 volatile uint32_t pulseCount = 0;
@@ -12,7 +13,7 @@ extern void pulseISR();
 extern void measureSoil();
 extern float calculateSoilResistance(float freq);
 
-void setup() {
+void humiditySetup() {
   pinMode(INTERRUPT_PIN, INPUT);
   attachInterrupt(digitalPinToInterrupt(INTERRUPT_PIN), pulseISR, RISING);
   Serial.begin(115200);
