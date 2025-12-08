@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP TLP240A_F
+D MOSFET Output Optocouplers Photorelay 0.5A 60V 5000Vrms 130pF 3mA
+K
+F http://toshiba.semicon-storage.com/info/docget.jsp?did=13992&prodName=TLP240A
+$ENDCMP
+#
+#End Doc Library

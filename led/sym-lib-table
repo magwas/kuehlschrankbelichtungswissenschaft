@@ -16,4 +16,5 @@
   (lib (name "MCP7940N-I_P")(type "KiCad")(uri "${KIPRJMOD}/../MCP7940N-I_P.kicad_sym")(options "")(descr ""))
   (lib (name "BAT-HLD-005-THM")(type "KiCad")(uri "${KIPRJMOD}/../BAT-HLD-005-THM.kicad_sym")(options "")(descr ""))
   (lib (name "SMCJ1_5KE440A-TP")(type "KiCad")(uri "${KIPRJMOD}/../SMCJ1_5KE440A-TP.kicad_sym")(options "")(descr ""))
+  (lib (name "TLP240A_F")(type "KiCad")(uri ""${KIPRJMOD}/../TLP240A_F.kicad_sym")(options "")(descr ""))
 )
