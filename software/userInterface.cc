@@ -38,7 +38,7 @@ void UserInterface::relayCommand(char * payload) {
 void UserInterface::setCommand(char * payload) {
     int ppf65,ppf18;
     if(2==sscanf(payload, "%*s %u %u", &ppf65,&ppf18)) {
-        lamp_setPPF(ppf65,ppf18);
+        lamp.setPPF(ppf65,ppf18);
     } else
     printf("cannot parse: %s",payload);
 }
@@ -49,12 +49,12 @@ void UserInterface::cmdParser(Message * message) {
     printf("cmd: %s\n",payload);
 
     if (!strcmp(payload, "on")) {
-        lamp_turnOn();
+        lamp.on();
         Serial.print(" turned on ");
         return;
     }
     if (!strcmp(payload, "off")) {
-        lamp_turnOff();
+        lamp.off();
         Serial.print(" turned off");
         return;
     }

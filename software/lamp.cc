@@ -1,21 +1,14 @@
 #include <Arduino.h>
 #include "lamp.h"
 
-char isLampOn = 0;
-
-void lamp_setPPF(int ppf65, int ppf18) {
+void Lamp::setPPF(int ppf65, int ppf18) {
   if(!isLampOn)
-    lamp_turnOn();
-  lamp_setPPF65(ppf65);
-  lamp_setPPF18(ppf18);
+    Lamp::on();
+  Lamp::setPPF65(ppf65);
+  Lamp::setPPF18(ppf18);
 }
 
-#define PPF65_MAX 1000
-#define PPF18_MAX 800
-#define PPF2DUTYCYCLE_MULTIPLIER (0.0612f*10)
-#define PPF_MIN 130
-
-void setlamp(int port, float ppf) {
+void Lamp::setlamp(int port, float ppf) {
   int value = ppf*PPF2DUTYCYCLE_MULTIPLIER;
   Serial.print("setting ");
   Serial.print(port);
@@ -26,7 +19,7 @@ void setlamp(int port, float ppf) {
   analogWrite(port,value);
 }
 
-void lamp_setPPF18(int ppf18) {
+void Lamp::setPPF18(int ppf18) {
   if(ppf18>PPF18_MAX)
     ppf18 = PPF18_MAX;
   if(ppf18>=PPF_MIN*4) {
@@ -40,7 +33,7 @@ void lamp_setPPF18(int ppf18) {
 }
 
 
-void lamp_setPPF65(int ppf65) {
+void Lamp::setPPF65(int ppf65) {
   if(ppf65>PPF65_MAX)
     ppf65 = PPF65_MAX;
   if(ppf65>=PPF_MIN*5) {
@@ -70,7 +63,7 @@ void lamp_setPPF65(int ppf65) {
   }
 }
 
-void lamp_turnOn() {
+void Lamp::on() {
   analogWrite(PWM_65_1,0);
   analogWrite(PWM_65_2,0);
   analogWrite(PWM_65_3,0);
@@ -83,7 +76,7 @@ void lamp_turnOn() {
   isLampOn = 1;
 }
 
-void lamp_turnOff() {
+void Lamp::off() {
   for(int i=255;i>=0;i--){
     analogWrite(PWM_MAINS,i);
     delay(20);
@@ -96,3 +89,5 @@ void lamp_turnOff() {
   analogWrite(PWM_18_2,0);
   isLampOn = 0;
 }
+
+Lamp lamp;
