@@ -31,7 +31,7 @@ help:
 	@echo "  clean   - Clean build files"
 
 monitor:
-	picocom -b 9600 --echo --imap lfcrlf --omap crcrlf $(MONITOR_PORT)
+	picocom -b 9600 --echo --imap lfcrlf  $(MONITOR_PORT)
 
 
 .PHONY: help

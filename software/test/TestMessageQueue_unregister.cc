@@ -1,20 +1,18 @@
 #include <gtest/gtest.h>
 #include "MessageQueueTestFixture.h"
 
-TEST_F(MessageQueueTest, unregister_with_a_single_item_list_sets_head_to_null) {
+TEST_F(MessageQueueTest, unregister_sets_type_to_None) {
     when(ONE_LISTENER);
-    systemQueue.unregisterListener(&(entries[0]));
-    ASSERT_EQ(NULL,getListeners());
+    systemQueue.unregisterListener(entries[0].type,entries[0].listener);
+    ASSERT_EQ(MessageType::None,getListeners()[0].type);
 }
 
-TEST_F(MessageQueueTest, unregister_of_the_first_item_sets_head_to_the_second_item) {
-    when(TWO_LISTENERS);
-    systemQueue.unregisterListener(&(entries[0]));
-    ASSERT_EQ(&(entries[1]),getListeners());
+TEST_F(MessageQueueTest, unregister_from_first_place_returns_zero) {
+    when(ONE_LISTENER);
+    ASSERT_EQ(0,systemQueue.unregisterListener(entries[0].type,entries[0].listener));
 }
 
-TEST_F(MessageQueueTest, unregister_of_the_second_item_sets_next_of_first_item_to_null) {
+TEST_F(MessageQueueTest, unregister_returns_the_id_of_unregistered_listener) {
     when(TWO_LISTENERS);
-    systemQueue.unregisterListener(&(entries[1]));
-    ASSERT_EQ(NULL,entries[0].next);
+    ASSERT_EQ(1,systemQueue.unregisterListener(entries[1].type,entries[1].listener));
 }

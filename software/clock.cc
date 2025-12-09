@@ -2,11 +2,11 @@
 
 MCP7940_Class     MCP7940;
 
-DateTime getTime() {
+DateTime Clock::getTime() {
     return MCP7940.now();
 }
 
-void printTime() {
+void Clock::printTime() {
     DateTime now = MCP7940.now();
     printf("%04d-%02d-%02d %02d:%02d:%02d\n",
             now.year(),
@@ -15,15 +15,15 @@ void printTime() {
 
 }
 
-void settTime(DateTime time) {
+void Clock::settTime(DateTime time) {
     MCP7940.adjust(time);
 }
 
-int8_t calibrateTime(DateTime time) {
+int8_t Clock::calibrateTime(DateTime time) {
     return MCP7940.calibrate(time);
 }
 
-DateTime parseTime(char *timeString) {
+DateTime Clock::parseTime(char *timeString) {
     short unsigned int tokens, year, month, day, hour, minute, second;
     tokens = sscanf(timeString,
                           "%hu-%hu-%hu %hu:%hu:%hu",
@@ -33,7 +33,7 @@ DateTime parseTime(char *timeString) {
     return DateTime(year, month, day,hour, minute, second);
 }
 
-void clockInit() {
+void Clock::begin() {
     while (!MCP7940.begin()) {
       Serial.println(F("Unable to find MCP7940. Checking again in 3s."));
       delay(3000);

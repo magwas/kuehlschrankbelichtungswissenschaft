@@ -3,41 +3,39 @@
 #include "lamp.h"
 #include "MessageQueue.h"
 
-Message userInput;
-volatile char didRead = 0;
+Message UserInterface::userInput={MessageType::Command,""};
+volatile int UserInterface::didRead = 0;
 
-void readPrimitive() {
-    size_t available = Serial.available();
-    if(available > 0) {
-        if(didRead+available>PAYLOAD_LENGTH) {
-            available = PAYLOAD_LENGTH-didRead;
-        }
-        Serial.readBytes((char *)&(userInput.payload)+didRead,available);
-        didRead+=available;
-        char* pos = strchr((char *)&(userInput.payload), '\n');
-        *pos=0;
-        if(NULL != pos) {
-            systemQueue.add(&userInput);
-            int left = didRead-(pos-((char*)&(userInput.payload)));
-            if(left>0)
-                memcpy(&(userInput.payload),pos,left);
-            didRead = left;
-        }
+
+void UserInterface::readLine(Message *msg) {
+    char received = msg->payload[0];
+    if(13 == received) {
+        userInput.payload[didRead]=0;
+        systemQueue.send(&userInput);
+        didRead = 0;
+        return;
     }
+    userInput.payload[didRead]=received;
+    didRead++;
+    if(didRead>=PAYLOAD_LENGTH-1)
+    didRead = 0;
 }
 
-void relayCommand(char * payload) {
+
+void UserInterface::relayCommand(char * payload) {
     int interval;
-    if(1==sscanf(payload, "%*s %u", &interval)) {
+    int tokens =sscanf(payload, "%*s %u\n", &interval);
+    if(1==tokens) {
         Serial.println(interval);
         digitalWrite(A0,HIGH);
         delay(interval);
         digitalWrite(A0,LOW);
+        return;
     }
-    printf("cannot parse: %s",payload);
+    printf("cannot parse: %s (%u)\n",payload, tokens);
 }
 
-void setCommand(char * payload) {
+void UserInterface::setCommand(char * payload) {
     int ppf65,ppf18;
     if(2==sscanf(payload, "%*s %u %u", &ppf65,&ppf18)) {
         lamp_setPPF(ppf65,ppf18);
@@ -45,8 +43,11 @@ void setCommand(char * payload) {
     printf("cannot parse: %s",payload);
 }
 
-void cmdParser(Message * message) {
+
+void UserInterface::cmdParser(Message * message) {
     char * payload=message->payload;
+    printf("cmd: %s\n",payload);
+
     if (!strcmp(payload, "on")) {
         lamp_turnOn();
         Serial.print(" turned on ");
@@ -57,13 +58,18 @@ void cmdParser(Message * message) {
         Serial.print(" turned off");
         return;
     }
-    if (!strcmp(payload, "relay ")) {
+    if (!strncmp(payload, "relay ",6)) {
         relayCommand(payload);
         return;
     }
-    if (!strcmp(payload, "set ")) {
+    if (!strncmp(payload, "set ",4)) {
         setCommand(payload);
         return;
     }
     printf("cannot parse: %s",payload);
+}
+
+UserInterface::UserInterface(){
+    systemQueue.registerListener(MessageType::Serial,&readLine);
+    systemQueue.registerListener(MessageType::Command,&cmdParser);
 }

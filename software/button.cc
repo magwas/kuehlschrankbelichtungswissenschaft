@@ -1,23 +1,18 @@
 #include <Arduino.h>
+#include "config.h"
 #include "button.h"
-#include "MessageQueue.h"
-volatile int lastmillis=0;
 
-Message button1Message = {MSG_BUTTON,"0"};
-Message button2Message = {MSG_BUTTON,"1"};
-
-void interrupt_butt1() {
-    systemQueue.add(&button1Message);
+void Buttons::interrupt_butt1() {
+    systemQueue.send(MessageType::Button,(char)0);
 }
 
-void interrupt_butt2() {
-    systemQueue.add(&button2Message);
+void Buttons::interrupt_butt2() {
+    systemQueue.send(MessageType::Button,(char)1);
 }
-
-
-void initialize_buttons() {
+Buttons::Buttons() {
       pinMode(BUTTON_1,INPUT_PULLUP);
       attachInterrupt(digitalPinToInterrupt(BUTTON_1), interrupt_butt1, FALLING);
       pinMode(BUTTON_2,INPUT_PULLUP);
       attachInterrupt(digitalPinToInterrupt(BUTTON_2), interrupt_butt2, FALLING);
 }
+

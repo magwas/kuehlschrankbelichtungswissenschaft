@@ -1,16 +1,41 @@
-#define MSG_QUEUE_INTERNALS
 #include "MessageQueue.h"
 #include <string.h>
 
-void MessageQueue::add(Message *messageP) {
-    messageInProgress++;
+void spinlock_enter(volatile int *lock) {
+    (*lock)++;
+    while(1!=(*lock));
+}
+void spinlock_exit(volatile int *lock) {
+    (*lock)--;
+}
+
+void MessageQueue::send(Message *messageP) {
+    spinlock_enter(&messageInProgress);
     int oldTail = messageQueueTail;
     messageQueueTail = (messageQueueTail+1)%MSG_QUEUE_LENGTH;
     memcpy(&(messageQueue[oldTail]),messageP,sizeof(Message));
-    messageInProgress--;
+    spinlock_exit(&messageInProgress);
 }
 
-Message* MessageQueue::get() {
+void MessageQueue::send(MessageType type, char value) {
+    spinlock_enter(&messageInProgress);
+    int oldTail = messageQueueTail;
+    messageQueueTail = (messageQueueTail+1)%MSG_QUEUE_LENGTH;
+    messageQueue[oldTail].type=type;
+    messageQueue[oldTail].payload[0]=value;
+    spinlock_exit(&messageInProgress);
+}
+
+void MessageQueue::send(MessageType type, int value) {
+    spinlock_enter(&messageInProgress);
+    int oldTail = messageQueueTail;
+    messageQueueTail = (messageQueueTail+1)%MSG_QUEUE_LENGTH;
+    messageQueue[oldTail].type=type;
+    ((int *)messageQueue[oldTail].payload)[0]=value;
+    spinlock_exit(&messageInProgress);
+}
+
+Message* MessageQueue::receive() {
     if(messageQueueTail == messageQueueHead)
         return NULL;
     while(messageInProgress!=0);
@@ -19,55 +44,35 @@ Message* MessageQueue::get() {
     return &(messageQueue[oldHead]);
 }
 
-ListenerEntry* MessageQueue::listenersGetTail() {
-    if(NULL == listeners)
-        return NULL;
-    ListenerEntry* current = listeners;
-    while(NULL != current->next) {
-        current = current->next;
-    }
-    return current;
-}
-
-void MessageQueue::registerListener(ListenerEntry* entry) {
-    entry->next = NULL;
-    ListenerEntry * tail = listenersGetTail();
-    if(NULL == tail) {
-        listeners = entry;
-        return;
-    }
-    tail->next = entry;
-}
-
-void MessageQueue::unregisterListener(ListenerEntry * entry) {
-    if(NULL==listeners)
-        return;
-    if(listeners == entry) {
-        listeners = entry->next;
-        return;
-    }
-    ListenerEntry *current = listeners;
-    while(NULL != current->next) {
-        if(current->next == entry) {
-            current->next = entry->next;
-            return;
+int MessageQueue::registerListener(MessageType type,Listener listener) {
+    for(int i=0;i<LISTENERS_COUNT_MAX;i++) {
+        if(listeners[i].type==MessageType::None) {
+            listeners[i].type = type;
+            listeners[i].listener = listener;
+            return i;
         }
     }
+    return -1;
 }
 
-#include <stdio.h>
-void MessageQueue::dispatch(Message *msg) {
-        if(NULL == listeners)
-            return;
-        ListenerEntry* current = listeners;
-        while(true) {
-            if(current->messageType == msg->type) {
-                (*(current->listener))(msg);
-            }
-            current = current->next;
-            if(NULL == current)
-                return;
+int MessageQueue::unregisterListener(MessageType type,Listener listener) {
+    for(int i=0;i<LISTENERS_COUNT_MAX;i++) {
+        if(listeners[i].type==type && listeners[i].listener == listener) {
+            listeners[i].type = MessageType::None;
+            return i;
         }
+    }
+    return -1;
+}
+int MessageQueue::dispatch(Message *msg) {
+    int count = 0;
+    for(int i=0;i<LISTENERS_COUNT_MAX;i++) {
+        if(listeners[i].type==msg->type) {
+            (*(listeners[i].listener))(msg);
+            count++;
+        }
+    }
+    return count;
 }
 
 MessageQueue systemQueue;

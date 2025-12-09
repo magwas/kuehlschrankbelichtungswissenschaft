@@ -7,45 +7,52 @@
 #include "printf.h"
 #include "clock.h"
 #include "MessageQueue.h"
+#include "userinterface.h"
 
 unsigned char fill = 0;
 
+
 void testPWM(Message *msg) {
-    if(msg->payload[0]=='0') {
+    if(msg->payload[0]==0) {
         fill-=10;
     }
-    if(msg->payload[0]=='1') {
+    if(msg->payload[0]==1) {
         fill+=10;
     }
     printf("testpwm: %u\n",fill);
     analogWrite(TEST_PWM,fill*10);
 }
 
-ListenerEntry testPWMEntry = {MSG_BUTTON,&testPWM};
-
+Buttons buttons;
+HouseKeeper houseKeeper;
+UserInterface ui;
+Clock clock;
 
 void setup()
 {
   printf_begin();
   Serial.begin(9600);
-  delay(10000);
+  clock.begin();
+  delay(3000);
   Serial.println("hello");
-  clockInit();
+  clock.printTime();
   temperatureInit();
-  houseKeepInit();
   pinMode(A0,OUTPUT);
-  initialize_buttons();
-  systemQueue.registerListener(&testPWMEntry);
+  systemQueue.registerListener(MessageType::Button,&testPWM);
 }
+
+Message serialMsg = {MessageType::Serial, 'a'};
 
 void loop()
 {
-    houseKeep();
-    delay(100);
-    Message *msg=systemQueue.get();
+    if(Serial.available()) {
+        char read = Serial.read();
+        systemQueue.send(MessageType::Serial, read);
+    }
+    Message *msg=systemQueue.receive();
     while(msg!=NULL) {
         systemQueue.dispatch(msg);
-        msg=systemQueue.get();
+        msg=systemQueue.receive();
     }
 }
 

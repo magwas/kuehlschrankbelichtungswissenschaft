@@ -7,8 +7,8 @@
 class MessageQueueTest : public ::testing::Test {
 protected:
     Message testMessages[2] = {
-        {1,"message one"},
-        {2, "message two"}
+        {MessageType::Button,"message one"},
+        {MessageType::Serial, "message two"}
     };
 
     inline static volatile bool listener1_ran = false;
@@ -23,9 +23,9 @@ protected:
     }
 
     ListenerEntry entries[3] = {
-        {1,&listener1,NULL},
-        {2,&listener2,NULL},
-        {2,&listener1,NULL}
+        {MessageType::Button,&listener1},
+        {MessageType::Serial,&listener2},
+        {MessageType::Serial,&listener1}
     };
 
     MessageQueueTest() {
@@ -47,8 +47,8 @@ protected:
 
     void SetUp() override {
         fillBufferWithRandomC((char*)systemQueue.messageQueue,MSG_QUEUE_LENGTH*sizeof(Message),12345);
+        fillBufferWithRandomC((char*)systemQueue.listeners,LISTENERS_COUNT_MAX*sizeof(ListenerEntry),12345);
         reset(5,5,5);
-        systemQueue.listeners = (ListenerEntry *) 42;
     }
     void fillBufferWithRandomC(char* buffer, size_t size, unsigned int seed) {
         srand(seed);
@@ -75,10 +75,13 @@ protected:
                 break;
             case    QUEUE_WITH_ONE_MEMBER:
                 reset(0,0,0);
-                systemQueue.add(&(testMessages[0]));
+                systemQueue.send(&(testMessages[0]));
                 break;
             case NO_LISTENERS:
-                systemQueue.listeners = NULL;
+                for(int i=0;i<LISTENERS_COUNT_MAX;i++)
+                {
+                    systemQueue.listeners[i].type=MessageType::None;
+                }
                 break;
             case BEFORE_WRAPAROUND:
                 reset(3,MSG_QUEUE_LENGTH-1,0);
@@ -87,19 +90,28 @@ protected:
                 reset(MSG_QUEUE_LENGTH-1,3,0);
                 break;
             case ONE_LISTENER:
-                systemQueue.listeners=NULL;
-                systemQueue.registerListener(&(entries[0]));
+                for(int i=0;i<LISTENERS_COUNT_MAX;i++)
+                {
+                    systemQueue.listeners[i].type=MessageType::None;
+                }
+                systemQueue.registerListener(entries[0].type,entries[0].listener);
                 break;
             case TWO_LISTENERS:
-                systemQueue.listeners=NULL;
-                systemQueue.registerListener(&(entries[0]));
-                systemQueue.registerListener(&(entries[1]));
+                for(int i=0;i<LISTENERS_COUNT_MAX;i++)
+                {
+                    systemQueue.listeners[i].type=MessageType::None;
+                }
+                systemQueue.registerListener(entries[0].type,entries[0].listener);
+                systemQueue.registerListener(entries[1].type,entries[1].listener);
                 break;
             case LISTENERS_ARE_SET_UP:
-                systemQueue.listeners = NULL;
-                systemQueue.registerListener(&(entries[0]));
-                systemQueue.registerListener(&(entries[1]));
-                systemQueue.registerListener(&(entries[2]));
+                for(int i=0;i<LISTENERS_COUNT_MAX;i++)
+                {
+                    systemQueue.listeners[i].type=MessageType::None;
+                }
+                systemQueue.registerListener(entries[0].type,entries[0].listener);
+                systemQueue.registerListener(entries[1].type,entries[1].listener);
+                systemQueue.registerListener(entries[2].type,entries[2].listener);
                 listener1_ran=false;
                 listener2_ran=false;
                 break;

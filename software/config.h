@@ -1,3 +1,7 @@
+#ifndef MY_CONFIG_H
+#define MY_CONFIG_H
+#include <stdint.h>
+
 #define PWM_65_1 3
 #define PWM_65_2 5
 #define PWM_65_3 6
@@ -9,8 +13,10 @@
 #define BUTTON_1 0
 #define BUTTON_2 1
 
-#define MSG_BUTTON 1
-#define MSG_1HZ 2
+enum class MessageType : uint16_t {
+    None,Button,Serial,OneHz,Command
+};
 
 #define TEST_PWM 6
 
+#endif

@@ -1,25 +1,32 @@
 #include <Arduino.h>
 #include "temperature.h"
 #include "clock.h"
-volatile byte shouldHouseKeep = 0;
+#include "MessageQueue.h"
+#include "housekeep.h"
 
-void interrupt_1S() {
-  shouldHouseKeep = 1;
+
+void HouseKeeper::interrupt_1S() {
+    systemQueue.send(MessageType::OneHz,(char)0);
 }
 
-void houseKeepInit() {
-  pinMode(INT_1S, INPUT_PULLUP);
-  Serial.println(digitalPinToInterrupt(INT_1S));
-  attachInterrupt(digitalPinToInterrupt(INT_1S), interrupt_1S, FALLING);
-}
+volatile int HouseKeeper::housekept;
 
-void houseKeep() {
-  if(!shouldHouseKeep)
+void HouseKeeper::houseKeep(Message *msg) {
+  housekept++;
+  if(housekept%4 != 0)
     return;
   temperatureGet();
   temperaturePrint();
   Serial.println (millis());
-  printTime();
+  clock.printTime();
   Serial.println(" houseekeping");
-  shouldHouseKeep = 0;
 }
+
+
+HouseKeeper::HouseKeeper() {
+  pinMode(INT_1S, INPUT_PULLUP);
+  Serial.println(digitalPinToInterrupt(INT_1S));
+  attachInterrupt(digitalPinToInterrupt(INT_1S), interrupt_1S, FALLING);
+  systemQueue.registerListener(MessageType::OneHz,&houseKeep);
+}
+

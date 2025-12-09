@@ -2,26 +2,26 @@
 #include "MessageQueueTestFixture.h"
 
 
-TEST_F(MessageQueueTest, register_with_empty_list_sets_the_listener_head) {
+TEST_F(MessageQueueTest, register_with_empty_list_registers_the_right_type) {
     when(NO_LISTENERS);
-    systemQueue.registerListener(&(entries[0]));
-    ASSERT_EQ(&(entries[0]),getListeners());
+    systemQueue.registerListener(entries[0].type,entries[0].listener);
+    ASSERT_EQ(MessageType::Button,getListeners()[0].type);
 }
 
-TEST_F(MessageQueueTest, register_with_empty_list_sets_the_entry_next_to_null) {
+TEST_F(MessageQueueTest, register_with_empty_list_registers_the_right_listener) {
     when(NO_LISTENERS);
-    systemQueue.registerListener(&(entries[0]));
-    ASSERT_EQ(NULL,entries[0].next);
+    systemQueue.registerListener(entries[0].type,entries[0].listener);
+    ASSERT_EQ(&listener1,getListeners()[0].listener);
 }
 
-TEST_F(MessageQueueTest, register_sets_the_next_of_last_entry) {
+TEST_F(MessageQueueTest, register_with_nonempty_list_registers_the_right_type) {
     when(ONE_LISTENER);
-    systemQueue.registerListener(&(entries[1]));
-    ASSERT_EQ(&(entries[1]),entries[0].next);
+    systemQueue.registerListener(entries[0].type,entries[0].listener);
+    ASSERT_EQ(MessageType::Button,getListeners()[1].type);
 }
 
-TEST_F(MessageQueueTest, register_sets_the_next_of_the_entry_null) {
+TEST_F(MessageQueueTest, register_with_nonempty_list_registers_the_right_listener) {
     when(ONE_LISTENER);
-    systemQueue.registerListener(&(entries[1]));
-    ASSERT_EQ(NULL,entries[1].next);
+    systemQueue.registerListener(entries[0].type,entries[0].listener);
+    ASSERT_EQ(&listener1,getListeners()[1].listener);
 }
