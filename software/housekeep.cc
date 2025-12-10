@@ -17,13 +17,12 @@ void HouseKeeper::houseKeep(Message *msg) {
     return;
   clock.printTime();
   systemQueue.send(MessageType::TemperatureRequest,(char) 0);
-  Serial.println(" houseekeping");
+  systemQueue.send(MessageType::Console,"housekeeping");
 }
 
 
 HouseKeeper::HouseKeeper() {
   pinMode(INT_1S, INPUT_PULLUP);
-  Serial.println(digitalPinToInterrupt(INT_1S));
   attachInterrupt(digitalPinToInterrupt(INT_1S), interrupt_1S, FALLING);
   systemQueue.registerListener(MessageType::OneHz,&houseKeep);
 }

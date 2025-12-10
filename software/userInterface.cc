@@ -52,10 +52,10 @@ CommandParams UserInterface::commandToMessageType(const char* command) {
 
 void UserInterface::cmdParser(Message * message) {
     char * payload=message->payload;
-    int arg1;
-    int arg2;
+    uint32_t arg1;
+    uint32_t arg2;
     char command[PAYLOAD_LENGTH];
-    int tokens =sscanf(payload, "%s %u %u\n",command, &arg1, &arg2);
+    int tokens =sscanf(payload, "%s %lu %lu\n",command, &arg1, &arg2);
     CommandParams params = commandToMessageType(command);
     Message msg;
     msg.type=MessageType::Console;
@@ -65,8 +65,9 @@ void UserInterface::cmdParser(Message * message) {
         sprintf(msg.payload,"arg#(%u): %s",params.args,payload);
     } else {
         msg.type = params.type;
-        *((int *)msg.payload) = arg1;
-        *(((int *)msg.payload)+1) = arg2;
+        CommandPayload *payload = (CommandPayload *)msg.payload;
+        payload->arg1 = arg1;
+        payload->arg2 = arg2;
     }
     systemQueue.send(&msg);
 

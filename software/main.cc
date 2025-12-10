@@ -14,10 +14,10 @@ unsigned char fill = 0;
 
 
 void testPWM(Message *msg) {
-    if(msg->payload[0]==0) {
+    if(msg->payload[0]=='v') {
         fill-=10;
     }
-    if(msg->payload[0]==1) {
+    if(msg->payload[0]=='^') {
         fill+=10;
     }
     printf("testpwm: %u\n",fill);

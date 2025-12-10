@@ -1,4 +1,5 @@
 #include "clock.h"
+#include "userinterface.h"
 
 MCP7940_Class     MCP7940;
 
@@ -23,7 +24,7 @@ void Clock::printTime() {
     systemQueue.send(MessageType::Console,buffer);
 }
 
-void Clock::settTime(DateTime time) {
+void Clock::setTime(DateTime time) {
     MCP7940.adjust(time);
     sync(time.unixtime());
 }
@@ -59,6 +60,31 @@ void Clock::begin() {
     }
   MCP7940.setSQWState(true);
   MCP7940.setSQWSpeed(Hz1);
+  systemQueue.registerListener(MessageType::Clock,&(command));
+}
+
+void Clock::command(Message *msg) {
+    CommandPayload *payload = (CommandPayload *)msg->payload;
+    DateTime time = DateTime(payload->arg2);
+    char buffer[PAYLOAD_LENGTH];
+    int8_t calibration;
+
+    switch(static_cast<ClockCommands>(payload->arg1)) {
+        case ClockCommands::get:
+            clock.printTime();
+            break;
+        case ClockCommands::set:
+            clock.setTime(time);
+            break;
+        case ClockCommands::adjust:
+            calibration = clock.calibrateTime(time);
+            sprintf(buffer,"calibration: %d",calibration);
+            systemQueue.send(MessageType::Console,buffer);
+            break;
+        default:
+            sprintf(buffer,"unknown clock command: %lu",payload->arg1);
+            systemQueue.send(MessageType::Console,buffer);
+    }
 }
 
 void Clock::sync(uint32_t unixtime) {

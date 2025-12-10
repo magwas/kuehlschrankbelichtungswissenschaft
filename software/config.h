@@ -22,7 +22,12 @@
 #define COMMAND_TABLE \
     ENTRY(lamp,   Lamp,   1) \
     ENTRY(set,    Set,    2) \
-    ENTRY(relay,  Relay,  1)
+    ENTRY(relay,  Relay,  1) \
+    ENTRY(clock,  Clock,  2)
+
+#define BUTTONS \
+    ENTRY(0,'^')\
+    ENTRY(1,'v')
 
 enum class MessageType : uint8_t {
     None,
@@ -35,7 +40,8 @@ enum class MessageType : uint8_t {
     Console,
     Relay,
     Set,
-    Lamp
+    Lamp,
+    Clock
 };
 
 #define TEST_PWM 6

@@ -5,8 +5,8 @@
 #include "MessageQueue.h"
 
 struct CommandPayload {
-    int arg1;
-    int arg2;
+    uint32_t arg1;
+    uint32_t arg2;
 };
 
 struct CommandParams {
