@@ -4,7 +4,7 @@
 
 #define PAYLOAD_LENGTH 32
 #define LISTENERS_COUNT_MAX 16
-#define MSG_QUEUE_LENGTH 16
+#define MSG_QUEUE_LENGTH 20
 
 #define PWM_65_1 3
 #define PWM_65_2 5
@@ -23,6 +23,8 @@
     ENTRY(lamp,   Lamp,   1) \
     ENTRY(set,    Set,    2) \
     ENTRY(relay,  Relay,  1) \
+    ENTRY(error,  Error,  2) \
+    ENTRY(errors,  Errors,  1) \
     ENTRY(clock,  Clock,  2)
 
 #define BUTTONS \
@@ -41,7 +43,9 @@ enum class MessageType : uint8_t {
     Relay,
     Set,
     Lamp,
-    Clock
+    Clock,
+    Error,
+    Errors,
 };
 
 #define TEST_PWM 6

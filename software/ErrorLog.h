@@ -16,6 +16,7 @@ class ErrorLog {
         void write(char code, int data);
         ErrorMessage read(uint16_t index);
         void printAll();
+        ErrorLog();
 };
 
 extern ErrorLog errorLog;

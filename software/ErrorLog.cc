@@ -2,20 +2,17 @@
 #include <EEPROM.h>
 #include "ErrorLog.h"
 #include "clock.h"
+#include "userinterface.h"
 
 void ErrorLog::printAll() {
+    char buffer[PAYLOAD_LENGTH];
+    char buffer2[PAYLOAD_LENGTH];
     for(int i = 0; i<MAX_ERRORS ; i++) {
         ErrorMessage msg = read(i);
-        Serial.print(i);
-        Serial.print(" ");
         DateTime time = DateTime(msg.time);
-        char buffer[PAYLOAD_LENGTH];
         clock.formatTime((char *)buffer,time);
-        Serial.print(buffer);
-        Serial.print(" ");
-        Serial.print(msg.errorCode);
-        Serial.print(" ");
-        Serial.println(msg.additionalData);
+        sprintf(buffer2,"%s %u %u",buffer,(int)msg.errorCode,msg.additionalData);
+        systemQueue.send(MessageType::Console,buffer2);
     }
 }
 
@@ -61,6 +58,33 @@ void ErrorLog::clean() {
         EEPROM.put(addr, thisTime);
     }
 
+}
+
+void errorCommand(Message *msg) {
+    CommandPayload *payload = (CommandPayload *)msg->payload;
+    errorLog.write(payload->arg1,payload->arg2);
+    char buffer[PAYLOAD_LENGTH];
+    sprintf(buffer,"ERROR code=%u, arg=%u",(char)payload->arg1,(int)payload->arg2);
+    systemQueue.send(MessageType::Console,buffer);
+}
+
+void errorsCommand(Message *msg) {
+    CommandPayload *payload = (CommandPayload *)msg->payload;
+    switch(payload->arg1) {
+        case 0:
+            errorLog.printAll();
+            break;
+        case 1:
+            errorLog.clean();
+            break;
+        default:
+            systemQueue.send(MessageType::Console,F("0: print all, 1: clean"));
+    }
+}
+
+ErrorLog::ErrorLog() {
+    systemQueue.registerListener(MessageType::Error,&errorCommand);
+    systemQueue.registerListener(MessageType::Errors,&errorsCommand);
 }
 
 ErrorLog errorLog;

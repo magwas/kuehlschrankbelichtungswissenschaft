@@ -46,7 +46,6 @@ void setup()
   thermometer.begin();
   buttons.begin();
   clock.printTime();
-  errorLog.printAll();
   errorLog.write('s',INT_VERSION);
   pinMode(A0,OUTPUT);
   systemQueue.registerListener(MessageType::Button,&testPWM);
