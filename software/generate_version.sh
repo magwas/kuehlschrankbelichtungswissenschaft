@@ -3,6 +3,7 @@ set -e
 GIT_TAG=$(git describe --tags --always --match "[0-9]*.[0-9]*" 2>/dev/null || echo "0.0.0")
 VERSION=$(echo "$GIT_TAG" | sed -E 's/^v?([0-9]+\.[0-9]+).*$/\1/')
 DISTANCE=0
+BRANCH=$(git symbolic-ref --short HEAD 2>/dev/null || echo "detached")
 if [[ "$GIT_TAG" =~ -([0-9]+)-g ]]; then
     DISTANCE="${BASH_REMATCH[1]}"
 fi
@@ -26,6 +27,8 @@ cat > version.h <<EOF
 #define VERSION_STR "${SIGN_STRING}${VERSION}.${DISTANCE}"
 #define SIGN_IS_NEG ${SIGN_IS_NEG}
 #define UNSIGNED_CALC ${UNSIGNED}
+
+#define BRANCH ${BRANCH}
 
 #if SIGN_IS_NEG == 1
     #define INT_VERSION (-(UNSIGNED_CALC))
