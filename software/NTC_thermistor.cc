@@ -1,5 +1,6 @@
 #include "NTC_thermistor.h"
-float a[] = {1538.630000,1444.170000,1356.080000,1273.900000,1197.190000,1125.550000,
+
+float NtcThermistor::calibrationdata[] = {1538.630000,1444.170000,1356.080000,1273.900000,1197.190000,1125.550000,
     1058.630000,996.070000,937.580000,882.870000,831.660000,777.190000,726.840000,
     680.240000,637.100000,597.130000,560.060000,525.670000,493.730000,464.050000,
     436.450000,416.100000,396.700000,378.190000,360.530000,343.700000,327.640000,
@@ -22,20 +23,19 @@ float a[] = {1538.630000,1444.170000,1356.080000,1273.900000,1197.190000,1125.55
     1.569800,1.527200,1.485900,1.445900,1.407200,1.369600,1.333300,1.298000,1.263800,1.230600,
     1.198500,1.167300,1.137000,1.107700,1.079200,1.051600,1.024700,0.998700,0.973500,0.948900};
 
-int resistance2temperature(float resistance) {
-    int size = sizeof(a)/sizeof(a[0]);
+int NtcThermistor::resistance2temperature(float resistance) {
+    int size = sizeof(calibrationdata)/sizeof(calibrationdata[0]);
     for(int i=0;i<size;i++) {
-        if(a[i]<=resistance)
+        if(calibrationdata[i]<=resistance)
         return i+MINTEMP;
     }
     return TOOHIGHTEMP;
 }
 
-float voltage2resistance(float v, float r1) {
+float NtcThermistor::voltage2resistance(float v, float r1) {
     return (r1*v)/(5.0-v);
 }
 
-int voltage2temperature(float v, float r1) {
+int NtcThermistor::voltage2temperature(float v, float r1) {
     return resistance2temperature(voltage2resistance(v, r1));
 }
-
