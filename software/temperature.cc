@@ -7,19 +7,15 @@
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
-float tempC;
 
-void temperatureInit() {
-      sensors.begin();
+Thermometer::Thermometer() {
+     sensors.begin();
+     systemQueue.registerListener(MessageType::TemperatureRequest,&read);
 }
 
-void temperatureGet() {
-  sensors.requestTemperatures();
-   tempC = sensors.getTempCByIndex(0);
+void Thermometer::read(Message * msg) {
+    sensors.requestTemperatures();
+    float tempC = sensors.getTempCByIndex(msg->payload[0]);
+    systemQueue.send(MessageType::Temperature,tempC);
 }
 
-void temperaturePrint() {
-  Serial.print("Temperature: ");
-  Serial.print(tempC);
-  Serial.println("°C");
-}

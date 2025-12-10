@@ -25,6 +25,14 @@ void MessageQueue::send(MessageType type, char value) {
     messageQueue[oldTail].payload[0]=value;
     spinlock_exit(&messageInProgress);
 }
+void MessageQueue::send(MessageType type, float value) {
+    spinlock_enter(&messageInProgress);
+    int oldTail = messageQueueTail;
+    messageQueueTail = (messageQueueTail+1)%MSG_QUEUE_LENGTH;
+    messageQueue[oldTail].type=type;
+    *((float*) (messageQueue[oldTail].payload))=value;
+    spinlock_exit(&messageInProgress);
+}
 
 void MessageQueue::send(MessageType type, int value) {
     spinlock_enter(&messageInProgress);

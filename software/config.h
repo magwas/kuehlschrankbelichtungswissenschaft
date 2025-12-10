@@ -14,7 +14,7 @@
 #define BUTTON_2 1
 
 enum class MessageType : uint16_t {
-    None,Button,Serial,OneHz,Command
+    None,Button,Serial,OneHz,Command, TemperatureRequest, Temperature
 };
 
 #define TEST_PWM 6

@@ -1,5 +1,11 @@
 #include "config.h"
+#include "MessageQueue.h"
 
-void temperatureInit();
-extern void temperatureGet();
-extern void temperaturePrint() ;
+class Thermometer {
+    protected:
+        static void read(Message * msg);
+    public:
+        Thermometer();
+};
+
+extern Thermometer thermometer;

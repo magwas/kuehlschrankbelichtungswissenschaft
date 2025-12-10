@@ -27,6 +27,7 @@ Buttons buttons;
 HouseKeeper houseKeeper;
 UserInterface ui;
 Clock clock;
+Thermometer thermometer;
 
 void setup()
 {
@@ -36,7 +37,6 @@ void setup()
   delay(3000);
   Serial.println("hello");
   clock.printTime();
-  temperatureInit();
   pinMode(A0,OUTPUT);
   systemQueue.registerListener(MessageType::Button,&testPWM);
 }

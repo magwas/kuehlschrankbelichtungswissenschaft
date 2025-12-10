@@ -33,6 +33,7 @@ class MessageQueue {
         void send(Message *message);
         void send(MessageType type, char value);
         void send(MessageType type, int value);
+        void send(MessageType type, float value);
         Message* receive();
         int registerListener(MessageType type,Listener listener);
         int unregisterListener(MessageType type,Listener listener);
