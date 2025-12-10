@@ -73,3 +73,5 @@ UserInterface::UserInterface(){
     systemQueue.registerListener(MessageType::Serial,&readLine);
     systemQueue.registerListener(MessageType::Command,&cmdParser);
 }
+
+UserInterface ui;

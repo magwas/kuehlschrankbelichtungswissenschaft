@@ -5,7 +5,7 @@ class Thermometer {
     protected:
         static void read(Message * msg);
     public:
-        Thermometer();
+        void begin();
 };
 
 extern Thermometer thermometer;

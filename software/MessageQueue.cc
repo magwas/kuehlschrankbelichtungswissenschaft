@@ -25,6 +25,25 @@ void MessageQueue::send(MessageType type, char value) {
     messageQueue[oldTail].payload[0]=value;
     spinlock_exit(&messageInProgress);
 }
+
+void MessageQueue::send(MessageType type, const char* value) {
+    spinlock_enter(&messageInProgress);
+    int oldTail = messageQueueTail;
+    messageQueueTail = (messageQueueTail+1)%MSG_QUEUE_LENGTH;
+    messageQueue[oldTail].type=type;
+    memcpy(messageQueue[oldTail].payload,value,PAYLOAD_LENGTH);
+    spinlock_exit(&messageInProgress);
+}
+
+void MessageQueue::send(MessageType type, const __FlashStringHelper* value) {
+    spinlock_enter(&messageInProgress);
+    int oldTail = messageQueueTail;
+    messageQueueTail = (messageQueueTail+1)%MSG_QUEUE_LENGTH;
+    messageQueue[oldTail].type=type;
+    memcpy_P(messageQueue[oldTail].payload,value,PAYLOAD_LENGTH);
+    spinlock_exit(&messageInProgress);
+}
+
 void MessageQueue::send(MessageType type, float value) {
     spinlock_enter(&messageInProgress);
     int oldTail = messageQueueTail;

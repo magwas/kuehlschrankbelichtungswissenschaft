@@ -8,9 +8,9 @@ OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
 
 
-Thermometer::Thermometer() {
-     sensors.begin();
-     systemQueue.registerListener(MessageType::TemperatureRequest,&read);
+void Thermometer::begin() {
+    sensors.begin();
+    systemQueue.registerListener(MessageType::TemperatureRequest,&read);
 }
 
 void Thermometer::read(Message * msg) {
@@ -19,3 +19,4 @@ void Thermometer::read(Message * msg) {
     systemQueue.send(MessageType::Temperature,tempC);
 }
 
+Thermometer thermometer;

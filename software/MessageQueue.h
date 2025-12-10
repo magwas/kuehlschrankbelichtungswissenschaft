@@ -1,11 +1,19 @@
 #ifndef MESSAGE_QUEUE_H
 #define MESSAGE_QUEUE_H
+#include <Arduino.h>
 #include "config.h"
 #include <stddef.h>
+#include <avr/pgmspace.h>
 
-#define PAYLOAD_LENGTH 16
-#define LISTENERS_COUNT_MAX 16
-#define MSG_QUEUE_LENGTH 16
+#ifndef PAYLOAD_LENGTH
+    #error "please define PAYLOAD_LENGTH"
+#endif
+#ifndef LISTENERS_COUNT_MAX
+    #error "please define LISTENERS_COUNT_MAX"
+#endif
+#ifndef MSG_QUEUE_LENGTH
+    #error "please define MSG_QUEUE_LENGTH"
+#endif
 
 
 typedef struct  Message {
@@ -32,6 +40,8 @@ class MessageQueue {
     public:
         void send(Message *message);
         void send(MessageType type, char value);
+        void send(MessageType type, const char* value);
+        void send(MessageType type, const __FlashStringHelper* value);
         void send(MessageType type, int value);
         void send(MessageType type, float value);
         Message* receive();

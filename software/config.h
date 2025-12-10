@@ -2,6 +2,10 @@
 #define MY_CONFIG_H
 #include <stdint.h>
 
+#define PAYLOAD_LENGTH 32
+#define LISTENERS_COUNT_MAX 16
+#define MSG_QUEUE_LENGTH 16
+
 #define PWM_65_1 3
 #define PWM_65_2 5
 #define PWM_65_3 6
@@ -12,9 +16,17 @@
 #define ONE_WIRE_BUS 13
 #define BUTTON_1 0
 #define BUTTON_2 1
+#define BUTTON_INTERRUPTS 1 0 2
 
 enum class MessageType : uint16_t {
-    None,Button,Serial,OneHz,Command, TemperatureRequest, Temperature
+    None,
+    Button,
+    Serial,
+    OneHz,
+    Command,
+    TemperatureRequest,
+    Temperature,
+    Console
 };
 
 #define TEST_PWM 6

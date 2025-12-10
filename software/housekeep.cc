@@ -15,9 +15,8 @@ void HouseKeeper::houseKeep(Message *msg) {
   housekept++;
   if(housekept%4 != 0)
     return;
-  systemQueue.send(MessageType::TemperatureRequest,(char) 0);
-  Serial.println (millis());
   clock.printTime();
+  systemQueue.send(MessageType::TemperatureRequest,(char) 0);
   Serial.println(" houseekeping");
 }
 
@@ -29,3 +28,4 @@ HouseKeeper::HouseKeeper() {
   systemQueue.registerListener(MessageType::OneHz,&houseKeep);
 }
 
+HouseKeeper houseKeeper;

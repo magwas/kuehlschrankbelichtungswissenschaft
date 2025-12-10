@@ -1,13 +1,24 @@
+#include <Arduino.h>
 #include "config.h"
 #include "MessageQueue.h"
 
-class Buttons {
-    protected:
-        static Message button1Message;
-        static Message button2Message;
-        static void interrupt_butt1();
+inline static void interruptForButton0() {
+    systemQueue.send(MessageType::Button,(char)0);
+}
 
-        static void interrupt_butt2();
+inline static void interruptForButton1() {
+    systemQueue.send(MessageType::Button,(char)1);
+}
+
+
+class Buttons {
     public:
-        Buttons();
+        void begin() {
+              pinMode(0,INPUT_PULLUP);
+              attachInterrupt(digitalPinToInterrupt(0), interruptForButton0, FALLING);
+              pinMode(1,INPUT_PULLUP);
+              attachInterrupt(digitalPinToInterrupt(1), interruptForButton1, FALLING);
+        }
 };
+
+extern Buttons buttons;
