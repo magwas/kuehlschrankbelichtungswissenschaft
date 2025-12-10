@@ -46,6 +46,7 @@ enum class MessageType : uint8_t {
     Clock,
     Error,
     Errors,
+    Housekeep
 };
 
 #define TEST_PWM 6

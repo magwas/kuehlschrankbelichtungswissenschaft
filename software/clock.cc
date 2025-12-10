@@ -82,8 +82,7 @@ void Clock::command(Message *msg) {
             systemQueue.send(MessageType::Console,buffer);
             break;
         default:
-            sprintf(buffer,"unknown clock command: %lu",payload->arg1);
-            systemQueue.send(MessageType::Console,buffer);
+            systemQueue.send(MessageType::Console,"0: read, 1: set, 2: calibrate");
     }
 }
 

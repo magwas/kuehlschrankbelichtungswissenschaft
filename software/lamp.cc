@@ -105,10 +105,16 @@ void Lamp::relayCommand(Message *msg) {
 
 void Lamp::onOffCommand(Message *msg) {
     CommandPayload *payload = (CommandPayload *)msg->payload;
-    if(payload->arg1 == 0)
-        lamp.off();
-    else
-        lamp.on();
+    switch(payload->arg1) {
+        case 0:
+            lamp.off();
+            break;
+        case 1:
+            lamp.on();
+            break;
+        default:
+            systemQueue.send(MessageType::Console,"0: off, 1:on");
+    }
 }
 
 Lamp::Lamp() {

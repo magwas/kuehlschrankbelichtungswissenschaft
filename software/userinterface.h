@@ -27,6 +27,7 @@ class UserInterface {
         static void relayCommand(char * payload);
         static void cmdParser(Message * message);
         static CommandParams commandToMessageType(const char*);
+        static void help();
     public:
         UserInterface();
 };

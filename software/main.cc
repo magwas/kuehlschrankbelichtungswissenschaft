@@ -51,7 +51,6 @@ void setup()
   systemQueue.registerListener(MessageType::Button,&testPWM);
   systemQueue.registerListener(MessageType::Temperature,&tempread);
   int n = systemQueue.registerListener(MessageType::Console,&console);
-  printf("Datetime size: %u",sizeof(DateTime));
   printf("listeners: %u\n",n);
 
 }

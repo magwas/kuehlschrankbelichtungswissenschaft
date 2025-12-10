@@ -15,9 +15,8 @@ void HouseKeeper::houseKeep(Message *msg) {
   housekept++;
   if(housekept%10 != 0)
     return;
-  clock.printTime();
   systemQueue.send(MessageType::TemperatureRequest,(char) 0);
-  systemQueue.send(MessageType::Console,"housekeeping");
+  systemQueue.send(MessageType::Housekeep,"housekeeping");
 }
 
 

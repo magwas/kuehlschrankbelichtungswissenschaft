@@ -50,6 +50,11 @@ CommandParams UserInterface::commandToMessageType(const char* command) {
     return CommandParams{MessageType::None, 0};
 }
 
+void UserInterface::help() {
+#define ENTRY(cmd,msg,args) systemQueue.send(MessageType::Console,#cmd ":" #args " args");
+COMMAND_TABLE
+#undef ENTRY
+}
 void UserInterface::cmdParser(Message * message) {
     char * payload=message->payload;
     uint32_t arg1;
@@ -60,9 +65,9 @@ void UserInterface::cmdParser(Message * message) {
     Message msg;
     msg.type=MessageType::Console;
     if(params.type == MessageType::None) {
-        sprintf(msg.payload,"cannot parse: %s",payload);
+        help();
     } else if(tokens != params.args +1) {
-        sprintf(msg.payload,"arg#(%u): %s",params.args,payload);
+        sprintf(msg.payload,"need %u args: %s",params.args,payload);
     } else {
         msg.type = params.type;
         CommandPayload *payload = (CommandPayload *)msg.payload;
