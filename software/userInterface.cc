@@ -1,10 +1,22 @@
 #include <Arduino.h>
+#include <avr/pgmspace.h>
 #include "userinterface.h"
 #include "lamp.h"
 #include "MessageQueue.h"
 
+
+#define ENTRY(str, type, args) const char cmd_##str##_str[] PROGMEM = #str;
+COMMAND_TABLE
+#undef ENTRY
+
+const CommandEntry commandTable[] PROGMEM = {
+#define ENTRY(str, type, args) {cmd_##str##_str, {MessageType::type, args}},
+COMMAND_TABLE
+#undef ENTRY
+};
+
 Message UserInterface::userInput={MessageType::Command,""};
-volatile int UserInterface::didRead = 0;
+volatile int UserInterface::didRead =0;
 
 
 void UserInterface::readLine(Message *msg) {
@@ -21,52 +33,43 @@ void UserInterface::readLine(Message *msg) {
     didRead = 0;
 }
 
+#define TABLE_SIZE  (sizeof(commandTable) / sizeof(CommandEntry))
 
-void UserInterface::relayCommand(char * payload) {
-    int interval;
-    int tokens =sscanf(payload, "%*s %u\n", &interval);
-    if(1==tokens) {
-        Serial.println(interval);
-        digitalWrite(A0,HIGH);
-        delay(interval);
-        digitalWrite(A0,LOW);
-        return;
+CommandParams UserInterface::commandToMessageType(const char* command) {
+    for (uint8_t i = 0; i < TABLE_SIZE; i++) {
+        const char* namePtr = (const char*)pgm_read_ptr(&commandTable[i].name);
+        int iseq = strcmp_P(command, namePtr);
+        if ( iseq == 0) {
+            CommandParams params;
+            params.type = static_cast<MessageType>(pgm_read_byte(
+                &commandTable[i].params.type));
+            params.args = pgm_read_byte(&commandTable[i].params.args);
+            return params;
+        }
     }
-    printf("cannot parse: %s (%u)\n",payload, tokens);
+    return CommandParams{MessageType::None, 0};
 }
-
-void UserInterface::setCommand(char * payload) {
-    int ppf65,ppf18;
-    if(2==sscanf(payload, "%*s %u %u", &ppf65,&ppf18)) {
-        lamp.setPPF(ppf65,ppf18);
-    } else
-    printf("cannot parse: %s",payload);
-}
-
 
 void UserInterface::cmdParser(Message * message) {
     char * payload=message->payload;
-    printf("cmd: %s\n",payload);
+    int arg1;
+    int arg2;
+    char command[PAYLOAD_LENGTH];
+    int tokens =sscanf(payload, "%s %u %u\n",command, &arg1, &arg2);
+    CommandParams params = commandToMessageType(command);
+    Message msg;
+    msg.type=MessageType::Console;
+    if(params.type == MessageType::None) {
+        sprintf(msg.payload,"cannot parse: %s",payload);
+    } else if(tokens != params.args +1) {
+        sprintf(msg.payload,"arg#(%u): %s",params.args,payload);
+    } else {
+        msg.type = params.type;
+        *((int *)msg.payload) = arg1;
+        *(((int *)msg.payload)+1) = arg2;
+    }
+    systemQueue.send(&msg);
 
-    if (!strcmp(payload, "on")) {
-        lamp.on();
-        Serial.print(" turned on ");
-        return;
-    }
-    if (!strcmp(payload, "off")) {
-        lamp.off();
-        Serial.print(" turned off");
-        return;
-    }
-    if (!strncmp(payload, "relay ",6)) {
-        relayCommand(payload);
-        return;
-    }
-    if (!strncmp(payload, "set ",4)) {
-        setCommand(payload);
-        return;
-    }
-    printf("cannot parse: %s",payload);
 }
 
 UserInterface::UserInterface(){

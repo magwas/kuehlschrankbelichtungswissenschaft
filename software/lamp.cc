@@ -1,5 +1,6 @@
 #include <Arduino.h>
 #include "lamp.h"
+#include "userinterface.h"
 
 void Lamp::setPPF(int ppf65, int ppf18) {
   if(!isLampOn)
@@ -10,12 +11,9 @@ void Lamp::setPPF(int ppf65, int ppf18) {
 
 void Lamp::setlamp(int port, float ppf) {
   int value = ppf*PPF2DUTYCYCLE_MULTIPLIER;
-  Serial.print("setting ");
-  Serial.print(port);
-  Serial.print(" to ");
-  Serial.println(ppf);
-  Serial.print(" = ");
-  Serial.println(value);
+  char buffer[PAYLOAD_LENGTH];
+  sprintf(buffer,"setting %u to %f (%u)",port,(double)ppf,value);
+  systemQueue.send(MessageType::Console,buffer);
   analogWrite(port,value);
 }
 
@@ -69,6 +67,7 @@ void Lamp::on() {
   analogWrite(PWM_65_3,0);
   analogWrite(PWM_18_1,0);
   analogWrite(PWM_18_2,0);
+  digitalWrite(LAMP_RELAY,HIGH);
   for(int i=0;i< 256;i++){
     analogWrite(PWM_MAINS,i);
     delay(20);
@@ -77,11 +76,13 @@ void Lamp::on() {
 }
 
 void Lamp::off() {
+  digitalWrite(LAMP_RELAY,LOW);
   for(int i=255;i>=0;i--){
     analogWrite(PWM_MAINS,i);
     delay(20);
   }
   delay(1000);
+
   analogWrite(PWM_65_1,0);
   analogWrite(PWM_65_2,0);
   analogWrite(PWM_65_3,0);
@@ -90,4 +91,29 @@ void Lamp::off() {
   isLampOn = 0;
 }
 
+void Lamp::setCommand(Message *msg) {
+    CommandPayload *payload = (CommandPayload *)msg->payload;
+    lamp.setPPF(payload->arg1,payload->arg2);
+}
+
+void Lamp::relayCommand(Message *msg) {
+    CommandPayload *payload = (CommandPayload *)msg->payload;
+    digitalWrite(LAMP_RELAY,HIGH);
+    delay(payload->arg1);
+    digitalWrite(LAMP_RELAY,LOW);
+}
+
+void Lamp::onOffCommand(Message *msg) {
+    CommandPayload *payload = (CommandPayload *)msg->payload;
+    if(payload->arg1 == 0)
+        lamp.off();
+    else
+        lamp.on();
+}
+
+Lamp::Lamp() {
+    systemQueue.registerListener(MessageType::Set,&setCommand);
+    systemQueue.registerListener(MessageType::Relay,&relayCommand);
+    systemQueue.registerListener(MessageType::Lamp,&onOffCommand);
+}
 Lamp lamp;

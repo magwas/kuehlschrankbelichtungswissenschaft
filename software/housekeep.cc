@@ -13,7 +13,7 @@ volatile int HouseKeeper::housekept;
 
 void HouseKeeper::houseKeep(Message *msg) {
   housekept++;
-  if(housekept%4 != 0)
+  if(housekept%10 != 0)
     return;
   clock.printTime();
   systemQueue.send(MessageType::TemperatureRequest,(char) 0);

@@ -2,7 +2,7 @@
 BOARD_TAG    = micro
 MONITOR_PORT = /dev/ttyACM0
 ARDUINO_LIBS = Wire MCP7940 OneWire DallasTemperature EEPROM
-
+LDFLAGS = -Wl,-u,vfprintf -lprintf_flt
 # Arduino directory (adjust if needed)
 ARDUINO_DIR = /usr/share/arduino
 
@@ -10,7 +10,9 @@ ARDUINO_DIR = /usr/share/arduino
 TARGET = main
 SRC = src/$(TARGET).cc
 
-all: version tests $(TARGET_EEP) $(TARGET_HEX) upload monitor
+all: version tests $(TARGET_EEP) $(TARGET_HEX)
+
+run: all upload monitor
 
 
 # Include Arduino.mk

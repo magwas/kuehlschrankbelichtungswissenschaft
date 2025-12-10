@@ -13,12 +13,18 @@
 #define PWM_18_1 9
 #define PWM_18_2 10
 #define PWM_MAINS 11
+#define LAMP_RELAY A0
 #define ONE_WIRE_BUS 13
 #define BUTTON_1 0
 #define BUTTON_2 1
 #define BUTTON_INTERRUPTS 1 0 2
 
-enum class MessageType : uint16_t {
+#define COMMAND_TABLE \
+    ENTRY(lamp,   Lamp,   1) \
+    ENTRY(set,    Set,    2) \
+    ENTRY(relay,  Relay,  1)
+
+enum class MessageType : uint8_t {
     None,
     Button,
     Serial,
@@ -26,7 +32,10 @@ enum class MessageType : uint16_t {
     Command,
     TemperatureRequest,
     Temperature,
-    Console
+    Console,
+    Relay,
+    Set,
+    Lamp
 };
 
 #define TEST_PWM 6
