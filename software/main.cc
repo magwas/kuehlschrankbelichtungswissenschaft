@@ -12,6 +12,7 @@
 
 unsigned char fill = 0;
 
+char buffer[PAYLOAD_LENGTH];
 
 void testPWM(Message *msg) {
     if(msg->payload[0]=='v') {
@@ -20,20 +21,25 @@ void testPWM(Message *msg) {
     if(msg->payload[0]=='^') {
         fill+=10;
     }
-    printf("testpwm: %u\n",fill);
-    analogWrite(TEST_PWM,fill*10);
+    sprintf(buffer,"testpwm: %u  ",fill);
+    systemQueue.send(MessageType::Console, buffer);
+    analogWrite(TEST_PWM,fill);
 }
 
 void tempread(Message *msg) {
     float *floatp = (float *)msg->payload;
     float val = *floatp;
-    Serial.print(val);
-    Serial.println(" C");
+    sprintf(buffer,"%.2f C  ",val);
+    systemQueue.send(MessageType::Console, buffer);
 }
+
 
 void console(Message * msg) {
     Serial.println(msg->payload);
 }
+
+
+
 
 void setup()
 {

@@ -5,9 +5,6 @@
 #include "housekeep.h"
 
 
-void HouseKeeper::interrupt_1S() {
-    systemQueue.send(MessageType::OneHz,(char)0);
-}
 
 volatile int HouseKeeper::housekept;
 
@@ -21,8 +18,6 @@ void HouseKeeper::houseKeep(Message *msg) {
 
 
 HouseKeeper::HouseKeeper() {
-  pinMode(INT_1S, INPUT_PULLUP);
-  attachInterrupt(digitalPinToInterrupt(INT_1S), interrupt_1S, FALLING);
   systemQueue.registerListener(MessageType::OneHz,&houseKeep);
 }
 

@@ -1,7 +1,15 @@
 #include "clock.h"
 #include "userinterface.h"
 
+#ifndef INT_1S
+    #error "please define INT_1S as pin number for 1HZ signal"
+#endif
+
 MCP7940_Class     MCP7940;
+
+void Clock::interrupt_1S() {
+    systemQueue.send(MessageType::OneHz,(char)0);
+}
 
 DateTime Clock::getTime() {
     DateTime now =  MCP7940.now();
@@ -60,6 +68,12 @@ void Clock::begin() {
     }
   MCP7940.setSQWState(true);
   MCP7940.setSQWSpeed(Hz1);
+  MCP7940.setBattery(true);
+  if (!MCP7940.getBattery()) {
+    systemQueue.send(MessageType::Console,"no bat backup");
+  }
+  pinMode(INT_1S, INPUT_PULLUP);
+  attachInterrupt(digitalPinToInterrupt(INT_1S), interrupt_1S, FALLING);
   systemQueue.registerListener(MessageType::Clock,&(command));
 }
 

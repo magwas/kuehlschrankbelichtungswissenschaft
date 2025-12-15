@@ -7,6 +7,7 @@ enum SquareWaveTypes { Hz1, kHz4, kHz8, kHz32, Hz64 };
 
 class Clock {
     protected:
+        static void interrupt_1S();
         uint32_t syncUnix;
         unsigned long syncMillis;
         void sync(uint32_t unixtime);

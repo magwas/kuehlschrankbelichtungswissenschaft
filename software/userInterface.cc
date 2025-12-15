@@ -4,6 +4,9 @@
 #include "lamp.h"
 #include "MessageQueue.h"
 
+#ifndef COMMAND_TABLE
+    #error "please define COMMAND_TABLE with some ENTRY(string,type,#args)"
+#endif
 
 #define ENTRY(str, type, args) const char cmd_##str##_str[] PROGMEM = #str;
 COMMAND_TABLE
@@ -51,7 +54,7 @@ CommandParams UserInterface::commandToMessageType(const char* command) {
 }
 
 void UserInterface::help() {
-#define ENTRY(cmd,msg,args) systemQueue.send(MessageType::Console,#cmd ":" #args " args");
+#define ENTRY(cmd,msg,args) systemQueue.send(MessageType::Console,F(#cmd ":" #args " args"));
 COMMAND_TABLE
 #undef ENTRY
 }

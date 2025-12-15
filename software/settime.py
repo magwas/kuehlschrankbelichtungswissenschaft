@@ -23,7 +23,7 @@ def main():
     cmd = 1
     port = sys.argv[1]
     if len(sys.argv) == 3:
-        cmd = 2
+        cmd = sys.argv[2]
     
     try:
         with serial.Serial(port=port,
