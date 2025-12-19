@@ -1,10 +1,10 @@
-MODULES = MessageQueue
+MODULES = library/MessageQueue/MessageQueue
 MessageQueue_TESTS = add get register unregister dispatch
 
 TESTDATA_OBJS =
 
 CXX = g++
-CXXFLAGS = -std=c++17 -Wall -I h  -c
+CXXFLAGS = -std=c++17 -Wall -I h -I .. -I ../library -c
 LXXFLAGS = -std=c++17 -I h -pthread
 TARGET = tests
 GTEST = -lgtest
@@ -31,7 +31,7 @@ VPATH = . ..
 
 # Pattern rule for .o files in ./obj directory
 ./obj/%.o: %.cc
-	mkdir -p ./obj
+	mkdir -p $(basename $@)
 	$(CXX) $(CXXFLAGS) -c $< -o $@
 
 clean:

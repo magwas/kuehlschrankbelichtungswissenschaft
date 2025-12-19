@@ -1,4 +1,4 @@
-#include "button.h"
+#include "Buttons.h"
 #ifndef BUTTONS
     #error "please define BUTTONS with some ENTRY(pin,value)"
 #endif
@@ -18,4 +18,3 @@ void Buttons::begin() {
 #undef ENTRY
 }
 
-Buttons buttons;

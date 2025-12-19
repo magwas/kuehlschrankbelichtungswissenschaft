@@ -1,8 +1,7 @@
 #include <Arduino.h>
 #include <OneWire.h>
 #include <DallasTemperature.h>
-#include "userinterface.h"
-#include "temperature.h"
+#include "Thermometer.h"
 
 OneWire oneWire(ONE_WIRE_BUS);
 DallasTemperature sensors(&oneWire);
@@ -19,4 +18,3 @@ void Thermometer::read(Message * msg) {
     systemQueue.send(MessageType::Temperature,tempC);
 }
 
-Thermometer thermometer;

@@ -21,6 +21,11 @@ typedef struct  Message {
     char payload[PAYLOAD_LENGTH];
 } Message;
 
+struct CommandPayload {
+    uint32_t arg1;
+    uint32_t arg2;
+};
+
 typedef void (*Listener)(Message*);
 
 typedef struct  ListenerEntry {

@@ -1,7 +1,6 @@
 #include <Arduino.h>
 #include <avr/pgmspace.h>
-#include "userinterface.h"
-#include "lamp.h"
+#include "Command.h"
 #include "MessageQueue.h"
 
 #ifndef COMMAND_TABLE
@@ -18,11 +17,11 @@ COMMAND_TABLE
 #undef ENTRY
 };
 
-Message UserInterface::userInput={MessageType::Command,""};
-volatile int UserInterface::didRead =0;
+Message Command::userInput={MessageType::Command,""};
+volatile int Command::didRead =0;
 
 
-void UserInterface::readLine(Message *msg) {
+void Command::readLine(Message *msg) {
     char received = msg->payload[0];
     if(13 == received) {
         userInput.payload[didRead]=0;
@@ -38,7 +37,7 @@ void UserInterface::readLine(Message *msg) {
 
 #define TABLE_SIZE  (sizeof(commandTable) / sizeof(CommandEntry))
 
-CommandParams UserInterface::commandToMessageType(const char* command) {
+CommandParams Command::commandToMessageType(const char* command) {
     for (uint8_t i = 0; i < TABLE_SIZE; i++) {
         const char* namePtr = (const char*)pgm_read_ptr(&commandTable[i].name);
         int iseq = strcmp_P(command, namePtr);
@@ -53,12 +52,12 @@ CommandParams UserInterface::commandToMessageType(const char* command) {
     return CommandParams{MessageType::None, 0};
 }
 
-void UserInterface::help() {
+void Command::help() {
 #define ENTRY(cmd,msg,args) systemQueue.send(MessageType::Console,F(#cmd ":" #args " args"));
 COMMAND_TABLE
 #undef ENTRY
 }
-void UserInterface::cmdParser(Message * message) {
+void Command::cmdParser(Message * message) {
     char * payload=message->payload;
     uint32_t arg1;
     uint32_t arg2;
@@ -69,6 +68,7 @@ void UserInterface::cmdParser(Message * message) {
     msg.type=MessageType::Console;
     if(params.type == MessageType::None) {
         help();
+        return;
     } else if(tokens != params.args +1) {
         sprintf(msg.payload,"need %u args: %s",params.args,payload);
     } else {
@@ -81,9 +81,8 @@ void UserInterface::cmdParser(Message * message) {
 
 }
 
-UserInterface::UserInterface(){
+Command::Command(){
     systemQueue.registerListener(MessageType::Serial,&readLine);
     systemQueue.registerListener(MessageType::Command,&cmdParser);
 }
 
-UserInterface ui;

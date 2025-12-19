@@ -1,16 +1,22 @@
 # Arduino Makefile for Arduino Micro
 BOARD_TAG    = micro
 MONITOR_PORT = /dev/ttyACM0
-ARDUINO_LIBS = Wire MCP7940 OneWire DallasTemperature EEPROM
+USER_LIB_PATH = $(PWD)/library
+ARDUINO_LIBS = Wire MCP7940 OneWire DallasTemperature EEPROM \
+	Adc Buttons Clock ErrorLog Scheduler Lamp MessageQueue\
+	Square Thermometer Command
 LDFLAGS = -Wl,-u,vfprintf -lprintf_flt
+CXXFLAGS = -I .
 # Arduino directory (adjust if needed)
 ARDUINO_DIR = /usr/share/arduino
+
 
 # Source files
 TARGET = main
 SRC = src/$(TARGET).cc
 
-all: version tests $(TARGET_EEP) $(TARGET_HEX)
+
+all: version $(TARGET_EEP) $(TARGET_HEX)
 
 run: all upload monitor
 
@@ -18,11 +24,8 @@ run: all upload monitor
 # Include Arduino.mk
 include /usr/share/arduino/Arduino.mk
 
-tests:
-	make -C test
-
 clean::
-	make -C test clean ; rm -f version.h
+	rm -f version.h
 
 # Help target
 help:

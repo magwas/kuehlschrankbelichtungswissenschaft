@@ -1,8 +1,7 @@
 #include <MCP7940.h>
 #include <EEPROM.h>
 #include "ErrorLog.h"
-#include "clock.h"
-#include "userinterface.h"
+#include "Clock.h"
 
 void ErrorLog::printAll() {
     char buffer[PAYLOAD_LENGTH];
@@ -87,4 +86,3 @@ ErrorLog::ErrorLog() {
     systemQueue.registerListener(MessageType::Errors,&errorsCommand);
 }
 
-ErrorLog errorLog;

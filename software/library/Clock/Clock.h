@@ -13,8 +13,9 @@ class Clock {
         void sync(uint32_t unixtime);
         static void command(Message *msg);
     public:
-        uint32_t fastUnixtime();
+        Clock();
         void begin();
+        uint32_t fastUnixtime();
         DateTime getTime();
         void printTime();
         void setTime(DateTime time);

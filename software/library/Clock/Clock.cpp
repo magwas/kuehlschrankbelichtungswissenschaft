@@ -1,5 +1,4 @@
-#include "clock.h"
-#include "userinterface.h"
+#include "Clock.h"
 
 #ifndef INT_1S
     #error "please define INT_1S as pin number for 1HZ signal"
@@ -52,7 +51,12 @@ DateTime Clock::parseTime(char *timeString) {
     return DateTime(year, month, day,hour, minute, second);
 }
 
+Clock::Clock() {
+    Serial.println("constructor");
+    systemQueue.send(MessageType::Console,F("initializing clock"));
+}
 void Clock::begin() {
+    Serial.print("begin");
     while (!MCP7940.begin()) {
         systemQueue.send(MessageType::Console,F("no MCP7940. recheck in 3s."));
         delay(3000);
@@ -111,4 +115,3 @@ uint32_t Clock::fastUnixtime() {
     return syncUnix + (elapsedMillis / 1000UL);
 }
 
-Clock clock;

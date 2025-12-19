@@ -102,6 +102,5 @@ int MessageQueue::dispatch(Message *msg) {
     return count;
 }
 
-MessageQueue systemQueue;
 
 

@@ -1,14 +1,17 @@
 #include <Arduino.h>
 #include "version.h"
-#include "housekeep.h"
-#include "userinterface.h"
+#include "Scheduler.h"
+#include "Command.h"
 //#include "NTC_thermistor.h"
-#include "printf.h"
-#include "clock.h"
+#include "Clock.h"
 #include "MessageQueue.h"
-#include "temperature.h"
-#include "button.h"
+#include "Thermometer.h"
+#include "Buttons.h"
 #include "ErrorLog.h"
+#include "Adc.h"
+#include "Lamp.h"
+#include "Square.h"
+
 
 unsigned char fill = 0;
 
@@ -23,7 +26,10 @@ void testPWM(Message *msg) {
     }
     sprintf(buffer,"testpwm: %u  ",fill);
     systemQueue.send(MessageType::Console, buffer);
-    analogWrite(TEST_PWM,fill);
+    CommandPayload *args = (CommandPayload *)buffer;
+    args->arg1=2;
+    args->arg2=fill;
+    systemQueue.send(MessageType::PWM,buffer);
 }
 
 void tempread(Message *msg) {
@@ -38,13 +44,20 @@ void console(Message * msg) {
     Serial.println(msg->payload);
 }
 
-
-
+MessageQueue systemQueue;
+Command cmd;
+ErrorLog errorLog;
+Scheduler scheduler;
+Clock clock;
+Adc adc;
+Buttons buttons;
+Lamp lamp;
+Square squareWawe;
+Thermometer thermometer;
 
 void setup()
 {
   delay(3000);
-  printf_begin();
   Serial.begin(9600);
   Serial.setTimeout(100);
   Serial.println("Hello!");
@@ -57,8 +70,7 @@ void setup()
   systemQueue.registerListener(MessageType::Button,&testPWM);
   systemQueue.registerListener(MessageType::Temperature,&tempread);
   int n = systemQueue.registerListener(MessageType::Console,&console);
-  printf("listeners: %u\n",n);
-
+  Serial.println(n);
 }
 
 Message serialMsg = {MessageType::Serial, 'a'};

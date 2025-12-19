@@ -1,14 +1,12 @@
 #include <Arduino.h>
-#include "temperature.h"
-#include "clock.h"
 #include "MessageQueue.h"
-#include "housekeep.h"
+#include "Scheduler.h"
 
 
 
-volatile int HouseKeeper::housekept;
+volatile int Scheduler::housekept;
 
-void HouseKeeper::houseKeep(Message *msg) {
+void Scheduler::houseKeep(Message *msg) {
   housekept++;
   if(housekept%10 != 0)
     return;
@@ -17,8 +15,7 @@ void HouseKeeper::houseKeep(Message *msg) {
 }
 
 
-HouseKeeper::HouseKeeper() {
+Scheduler::Scheduler() {
   systemQueue.registerListener(MessageType::OneHz,&houseKeep);
 }
 
-HouseKeeper houseKeeper;
