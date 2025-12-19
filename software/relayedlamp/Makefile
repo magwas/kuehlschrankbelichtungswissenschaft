@@ -1,7 +1,7 @@
 # Arduino Makefile for Arduino Micro
 BOARD_TAG    = micro
 MONITOR_PORT = /dev/ttyACM0
-USER_LIB_PATH = $(PWD)/library
+USER_LIB_PATH = $(PWD)/../library
 ARDUINO_LIBS = Wire MCP7940 OneWire DallasTemperature EEPROM \
 	Adc Buttons Clock ErrorLog Scheduler Lamp MessageQueue\
 	Square Thermometer Command
@@ -58,5 +58,5 @@ monitor:
 
 PHONY: version
 version:
-	./generate_version.sh > version.h 2>/dev/null || echo "// Could not generate version from Git" > version.h
+	$(USER_LIB_PATH)/generate_version.sh > version.h 2>/dev/null || echo "// Could not generate version from Git" > version.h
 .PHONY: help
