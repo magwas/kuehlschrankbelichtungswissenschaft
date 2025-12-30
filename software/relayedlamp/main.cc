@@ -1,11 +1,9 @@
 #include <Arduino.h>
 
-#define LED 14
+#define LED LED_BUILTIN
 void setup()
 {
-    delay(3000);
     pinMode(LED,OUTPUT);
-    sensors.begin();
 }
 
 void loop()
