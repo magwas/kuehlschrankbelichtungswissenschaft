@@ -140,8 +140,10 @@ void MessageQueue::send(MessageType type, int value) {
 
 Message* MessageQueue::receive() {
     noInterrupts();
-    if(messageQueueTail == messageQueueHead)
+    if(messageQueueTail == messageQueueHead) {
+        interrupts();
         return NULL;
+    }
     int oldHead = messageQueueHead;
     messageQueueHead = (messageQueueHead+1)%MSG_QUEUE_LENGTH;
     interrupts();
@@ -149,23 +151,29 @@ Message* MessageQueue::receive() {
 }
 
 int MessageQueue::registerListener(MessageType type,Listener listener) {
+    noInterrupts();
     for(int i=0;i<LISTENERS_COUNT_MAX;i++) {
         if(listeners[i].type==MessageType::None) {
             listeners[i].type = type;
             listeners[i].listener = listener;
+            interrupts();
             return i;
         }
     }
+    interrupts();
     return -1;
 }
 
 int MessageQueue::unregisterListener(MessageType type,Listener listener) {
+    noInterrupts();
     for(int i=0;i<LISTENERS_COUNT_MAX;i++) {
         if(listeners[i].type==type && listeners[i].listener == listener) {
             listeners[i].type = MessageType::None;
+            interrupts();
             return i;
         }
     }
+    interrupts();
     return -1;
 }
 int MessageQueue::dispatch(Message *msg) {
