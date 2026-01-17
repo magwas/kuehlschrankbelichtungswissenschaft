@@ -2,3 +2,5 @@ version.bin
 license.txt
 *.bak
 ~*
+*.gcode
+*.FCBak
