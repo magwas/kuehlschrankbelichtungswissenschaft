@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP TBL001-381-03GY-2GY
-D 1~24 Poles, Screwless, Horizontal, 3.81 Pitch, 20~18 (AWG), Terminal Block Connector
-K
-F https://www.sameskydevices.com/product/resource/tbl001-381.pdf
-$ENDCMP
-#
-#End Doc Library

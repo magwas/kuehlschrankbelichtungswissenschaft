@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP UA78M33CKCS
-D Reg Standard Lin Fix Pos 3.3V 0.5A 3-Pin
-K
-F https://datasheet.datasheetarchive.com/originals/distributors/Datasheets-37/DSA-734075.pdf
-$ENDCMP
-#
-#End Doc Library

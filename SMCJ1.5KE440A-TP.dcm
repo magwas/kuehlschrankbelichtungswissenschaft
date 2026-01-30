@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SMCJ1.5KE440A-TP
-D TVS
-K
-F https://www.mccsemi.com/pdf/Products/SMCJ1.5KE6.8(C)A-SMCJ1.5KE550(C)A(DO-214AB).pdf
-$ENDCMP
-#
-#End Doc Library

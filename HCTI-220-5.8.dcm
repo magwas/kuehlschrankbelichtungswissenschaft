@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP HCTI-220-5.8
-D Fixed Inductors HIGH CURR TOROIDAL INDUCTOR 220 UH
-K
-F https://www.mouser.tw/datasheet/2/643/BEL_060917_HCTI-1216521.pdf
-$ENDCMP
-#
-#End Doc Library

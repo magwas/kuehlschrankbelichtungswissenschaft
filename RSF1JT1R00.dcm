@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP RSF1JT1R00
-D RES, MO, 1W, 1 ohm, 5%
-K
-F https://cs.seielect.com/catalog/SEI-RSF_RSMF.pdf
-$ENDCMP
-#
-#End Doc Library
