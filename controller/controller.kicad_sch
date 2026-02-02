@@ -1199,6 +1199,90 @@
 		)
 	)
 	(sheet
+		(at 179.07 58.42)
+		(size 16.51 8.89)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "47b9b342-be34-432b-8f41-9fc4c27d3a4a")
+		(property "Sheetname" "CO2 sensor"
+			(at 179.07 57.7084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "CO2.kicad_sch"
+			(at 179.07 67.8946 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "controller"
+				(path "/6656c305-24d1-4d05-82fa-e34e3bee2322"
+					(page "7")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 179.07 81.28)
+		(size 12.7 7.62)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "5800feb2-801f-4c6a-9211-1a853d5d15d1")
+		(property "Sheetname" "Temperature sensor"
+			(at 179.07 80.5684 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "temperature.kicad_sch"
+			(at 179.07 89.4846 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "controller"
+				(path "/6656c305-24d1-4d05-82fa-e34e3bee2322"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
 		(at 175.26 34.29)
 		(size 29.21 10.16)
 		(exclude_from_sim no)

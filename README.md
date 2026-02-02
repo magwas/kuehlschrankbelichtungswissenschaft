@@ -69,8 +69,12 @@ Populate the dashboard with components. I try to recall here what I was using. B
 - For the mains plugs, I cannibalized some LEGRAND SUNO plugs, by removing everything above the bottom plastic and metal parts, and trimming down the plastic parts, keeping the tabs which open the electrodes for the assembly.
 - The main switch is a 22x30 standard switch.
 - The 12V barrel connectors I obtained are for 12mm diameter fine thread. I did not want to buy a tap for that, instead I made the holes the size such that they fit snuggly.
+ - Vents are standard PC ventillators
+ - The cooling pumps are 12V pumps I bought on eBay. The cooling is a mix of 6mm outer diameter copper and 6mm inner diameter silicone tubes.
+ - The nutrient dosage pumps are just like the cooling pumps.
+ - I actually do not yet have heating. I plan to coil up some heating wires for that purpose on some ceramics.
 - The USB-C connector is a noname one which fits into the 3.5x10mm hole and its length is 15mm. I could not find a datasheet for a similar one.
-- The connectors for the humidity sensors are standard 3.5mm audio jacks. They are actually the tye of swinging connector wher the round connector part is fixed to the anti-fracture housing with a thread. I use just the inner part.
+- The connectors for the humidity sensors are standard 3.5mm audio jacks. They are actually the tye of swinging connector wher the round connector part is fixed to the anti-fracture housing with a thread. I use just the inner part. The humidity sensors are just steel rods (~10cm sut from bicycle spokes) placed 1 cm apart.
 - The design now have just a simple hole for the wifi antenna, as I am currently waiting for the board wersion which comes with a connector for it.
 - The RJ11 connectors are the plain usual 90 degree ones.
 

@@ -1,4 +1,5 @@
 (sym_lib_table
   (version 7)
   (lib (name "ESP32-C3_SUPERMINI_TH")(type "KiCad")(uri "${KIPRJMOD}/parts/ESP32-C3_SUPERMINI_TH.kicad_sym")(options "")(descr ""))
+  (lib (name "PASCO2V15AUMA1")(type "KiCad")(uri "${KIPRJMOD}/parts/PASCO2V15AUMA1.kicad_sym")(options "")(descr ""))
 )

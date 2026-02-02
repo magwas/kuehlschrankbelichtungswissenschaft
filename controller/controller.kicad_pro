@@ -515,6 +515,14 @@
     [
       "d823885a-57f8-4e60-80bb-e61d9af58a56",
       "RJ11"
+    ],
+    [
+      "47b9b342-be34-432b-8f41-9fc4c27d3a4a",
+      "CO2 sensor"
+    ],
+    [
+      "5800feb2-801f-4c6a-9211-1a853d5d15d1",
+      "Temperature sensor"
     ]
   ],
   "text_variables": {}

@@ -2066,16 +2066,16 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C")
-		(at 95.25 152.4 90)
+		(at 92.71 152.4 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "15304cfe-5c0c-4bcb-bc4a-35d21bd52cb6")
 		(property "Reference" "J16"
-			(at 104.14 151.1299 90)
+			(at 83.82 151.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2084,7 +2084,7 @@
 			)
 		)
 		(property "Value" "6P6C"
-			(at 104.14 153.6699 90)
+			(at 83.82 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2093,7 +2093,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 94.615 152.4 90)
+			(at 93.345 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2102,7 +2102,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 94.615 152.4 90)
+			(at 93.345 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2111,7 +2111,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
-			(at 95.25 152.4 0)
+			(at 92.71 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2148,16 +2148,16 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C")
-		(at 128.27 152.4 90)
+		(at 125.73 152.4 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "311812e2-dc18-47c0-82ad-c565f5ca7708")
 		(property "Reference" "J17"
-			(at 137.16 151.1299 90)
+			(at 116.84 151.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2166,7 +2166,7 @@
 			)
 		)
 		(property "Value" "6P6C"
-			(at 137.16 153.6699 90)
+			(at 116.84 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2175,7 +2175,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 127.635 152.4 90)
+			(at 126.365 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2184,7 +2184,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 127.635 152.4 90)
+			(at 126.365 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2193,7 +2193,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
-			(at 128.27 152.4 0)
+			(at 125.73 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2230,16 +2230,16 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C")
-		(at 62.23 151.13 90)
+		(at 59.69 151.13 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6b9a215e-ff60-446a-ba19-edc22a611c9b")
 		(property "Reference" "J15"
-			(at 71.12 149.8599 90)
+			(at 50.8 149.8599 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2248,7 +2248,7 @@
 			)
 		)
 		(property "Value" "6P6C"
-			(at 71.12 152.3999 90)
+			(at 50.8 152.3999 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2257,7 +2257,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 61.595 151.13 90)
+			(at 60.325 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2266,7 +2266,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 61.595 151.13 90)
+			(at 60.325 151.13 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2275,7 +2275,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
-			(at 62.23 151.13 0)
+			(at 59.69 151.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2388,16 +2388,16 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C")
-		(at 194.31 152.4 90)
+		(at 191.77 152.4 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "aca69791-6be3-472d-a59c-a3e1b0383734")
 		(property "Reference" "J19"
-			(at 203.2 151.1299 90)
+			(at 182.88 151.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2406,7 +2406,7 @@
 			)
 		)
 		(property "Value" "6P6C"
-			(at 203.2 153.6699 90)
+			(at 182.88 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2415,7 +2415,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 193.675 152.4 90)
+			(at 192.405 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2424,7 +2424,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 193.675 152.4 90)
+			(at 192.405 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2433,7 +2433,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
-			(at 194.31 152.4 0)
+			(at 191.77 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2470,16 +2470,16 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C")
-		(at 161.29 152.4 90)
+		(at 158.75 152.4 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "b723af82-6990-47fb-94c2-35e44e545969")
 		(property "Reference" "J18"
-			(at 170.18 151.1299 90)
+			(at 149.86 151.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2488,7 +2488,7 @@
 			)
 		)
 		(property "Value" "6P6C"
-			(at 170.18 153.6699 90)
+			(at 149.86 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2497,7 +2497,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 160.655 152.4 90)
+			(at 159.385 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2506,7 +2506,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 160.655 152.4 90)
+			(at 159.385 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2515,7 +2515,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
-			(at 161.29 152.4 0)
+			(at 158.75 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2622,16 +2622,16 @@
 	)
 	(symbol
 		(lib_id "Connector:6P6C")
-		(at 226.06 152.4 90)
+		(at 223.52 152.4 270)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "d50fb7a6-3130-466b-9fb5-83ca14d12ac8")
 		(property "Reference" "J20"
-			(at 234.95 151.1299 90)
+			(at 214.63 151.1299 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2640,7 +2640,7 @@
 			)
 		)
 		(property "Value" "6P6C"
-			(at 234.95 153.6699 90)
+			(at 214.63 153.6699 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2649,7 +2649,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 225.425 152.4 90)
+			(at 224.155 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2658,7 +2658,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 225.425 152.4 90)
+			(at 224.155 152.4 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2667,7 +2667,7 @@
 			)
 		)
 		(property "Description" "RJ connector, 6P6C (6 positions 6 connected), RJ12/RJ18/RJ25"
-			(at 226.06 152.4 0)
+			(at 223.52 152.4 0)
 			(effects
 				(font
 					(size 1.27 1.27)
