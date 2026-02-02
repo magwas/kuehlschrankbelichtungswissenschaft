@@ -1,0 +1,26 @@
+## IDF Component Manager Manifest File
+dependencies:
+  MessageQueue:
+    path: ${MESSAGING_LIB}/MessageQueue
+  Command:
+    path: ${MESSAGING_LIB}/Command
+  Square:
+    path: ${MESSAGING_LIB}/Square
+  Astable:
+    path: ${MESSAGING_LIB}/Astable
+  MsgConfig:
+    path: ${MESSAGING_LIB}/MsgConfig
+  MsgWifi:
+    path: ${MESSAGING_LIB}/MsgWifi
+  TelnetConsole:
+    path: ${MESSAGING_LIB}/TelnetConsole
+  SerialConsole:
+    path: ${MESSAGING_LIB}/SerialConsole
+  MsgOneWireTemperature:
+    path: ${MESSAGING_LIB}/MsgOneWireTemperature
+  MsgMux:
+    path: ${MESSAGING_LIB}/MsgMux
+  MsgCO2:
+    path: ${MESSAGING_LIB}/MsgCO2
+
+  esp-idf-lib/onewire: '*'

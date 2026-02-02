@@ -7,3 +7,7 @@ license.txt
 *.png
 report
 -
+*.swp
+build
+dependencies.lock
+managed_components
