@@ -42,8 +42,8 @@ extern "C" void app_main(void)
     tester.begin();
     Astable::begin();
     MsgConfig::begin();
-//    MsgWifi::begin();
-//    TelnetConsole::begin();
+    MsgWifi::begin();
+    TelnetConsole::begin();
     MsgOneWireTemperature::begin();
     MsgMux::begin();
     co2.begin();

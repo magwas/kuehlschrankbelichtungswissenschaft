@@ -11,3 +11,5 @@ report
 build
 dependencies.lock
 managed_components
+.vscode
+msglib
