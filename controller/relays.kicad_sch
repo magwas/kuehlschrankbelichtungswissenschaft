@@ -4396,7 +4396,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1ADC4.5"
+		(property "Value" "JRC-23FHS"
 			(at 119.38 130.8099 0)
 			(effects
 				(font
@@ -4549,7 +4549,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1ADC4.5"
+		(property "Value" "JRC-23FHS"
 			(at 218.44 158.7499 0)
 			(effects
 				(font
@@ -4810,7 +4810,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1ADC4.5"
+		(property "Value" "JRC-23FHS"
 			(at 115.57 102.8699 0)
 			(effects
 				(font
@@ -5038,7 +5038,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1ADC4.5"
+		(property "Value" "JRC-23FHS"
 			(at 123.19 158.7499 0)
 			(effects
 				(font
@@ -5266,7 +5266,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1ADC4.5"
+		(property "Value" "JRC-23FHS"
 			(at 210.82 102.8699 0)
 			(effects
 				(font
@@ -5413,7 +5413,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "G6DN-1ADC4.5"
+		(property "Value" "JRC-23FHS"
 			(at 214.63 130.8099 0)
 			(effects
 				(font
