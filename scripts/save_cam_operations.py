@@ -1,92 +1,82 @@
-# -*- coding: utf-8 -*-
-import FreeCAD
-import FreeCADGui
+#
+# link this into your macro directory
+# ln -s $(pwd)/scripts/save_cam_operations.py ~/.local/share/FreeCAD/Macro/
+#
+import FreeCAD as App
+import json
 import os
-import subprocess
+from datetime import datetime
 
-def export_jobs_to_relative_folder():
-    doc = FreeCAD.ActiveDocument
-    if not doc:
-        FreeCAD.Console.PrintError("No active document.\n")
-        return
+def get_operation_params(op):
+    """Extract relevant parameters from a CAM operation object.
+    Customize this function to include the parameters you care about.
+    """
+    params = {
+        "Label": op.Label,
+        "TypeId": op.TypeId,
+        "OperationType": None,
+    }
+    # Try to get operation type from Proxy (most reliable)
+    if hasattr(op, "Proxy") and op.Proxy:
+        params["OperationType"] = op.Proxy.__class__.__name__
+    elif hasattr(op, "OperationType"):
+        params["OperationType"] = op.OperationType
+    elif hasattr(op, "OpType"):
+        params["OperationType"] = op.OpType
 
-    if not doc.FileName:
-        FreeCAD.Console.PrintError("Document must be saved first.\n")
-        return
+    # Common parameters – add or remove as needed
+    for prop in ["ToolNumber", "ClearanceHeight", "FinalDepth", "StepOver", "OffsetPattern", "Pattern"]:
+        if hasattr(op, prop):
+            val = getattr(op, prop)
+            # Convert App::PropertyX to Python types
+            if hasattr(val, "Value"):
+                val = val.Value
+            params[prop] = val
 
-    doc.recompute()
+    # For DressupTag, include dimensions
+    if params.get("OperationType") and "Tag" in params["OperationType"]:
+        for prop in ["Width", "Height", "Angle", "TagWidth", "TagHeight", "TagAngle"]:
+            if hasattr(op, prop):
+                val = getattr(op, prop)
+                if hasattr(val, "Value"):
+                    val = val.Value
+                params[prop] = val
 
-    doc_dir = os.path.dirname(doc.FileName)
-    jobs_dir = os.path.join(doc_dir, "jobs")
-    if not os.path.exists(jobs_dir):
-        os.makedirs(jobs_dir)
-        FreeCAD.Console.PrintMessage(f"Created folder: {jobs_dir}\n")
+    return params
 
-    # Find all CAM jobs
-    jobs = [obj for obj in doc.Objects if obj.TypeId == "Path::FeaturePython" and obj.Name.startswith("Job")]
+doc = App.ActiveDocument
+if not doc:
+    print("No active document found.")
+else:
+    model_path = doc.FileName
+    if not model_path:
+        print("Model must be saved first.")
+    else:
+        base = os.path.splitext(model_path)[0]
+        out_file = base + "_cam_operations.json"
 
-    if not jobs:
-        FreeCAD.Console.PrintWarning("No CAM Jobs found.\n")
-        return
+        # Collect all CAM operations
+        all_ops = []
+        for obj in doc.Objects:
+            # Include only objects that are likely CAM operations
+            if hasattr(obj, "TypeId") and (obj.TypeId.startswith("Path::") or obj.TypeId.startswith("CAM::")):
+                # Filter out non‑operation objects (like tool controllers) by checking for typical operation attributes
+                if hasattr(obj, "Proxy") or hasattr(obj, "OperationType") or hasattr(obj, "OpType"):
+                    op_data = {
+                        "ObjectName": obj.Name,
+                        "Label": obj.Label,
+                        "TypeId": obj.TypeId,
+                        "Parameters": get_operation_params(obj)
+                    }
+                    all_ops.append(op_data)
 
-    original_paths = {}
+        output = {
+            "Model": doc.Label,
+            "FilePath": model_path,
+            "Timestamp": datetime.now().isoformat(),
+            "Operations": all_ops
+        }
 
-    try:
-        for job in jobs:
-            safe_label = "".join(c for c in job.Label if c.isalnum() or c in (' ', '-', '_')).rstrip()
-            if not safe_label:
-                safe_label = job.Name
-            output_file = os.path.join(jobs_dir, safe_label + ".gcode")
-            FreeCAD.Console.PrintMessage(f"Exporting {job.Label} ({job.Name}) to {output_file}\n")
-
-            original_paths[job.Name] = job.PostProcessorOutputFile
-            job.PostProcessorOutputFile = output_file
-
-            FreeCADGui.Selection.clearSelection()
-            FreeCADGui.Selection.addSelection(job)
-            FreeCADGui.runCommand('CAM_Post', 0)   # Uses dialog – you must click OK
-
-            FreeCAD.Console.PrintMessage(f"  Successfully exported {job.Label}\n")
-
-    except Exception as e:
-        FreeCAD.Console.PrintError(f"Error during export: {e}\n")
-    finally:
-        for job_name, orig_path in original_paths.items():
-            job_obj = doc.getObject(job_name)
-            if job_obj:
-                job_obj.PostProcessorOutputFile = orig_path
-
-    FreeCAD.Console.PrintMessage("All jobs exported.\n")
-
-    # --- Delete the stray "-" file if it exists ---
-    dash_file = os.path.join(jobs_dir, "-")
-    if os.path.exists(dash_file):
-        try:
-            os.remove(dash_file)
-            FreeCAD.Console.PrintMessage(f"Removed stray '-` file from {jobs_dir}\n")
-        except Exception as e:
-            FreeCAD.Console.PrintError(f"Failed to remove '-` file: {e}\n")
-
-    # --- Run fixjobs.sh in the jobs directory ---
-    try:
-        os.chdir(jobs_dir)
-        script_path = "./fixjobs.sh"
-        if not os.path.isfile(script_path):
-            FreeCAD.Console.PrintError(f"fixjobs.sh not found in {jobs_dir}\n")
-            return
-        if not os.access(script_path, os.X_OK):
-            FreeCAD.Console.PrintWarning("fixjobs.sh is not executable. Attempting to run anyway.\n")
-        result = subprocess.run([script_path], capture_output=True, text=True)
-        if result.returncode == 0:
-            FreeCAD.Console.PrintMessage("fixjobs.sh ran successfully.\n")
-            if result.stdout:
-                FreeCAD.Console.PrintMessage("Output:\n" + result.stdout)
-        else:
-            FreeCAD.Console.PrintError(f"fixjobs.sh failed with code {result.returncode}\n")
-            if result.stderr:
-                FreeCAD.Console.PrintError("Error:\n" + result.stderr)
-    except Exception as e:
-        FreeCAD.Console.PrintError(f"Failed to run fixjobs.sh: {e}\n")
-
-# Run the macro
-export_jobs_to_relative_folder()
+        with open(out_file, 'w') as f:
+            json.dump(output, f, indent=2, default=str)
+        print(f"Saved {len(all_ops)} operations to {out_file}")

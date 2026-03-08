@@ -10,7 +10,9 @@ save_cam_operations creates a snapshot of all CAM operations. It saves a few par
 
 The check scripts check the jobs against the following rules, and print out every job not conforming.
 
-It should only identify the tool engraver001 as nonconforming.
+It should only identify the folowing:
+ the tool engraver001 as nonconforming.
+ the RJ11 profile operation in Dashboard have nonzero depth
 
 Jobs:
 	script: check_cam_operations.py

@@ -1,8 +1,8 @@
 note: we use G54 as coordinate system
 check the cam jobs. see CAM_CHECKLIST
-export the cam jobs using the save_cam_operations.py macro. It postprocesses all jobs (you have to click ok for each of them), then runs fixjobs.sh
+export the cam jobs using the postprocess_all.py macro. It postprocesses all jobs (you have to click ok for each of them), then runs fixjobs.sh
  fixjob.sh changes S100 to P100 on M3 commands, and changes Z operations to laser on and laser off in the engraving job.
-you probably want to link scripts/save_cam_operations.py to your local macro folder
+you probably want to link scripts/postprocess_all.py to your local macro folder
 
 0. preparing fixer holes on stock
 This creates four 4mm dia holes at ({40,50},{0,300})
