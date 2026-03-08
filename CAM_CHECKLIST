@@ -1,0 +1,34 @@
+The problem is that sometimes CAM operations hopelessly break when the geometry is changed,
+and deleting and recreating them can introduce problems.
+So there is an infrastructure to check them.
+
+The checking infrastructure in the scripts directory.
+You probably want to symlink run_all_checks.py and save_cam_operations.py
+to your local macro directory.
+run_all_checks.py runs all scripts/check_*.py
+save_cam_operations creates a snapshot of all CAM operations. It saves a few parameters, but not all!
+
+The check scripts check the jobs against the following rules, and print out every job not conforming.
+
+It should only identify the tool engraver001 as nonconforming.
+
+Jobs:
+	script: check_cam_operations.py
+	checked: all cam operations exists, major parameters are correct
+Dressuptags:
+	script: check_dressuptags.py
+	checked: width/height/angle=20/10/45
+Profiles:
+	script: check_profilings.py
+	checked: final depth is 0mm
+Pockets:
+	script: check_pockets.py
+	checked: pattern/step over=offset/50
+Tools:
+	script: check_tools.py
+	checked: horiz feed/vert feed/spindle=10/10/100
+post processor:
+	script: check_outputs.py
+	checked: postprocessor is marlin, and the output is jobs/<jobname>.gcode
+
+
